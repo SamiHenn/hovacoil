@@ -1,0 +1,52 @@
+/* footer-2.less */
+
+.footer-2 {
+
+  .widget {
+
+    > span + div {
+      display: none;
+      @media (min-width: 992px) {
+        display: block;
+      }
+
+    }
+
+    a {
+      .transition();
+      .text-p;
+      color: @color-white;
+    }
+
+    .menu {
+      a:hover {
+        color: @color-2;
+      }
+    }
+
+  }
+
+  &__show-submenu {
+    + div[class^="menu-"] {
+      display: block !important;
+    }
+  }
+
+  .sogo-logo {
+    svg {
+      display: block;
+      width: 1.7rem;
+      height: auto;
+    }
+
+  }
+  &__logo {
+    width: 3.36rem;
+    @media (min-width: 992px) {
+      width: 5.66rem;
+
+    }
+    height: auto;
+  }
+
+}

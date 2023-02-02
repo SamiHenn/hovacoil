@@ -1,0 +1,110 @@
+// {
+//     "Value": {
+//         "LstOffers": [
+//             {
+//                 "LstCarRiderOfferModel": [],
+//                 "Anaf": "60",
+//                 "CodeMigun": "0",
+//                 "CodeMigunStatus": "2",
+//                 "Price": 3683.0,
+//                 "IsWithHova": false,
+//                 "Id": "2001",
+//                 "Name": "מקיף",
+//                 "LogID": null
+//             },
+//             {
+//                 "LstCarRiderOfferModel": [],
+//                 "Anaf": "80",
+//                 "CodeMigun": "0",
+//                 "CodeMigunStatus": "2",
+//                 "Price": 2221.0,
+//                 "IsWithHova": false,
+//                 "Id": "2003",
+//                 "Name": "חובה",
+//                 "LogID": null
+//             },
+//             {
+//                 "LstCarRiderOfferModel": [],
+//                 "Anaf": "74",
+//                 "CodeMigun": null,
+//                 "CodeMigunStatus": null,
+//                 "Price": 0.0,
+//                 "IsWithHova": false,
+//                 "Id": "2004",
+//                 "Name": "מקיף פרפקט",
+//                 "LogID": null
+//             },
+//             {
+//                 "LstCarRiderOfferModel": [],
+//                 "Anaf": "66",
+//                 "CodeMigun": "0",
+//                 "CodeMigunStatus": "2",
+//                 "Price": 3316.0,
+//                 "IsWithHova": false,
+//                 "Id": "2005",
+//                 "Name": "צד ג'",
+//                 "LogID": null
+//             }
+//         ]
+//     },
+//     "Type": 0,
+//     "Messages": [],
+//     "IsSuccess": true
+// }
+
+
+{
+    "Value": {
+        "LstOffers": [
+            {
+                "LstCarRiderOfferModel": [],
+                "Anaf": "60",
+                "CodeMigun": "0",
+                "CodeMigunStatus": "2",
+                "Price": 3683.0,
+                "IsWithHova": false,
+                "Id": "2001",
+                "Name": "מקיף",
+                "LogID": null
+            },
+            {
+                "LstCarRiderOfferModel": [],
+                "Anaf": "80",
+                "CodeMigun": "0",
+                "CodeMigunStatus": "2",
+                "Price": 2221.0,
+                "IsWithHova": false,
+                "Id": "2003",
+                "Name": "חובה",
+                "LogID": null
+            },
+            {
+                "LstCarRiderOfferModel": [],
+                "Anaf": "74",
+                "CodeMigun": null,
+                "CodeMigunStatus": null,
+                "Price": 0.0,
+                "IsWithHova": false,
+                "Id": "2004",
+                "Name": "מקיף פרפקט",
+                "LogID": null
+            },
+            {
+                "LstCarRiderOfferModel": [],
+                "Anaf": "66",
+                "CodeMigun": "0",
+                "CodeMigunStatus": "2",
+                "Price": 3316.0,
+                "IsWithHova": false,
+                "Id": "2005",
+                "Name": "צד ג'",
+                "LogID": null
+            }
+        ]
+    },
+    "Type": 0,
+    "Messages": [],
+    "IsSuccess": true
+}
+
+

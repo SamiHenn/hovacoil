@@ -1,0 +1,85 @@
+/* section-posts-1.less */
+
+//body.mobile {
+//  .section-posts-1 {
+//    .bottom-right-image {
+//      img {
+//        width: 61px;
+//        height: auto;
+//      }
+//    }
+//  }
+//}
+
+.section-posts-1 {
+  border-bottom: 2px solid #797979;
+  .question {
+    color: @color-white;
+    background: @color-3;
+    padding: 15px 13px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 15px 30px 3px #d8d8d8;
+      .transition();
+    }
+
+    .icon {
+      width: 23px;
+      height: 23px;
+      margin-left: 10px;
+
+      &:after {
+        content: '';
+        background-image: url('data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%22ea8a80e1-888d-46b0-8f03-9298f99734ac%22%20data-name%3D%2270cfc93f-583e-40e4-a088-1464dbcfdaef%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2011.97%2011.97%22%3E%3Ctitle%20fill%3D%22%23ffffff%22%3Eminus%3C%2Ftitle%3E%3Cpath%20d%3D%22M11.17%2C4.35H.81a.81.81%2C0%2C0%2C0-.82.8s0%2C0%2C0%2C0V6.8a.81.81%2C0%2C0%2C0%2C.8.82H11.15a.82.82%2C0%2C0%2C0%2C.84-.8V5.17A.82.82%2C0%2C0%2C0%2C11.17%2C4.35Z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &.collapsed {
+      color: @color-white;
+      background: @color-white;
+      padding: 15px 13px;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .icon {
+        //font-size: 0.4rem;
+        //font-weight: 600;
+        //margin-left: 10px;
+        //.transition();
+
+        &:after {
+          content: '';
+          background-image: url('data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%2270cfc93f-583e-40e4-a088-1464dbcfdaef%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2011.97%2011.97%22%3E%3Ctitle%20fill%3D%22%23006fc0%22%3Eplus%3C%2Ftitle%3E%3Cpath%20id%3D%22328093c9-f28b-4753-9886-b83a61b701b8%22%20data-name%3D%22plus.svg%22%20d%3D%22M11.16%2C4.35H7.63V.82A.82.82%2C0%2C0%2C0%2C6.81%2C0H5.18a.82.82%2C0%2C0%2C0-.82.82V4.35H.82A.81.81%2C0%2C0%2C0%2C0%2C5.17H0V6.8a.81.81%2C0%2C0%2C0%2C.81.82H4.36v3.53a.82.82%2C0%2C0%2C0%2C.81.82H6.81a.82.82%2C0%2C0%2C0%2C.82-.81h0V7.62h3.53A.82.82%2C0%2C0%2C0%2C12%2C6.8V5.17A.82.82%2C0%2C0%2C0%2C11.16%2C4.35Z%22%20transform%3D%22translate%28-0.01%29%22%20fill%3D%22%23006fc0%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+          background-repeat: no-repeat;
+        }
+      }
+      span:last-child {
+        color: @color-6;
+      }
+    }
+  }
+
+  .answer {
+
+    .answer-inner {
+      padding: .5rem;
+    }
+  }
+
+  .bottom-right-image {
+    right: -8%;
+    position: relative;
+  }
+}

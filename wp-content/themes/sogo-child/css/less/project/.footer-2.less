@@ -1,0 +1,96 @@
+/* footer-2.less */
+
+body.mobile {
+
+  .footer-2 {
+
+    .widget {
+
+      > h3 {
+
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+
+        &:after {
+          content: '';
+          background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%2202851ba6-fc24-45fe-adbf-70d294d05a18%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2027.97%2016.03%22%3E%3Ctitle%20fill%3D%22%23ffffff%22%3Earrowdown%3C%2Ftitle%3E%3Cpath%20id%3D%22c56ea2dc-c683-4fd0-a909-82eb11273e57%22%20data-name%3D%22arrowdown.svg%22%20d%3D%22M27.69%2C1.65%2C26.29.27A.88.88%2C0%2C0%2C0%2C25%2C.23l0%2C0L14%2C11.09%2C3%2C.27A1%2C1%2C0%2C0%2C0%2C2.32%2C0a.91.91%2C0%2C0%2C0-.65.28L.27%2C1.65a.85.85%2C0%2C0%2C0-.06%2C1.2l.06.06L13.34%2C15.74a.88.88%2C0%2C0%2C0%2C1.25%2C0l0%2C0L27.7%2C2.91a.85.85%2C0%2C0%2C0%2C.06-1.2Z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          top: 50%;
+          left: -0.8rem;
+          transform: translateY(-50%);
+        }
+
+      }
+
+      > h3 + div {
+        display: none;
+      }
+
+    }
+
+    &__col {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__show-submenu {
+      + div[class^="menu-"] {
+        display: block !important;
+      }
+      &::after {
+        background-image: url('data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%22f984f2b5-1f9a-47ad-a026-bbf5b6182a9b%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2028%2016%22%3E%3Ctitle%20fill%3D%22%23ffffff%22%3Earrowup%3C%2Ftitle%3E%3Cpath%20id%3D%2225c57812-ade3-47c4-ae2e-31e950a4e9b3%22%20data-name%3D%22arrowup.svg%22%20d%3D%22M.28%2C14.36l1.4%2C1.37a.88.88%2C0%2C0%2C0%2C1.25%2C0l0%2C0L14%2C4.93l11%2C10.8a1%2C1%2C0%2C0%2C0%2C.65.28.91.91%2C0%2C0%2C0%2C.65-.28l1.4-1.37a.94.94%2C0%2C0%2C0%2C.28-.63%2C1%2C1%2C0%2C0%2C0-.28-.64L14.64.29a.88.88%2C0%2C0%2C0-1.25%2C0l0%2C0L.27%2C13.09a1%2C1%2C0%2C0%2C0-.28.64A.94.94%2C0%2C0%2C0%2C.28%2C14.36Z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') !important;
+      }
+    }
+
+    &__logo {
+      img {
+        width: 95px;
+      }
+    }
+
+  }
+
+}
+
+.footer-2 {
+
+  h3 {
+    margin-bottom: .2rem;
+  }
+
+  li {
+    line-height: .67rem;
+  }
+
+  p {
+    //color: @color-white;
+  }
+
+  a {
+    color: @color-white;
+
+    font-weight: 300;
+    font-size: 0.5rem;
+  }
+
+  .sogo-logo {
+    svg {
+      width: 44px;
+      height: 27px;
+      vertical-align: middle;
+      .sogo-logo-text {
+        fill: #494e53 !important;
+        @media (min-width: 992px) {
+          fill: black !important;
+        }
+      }
+    }
+  }
+
+}

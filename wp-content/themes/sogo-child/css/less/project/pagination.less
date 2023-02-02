@@ -1,0 +1,91 @@
+/* pagination.less */
+
+.page-navigation {
+
+  .wp-pagenavi {
+    direction: ltr;
+  }
+
+  .page {
+    vertical-align: middle;
+    display: inline-block;
+    color: @color-3;
+    border: none;
+    font-size: 0.6rem;
+    font-weight: 500 !important;
+    //padding: .2rem .35rem 0;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 0 0.1rem;
+    border-radius: 50%;
+    line-height: 1.1rem;
+    .transition(.2s);
+
+    &:hover {
+      border: none;
+      background: @color-1;
+      color: @color-white;
+      height: 1.3rem;
+      width: 1.3rem;
+      border-radius: 50%;
+      line-height: 1.1rem;
+      text-align: center;
+    }
+  }
+
+  .current {
+    vertical-align: middle;
+    display: inline-block;
+    border: none;
+    margin: 0 0.1rem;
+    font-size: 0.6rem;
+    font-weight: 500 !important;
+    background: @color-1;
+    color: @color-white;
+    border-radius: 50%;
+    height: 1.3rem;
+    width: 1.3rem;
+    line-height: 1.1rem;
+    text-align: center;
+  }
+
+  .nextpostslink {
+    border: 0;
+    vertical-align: middle;
+    color: transparent;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: relative;
+
+    &:after {
+      font-family: icomoon;
+      content: '\e902';
+      color: @color-3;
+      position: absolute;
+      top: 5px;
+      right: -5px;
+      font-size: 0.4rem;
+    }
+  }
+
+  .previouspostslink {
+    vertical-align: middle;
+    color: transparent;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    border: 0;
+
+    &:after {
+      font-family: icomoon;
+      content: '\e901';
+      color: @color-3;
+      position: absolute;
+      top: 5px;
+      left: -5px;
+      font-size: 0.4rem;
+    }
+  }
+}

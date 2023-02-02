@@ -1,0 +1,177 @@
+/*****************
+time-line.less
+****************/
+.time-line {
+  position: relative;
+
+  &:first-child {
+    z-index: 1;
+
+    .time-number {
+      position: relative;
+
+      &:before {
+        content: '';
+        background: #f2f2f2;
+        position: absolute;
+        width: 60px;
+        //width: 39px;
+        height: 18px;
+        left: 40px;
+        top: 35%;
+      }
+    }
+  }
+
+  &:last-child {
+    z-index: 1;
+
+    .time-number {
+      position: relative;
+
+      &:before {
+        content: '';
+        background: #f2f2f2;
+        position: absolute;
+        width: 60px;
+        //width: 39px;
+        height: 18px;
+        right: 40px;
+        top: 35%;
+      }
+    }
+  }
+
+  .time-number {
+    font-size: 0.6rem;
+    background-color: @color-7;
+    color: @color-white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-bottom: 2px;
+  }
+
+  .time-text {
+    font-size: 0.6rem;
+    color: @color-7;
+  }
+
+  &.time-line-current {
+
+    .time-number {
+      border: 2px solid @color-3;
+      background-color: white;
+      color: @color-3;
+    }
+
+    .time-text {
+      color: @color-3;
+      font-weight: 500;
+    }
+  }
+
+  &.time-line-finish {
+
+    .time-number {
+      background-color: @color-3;
+      position: relative;
+
+      &:after {
+        content: '';
+        background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%228e91fa81-6c05-4b96-84c4-a12626695a14%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2021.88%2017.12%22%3E%3Ctitle%20fill%3D%22%23ffffff%22%3Echeck%3C%2Ftitle%3E%3Cpath%20id%3D%2260a17336-ca37-4f44-af65-073ef2de6f0c%22%20data-name%3D%22check.svg%22%20d%3D%22M21.49%2C2.36%2C19.57.4a1.36%2C1.36%2C0%2C0%2C0-1-.4%2C1.35%2C1.35%2C0%2C0%2C0-1%2C.4L8.38%2C9.87%2C4.23%2C5.62a1.36%2C1.36%2C0%2C0%2C0-1-.4%2C1.33%2C1.33%2C0%2C0%2C0-1%2C.4l-1.92%2C2a1.4%2C1.4%2C0%2C0%2C0%2C0%2C2L5.5%2C14.76l1.92%2C2a1.33%2C1.33%2C0%2C0%2C0%2C1.88%2C0l0%2C0%2C1.92-2L21.49%2C4.32A1.45%2C1.45%2C0%2C0%2C0%2C21.49%2C2.36Z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") !important;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: 50%;
+        background-position: center;
+        background-color: @color-3;
+        border-radius: 50%;
+      }
+    }
+
+    .time-text {
+      color: @color-3;
+      font-weight: 400;
+    }
+  }
+
+  &.time-line-finish-2 {
+
+    &:after {
+      content: '';
+      background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%228e91fa81-6c05-4b96-84c4-a12626695a14%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2021.88%2017.12%22%3E%3Ctitle%20fill%3D%22%23ffffff%22%3Echeck%3C%2Ftitle%3E%3Cpath%20id%3D%2260a17336-ca37-4f44-af65-073ef2de6f0c%22%20data-name%3D%22check.svg%22%20d%3D%22M21.49%2C2.36%2C19.57.4a1.36%2C1.36%2C0%2C0%2C0-1-.4%2C1.35%2C1.35%2C0%2C0%2C0-1%2C.4L8.38%2C9.87%2C4.23%2C5.62a1.36%2C1.36%2C0%2C0%2C0-1-.4%2C1.33%2C1.33%2C0%2C0%2C0-1%2C.4l-1.92%2C2a1.4%2C1.4%2C0%2C0%2C0%2C0%2C2L5.5%2C14.76l1.92%2C2a1.33%2C1.33%2C0%2C0%2C0%2C1.88%2C0l0%2C0%2C1.92-2L21.49%2C4.32A1.45%2C1.45%2C0%2C0%2C0%2C21.49%2C2.36Z%22%20fill%3D%22%23ffffff%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E") !important;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 40px;
+      width: 40px;
+      background-size: 50%;
+      background-position: center;
+      background-color: @color-3;
+      border-radius: 50%;
+      font-size: 0.6rem;
+      transform: translateX(-50%);
+    }
+
+    .time-number {
+      background-color: @color-3;
+      position: relative;
+    }
+
+    .time-text {
+      color: @color-3;
+      font-weight: 400;
+    }
+  }
+
+  &.time-side-bars {
+
+    .time-number {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        height: 3px;
+        background-color: @color-7;
+        width: 4rem;
+
+        @media (min-width: 992px) {
+          width: 18rem;
+        }
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        height: 3px;
+        background-color: @color-7;
+        width: 4rem;
+
+        @media (min-width: 992px) {
+          width: 18rem;
+        }
+      }
+    }
+  }
+}
+
+.time-line-blue {
+
+  .time-number {
+
+    &:after {
+      background-color: @color-3 !important;
+    }
+  }
+}

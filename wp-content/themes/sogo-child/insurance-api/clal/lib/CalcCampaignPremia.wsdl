@@ -1,0 +1,271 @@
+<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+    <wsdl:types>
+        <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+            <s:element name="WSGetClalPremiaExtended">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element maxOccurs="1" minOccurs="1" name="campaignId" type="s:long"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="rashaimLinhog" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="vetekRashaim" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trLeida" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrRishayon" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="degem" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="shnatYezur" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="grira" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="shmashot" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="rechevChalufi" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="radio" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="hishtatfutAzmit" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="chadashTmuratYashan" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trRishayonRechev" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="hanachatShabat" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="lifneiShana" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="lifneiShnataim" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="lifneiShalosh" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="misparSochen" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trTchilatPolisa" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrRishayonNosaf" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrLeidaNosaf" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trAliyaLakvish" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TzadGimel" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="BitulhishtatfutAzmitTzadGimel" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="WSGetClalPremiaExtendedResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element maxOccurs="1" minOccurs="0" name="WSGetClalPremiaExtendedResult" type="tns:ClalPremiaInfoExtended"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="ClalPremiaInfoExtended">
+                <s:sequence>
+                    <s:element maxOccurs="1" minOccurs="1" name="ClalPremia" type="s:double"/>
+                    <s:element maxOccurs="1" minOccurs="1" name="IsSuccess" type="s:boolean"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="ErrMsg" type="s:string"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="FullErrMsg" type="s:string"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="ExtendedInformation" type="tns:ArrayOfPolicyField"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfPolicyField">
+                <s:sequence>
+                    <s:element maxOccurs="unbounded" minOccurs="0" name="PolicyField" nillable="true" type="tns:PolicyField"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="PolicyField">
+                <s:sequence>
+                    <s:element maxOccurs="1" minOccurs="1" name="Code" type="s:int"/>
+                    <s:element maxOccurs="1" minOccurs="1" name="Value" type="s:double"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="Name" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="WSGetClalPremia">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element maxOccurs="1" minOccurs="1" name="campaignId" type="s:long"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="rashaimLinhog" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="vetekRashaim" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trLeida" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrRishayon" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="degem" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="shnatYezur" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="grira" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="shmashot" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="rechevChalufi" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="radio" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="hishtatfutAzmit" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="chadashTmuratYashan" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trRishayonRechev" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="hanachatShabat" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="lifneiShana" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="lifneiShnataim" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="lifneiShalosh" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="misparSochen" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trTchilatPolisa" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrRishayonNosaf" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrLeidaNosaf" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="trAliyaLakvish" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TzadGimel" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="BitulhishtatfutAzmitTzadGimel" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="WSGetClalPremiaResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element maxOccurs="1" minOccurs="0" name="WSGetClalPremiaResult" type="tns:ClalPremiaInfo"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="ClalPremiaInfo">
+                <s:sequence>
+                    <s:element maxOccurs="1" minOccurs="1" name="ClalPremia" type="s:double"/>
+                    <s:element maxOccurs="1" minOccurs="1" name="RamatMigun" type="s:int"/>
+                    <s:element maxOccurs="1" minOccurs="1" name="IsSuccess" type="s:boolean"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="ErrMsg" type="s:string"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="FullErrMsg" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="WSBuildMizrahPolisa">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element maxOccurs="1" minOccurs="1" name="campaignId" type="s:long"/>
+                        <s:element maxOccurs="1" minOccurs="1" name="IsHazaa" type="s:boolean"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="MisparSochen" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrTchilatPolisa" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrTomPol" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="MisRishui" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="SugRechev" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrLeida" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="TrRishayon" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="AirBag" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="Degem" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="shnatYezur" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="MisparTeonot" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="MisparHarshot" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="IdentifierNumber" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="Name" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="CityName" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="ShemRechov" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="StreetNumber" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="ShvaCreditCardType" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="ShvaCreditCardNumber" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="ShvaCreditCardOwner" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="ShvaCreditCardTokef" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="Tashlumim" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="AllowCreditPayment" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="1" name="SachLetashlum" type="s:double"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="MisparTviot" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="GilRashaimLinhogChevra" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="VetakRashaimLinhogChevra" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="ShvaCreditCardOwnerID" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="ShvaCreditCardOwnerType" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="Fcw" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="Ldw" type="s:string"/>
+                        <s:element maxOccurs="1" minOccurs="0" name="YoungDriverGender" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="WSBuildMizrahPolisaResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element maxOccurs="1" minOccurs="0" name="WSBuildMizrahPolisaResult" type="tns:ChovaPremiaInfo"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="ChovaPremiaInfo">
+                <s:sequence>
+                    <s:element maxOccurs="1" minOccurs="1" name="ClalPremia" type="s:double"/>
+                    <s:element maxOccurs="1" minOccurs="1" name="MisparPolisa" type="s:double"/>
+                    <s:element maxOccurs="1" minOccurs="1" name="IsSuccess" type="s:boolean"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="ErrMsg" type="s:string"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="FullErrMsg" type="s:string"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="Url" type="s:string"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="UrlNBG" type="s:string"/>
+                    <s:element maxOccurs="1" minOccurs="0" name="UrlNetuneyCova" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+        </s:schema>
+    </wsdl:types>
+    <wsdl:message name="WSGetClalPremiaExtendedSoapIn">
+        <wsdl:part element="tns:WSGetClalPremiaExtended" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="WSGetClalPremiaExtendedSoapOut">
+        <wsdl:part element="tns:WSGetClalPremiaExtendedResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="WSGetClalPremiaSoapIn">
+        <wsdl:part element="tns:WSGetClalPremia" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="WSGetClalPremiaSoapOut">
+        <wsdl:part element="tns:WSGetClalPremiaResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="WSBuildMizrahPolisaSoapIn">
+        <wsdl:part element="tns:WSBuildMizrahPolisa" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="WSBuildMizrahPolisaSoapOut">
+        <wsdl:part element="tns:WSBuildMizrahPolisaResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:portType name="CalcCampaignPremiaSoap">
+        <wsdl:operation name="WSGetClalPremiaExtended">
+            <wsdl:input message="tns:WSGetClalPremiaExtendedSoapIn"/>
+            <wsdl:output message="tns:WSGetClalPremiaExtendedSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="WSGetClalPremia">
+            <wsdl:input message="tns:WSGetClalPremiaSoapIn"/>
+            <wsdl:output message="tns:WSGetClalPremiaSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="WSBuildMizrahPolisa">
+            <wsdl:input message="tns:WSBuildMizrahPolisaSoapIn"/>
+            <wsdl:output message="tns:WSBuildMizrahPolisaSoapOut"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="CalcCampaignPremiaSoap" type="tns:CalcCampaignPremiaSoap">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="WSGetClalPremiaExtended">
+            <soap:operation soapAction="http://tempuri.org/WSGetClalPremiaExtended" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="WSGetClalPremia">
+            <soap:operation soapAction="http://tempuri.org/WSGetClalPremia" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="WSBuildMizrahPolisa">
+            <soap:operation soapAction="http://tempuri.org/WSBuildMizrahPolisa" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="CalcCampaignPremiaSoap12" type="tns:CalcCampaignPremiaSoap">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="WSGetClalPremiaExtended">
+            <soap12:operation soapAction="http://tempuri.org/WSGetClalPremiaExtended" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="WSGetClalPremia">
+            <soap12:operation soapAction="http://tempuri.org/WSGetClalPremia" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="WSBuildMizrahPolisa">
+            <soap12:operation soapAction="http://tempuri.org/WSBuildMizrahPolisa" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="CalcCampaignPremia">
+        <wsdl:port binding="tns:CalcCampaignPremiaSoap" name="CalcCampaignPremiaSoap">
+            <soap:address location="https://wsa.clalbit.co.il/CalcCampaignPremia"/>
+        </wsdl:port>
+        <wsdl:port binding="tns:CalcCampaignPremiaSoap12" name="CalcCampaignPremiaSoap12">
+            <soap12:address location="https://wsa.clalbit.co.il/CalcCampaignPremia"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

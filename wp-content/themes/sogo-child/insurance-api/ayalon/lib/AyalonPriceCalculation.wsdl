@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CarInsuranceCalculation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:webSuggestionInput" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="webSuggestionInput">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CarDetails" type="tns:webInsuranceDetailsCar" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsuranceEndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsuranceStartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClubId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Anaf" type="tns:ANAF" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CollectiveId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AgentId" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="webInsuranceDetailsCar">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ManufactoreId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModelId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Year" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="GearType" type="tns:GEAR_TYPE" />
+          <s:element minOccurs="1" maxOccurs="1" name="EngineVolume" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VetekNehiga" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="RishayonDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsurenceCarType" type="tns:INS_CAR_TYPE" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumOfDrivers" type="tns:NUM_OF_DRIVERS" />
+          <s:element minOccurs="1" maxOccurs="1" name="YoungestDriverAge" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OldestDriverAge" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsDriveOnShabat" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="MainDriverGender" type="tns:GENDER" />
+          <s:element minOccurs="1" maxOccurs="1" name="RetzefBituhi" type="tns:REZEF_BITUHI" />
+          <s:element minOccurs="0" maxOccurs="1" name="cliamsHistoryCarLast3Years" type="tns:ArrayOfCliamsHistoryCar" />
+          <s:element minOccurs="1" maxOccurs="1" name="Ownership" nillable="true" type="tns:CAR_OWNERSHIP" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumOfClaims" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumOfDutyClaims" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Revocations" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Grira" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="Shmashot" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="Halifi" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vip" nillable="true" type="tns:VIP" />
+          <s:element minOccurs="1" maxOccurs="1" name="ManufacturerCode" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModelCode" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="YoungestBirthdate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="PersonalinjuryClaims" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CarLicense" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="YoungestDriverRishayonDate" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FCW" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="LDW" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="ESP" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="bundleId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="hanachatHatama" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HovaHofef" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="PanasimMaraot" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="Earthquake" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="RiotsStrikes" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZechutNigrar" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+          <s:element minOccurs="1" maxOccurs="1" name="NewOld" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HanachatSochen" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SapakHavilaAlifim" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SheverShmashotAdHabait" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="GEAR_TYPE">
+        <s:restriction base="s:string">
+          <s:enumeration value="AUTOMATIC" />
+          <s:enumeration value="MANUAL" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="BOOLEAN_DEFINIFION">
+        <s:restriction base="s:string">
+          <s:enumeration value="UNDEFINED" />
+          <s:enumeration value="YES" />
+          <s:enumeration value="NO" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="INS_CAR_TYPE">
+        <s:restriction base="s:string">
+          <s:enumeration value="UNDEFINED" />
+          <s:enumeration value="MAKIF" />
+          <s:enumeration value="ZAD_G" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="NUM_OF_DRIVERS">
+        <s:restriction base="s:string">
+          <s:enumeration value="UNDEFINED" />
+          <s:enumeration value="ONE" />
+          <s:enumeration value="TWO" />
+          <s:enumeration value="ANY" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="GENDER">
+        <s:restriction base="s:string">
+          <s:enumeration value="UNDEFINED" />
+          <s:enumeration value="MALE" />
+          <s:enumeration value="FEMALE" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="REZEF_BITUHI">
+        <s:restriction base="s:string">
+          <s:enumeration value="ZERO" />
+          <s:enumeration value="ONE" />
+          <s:enumeration value="TWO" />
+          <s:enumeration value="THREE" />
+          <s:enumeration value="FOUR" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfCliamsHistoryCar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="cliamsHistoryCar" nillable="true" type="tns:cliamsHistoryCar" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="cliamsHistoryCar">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumOfCarClaims" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsuranceCompany" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="numOfYearsBefore" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CAR_OWNERSHIP">
+        <s:restriction base="s:string">
+          <s:enumeration value="UNDEFINED" />
+          <s:enumeration value="PRIVATE" />
+          <s:enumeration value="COMMERCIAL" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="VIP">
+        <s:restriction base="s:string">
+          <s:enumeration value="UNDEFINED" />
+          <s:enumeration value="CAR" />
+          <s:enumeration value="TAXI" />
+          <s:enumeration value="BOTH" />
+          <s:enumeration value="NONE" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ANAF">
+        <s:restriction base="s:string">
+          <s:enumeration value="UNDEFINED" />
+          <s:enumeration value="CASCO" />
+          <s:enumeration value="OTODIL" />
+          <s:enumeration value="COLLECTIVE" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="CarInsuranceCalculationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CarInsuranceCalculationResult" type="tns:webResultCar" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="webResultCar">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:baseResult">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="PremiumDetails" type="tns:webPremiumDetails" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="baseResult" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SuggestionId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EncodedSuggestId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MsgObj" type="tns:messageDefinition" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="messageDefinition">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Result" type="tns:RESULT_TYPE" />
+          <s:element minOccurs="1" maxOccurs="1" name="MsgSource" type="tns:MSG_SOURCE" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CallCenterMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EngDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ErrTypeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="actionType" type="tns:ACTION_TYPE" />
+          <s:element minOccurs="1" maxOccurs="1" name="createDate" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="RESULT_TYPE">
+        <s:restriction base="s:string">
+          <s:enumeration value="ERROR" />
+          <s:enumeration value="OK" />
+          <s:enumeration value="WRONG_SERVICE_REQUEST" />
+          <s:enumeration value="NO_RESULT" />
+          <s:enumeration value="POLICY_EXISTS" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="MSG_SOURCE">
+        <s:restriction base="s:string">
+          <s:enumeration value="SQL" />
+          <s:enumeration value="SERVER" />
+          <s:enumeration value="SHVA" />
+          <s:enumeration value="COMTEC_CON_SERVER" />
+          <s:enumeration value="JAVA" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ACTION_TYPE">
+        <s:restriction base="s:string">
+          <s:enumeration value="CALC_ACT" />
+          <s:enumeration value="UPDATE_ACT" />
+          <s:enumeration value="SAVE_ACT" />
+          <s:enumeration value="PRODUCT_ACT" />
+          <s:enumeration value="VIEW_ACT" />
+          <s:enumeration value="VIEW_ADT_ACT" />
+          <s:enumeration value="GET_ACT_FROM_DB" />
+          <s:enumeration value="GET_ACT_FROM_JAVA" />
+          <s:enumeration value="GET_ACT_FROM_XML_COMTEC" />
+          <s:enumeration value="EMPTY" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="webPremiumDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CompulsoryPremium" nillable="true" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaxProtectionDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxProtectionId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxProtectionDiscount" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeductibleSpe" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeductibleReq" nillable="true" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Model" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BrutoPremium" nillable="true" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReqProtectionDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReqProtectionId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PolicyNumber" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ManufactoreId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModelId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Year" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="KitumPremia" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Grira" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Shmashot" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Halifi" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VIP" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VIP_A" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="VIP_B" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SheverShmashotAdHabait" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PanasimMaraot" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Earthquake" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RiotsStrikes" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZechutNigrar" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NewOld" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PolicyProductionSuccess" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QueryIsoMSG1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QueryIsoMSG2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QueryIsoMSG3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rishayon_DATE_ISO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BIRTH_DATE_ISO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Revocations" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PersonalInjuryClaims" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CarInsurancePolicyCreate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:webSuggestionInputForSave" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="webSuggestionInputForSave">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:webSuggestionInput">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IdNo" type="s:long" />
+              <s:element minOccurs="1" maxOccurs="1" name="ZipCode" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="PolicyId" nillable="true" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="CityId" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CarInsurancePolicyCreateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CarInsurancePolicyCreateResult" type="tns:webResultCar" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CarInsurancePolicyProduction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="input" type="tns:webSuggestionInputForProduction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="webSuggestionInputForProduction">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:webSuggestionInputForSave">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="AgentISO" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="OwnerISO" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="OwnerType" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="OwnerRishayonDate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="OwnerBirthdate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="OwnerID" nillable="true" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerFirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerLastName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerCityCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerCityName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerStreetCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerStreetName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerStreetNumber" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="OwnerZipCode" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerCellPhoneHeader" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerCellPhone" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="OwnerEmail" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ID_driver1" nillable="true" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="FirstName_driver1" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LastName_driver1" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Driver1_Birthdate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="PersonalinjuryClaims_driver1" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ID_driver2" nillable="true" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="FirstName_driver2" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LastName_driver2" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Driver2_Birthdate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="PersonalinjuryClaims_driver2" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="YoungestDriverId" nillable="true" type="s:long" />
+              <s:element minOccurs="0" maxOccurs="1" name="YoungestDriverFirstName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="YoungestDriverLastName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Prati" nillable="true" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="SapakGrira" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SapakShmashot" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SapakHalifi" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SapakVip" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SapakPanasimMaraot" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ISO_DATA" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="0" maxOccurs="1" name="Casco_Token_Number" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Hova_Token_Number" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DQ_PAYMENTS_NUM" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="DQ_PAYMENTS_NUM_HOVA" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreditCompanyId" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CardOwnerIdNo" nillable="true" type="s:long" />
+              <s:element minOccurs="1" maxOccurs="1" name="TokefMonth" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TokefMYear" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="CardOwnerFName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CardOwnerLName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="MORTGAGE" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="BANK" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="SNIF_BANK" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="MORTGAGE_HEVRA" nillable="true" type="s:long" />
+              <s:element minOccurs="1" maxOccurs="1" name="MeydaMaguti" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="MismaheyPolisa" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="KritatHozeBituah" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="InformationMarketing" type="tns:BOOLEAN_DEFINIFION" />
+              <s:element minOccurs="1" maxOccurs="1" name="IndicationInsuredResponse" type="tns:BOOLEAN_DEFINIFION" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="CarInsurancePolicyProductionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CarInsurancePolicyProductionResult" type="tns:webResultCar" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCities">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCitiesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCitiesResult" type="tns:ArrayOfCity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="city" nillable="true" type="tns:city" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="city">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GetCities" type="tns:ArrayOfCity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ExtensionDataObject" />
+      <s:element name="GetStreets">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStreetsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStreetsResult" type="tns:ArrayOfStreet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStreet">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="street" nillable="true" type="tns:street" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="street">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetDesc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ZipMethod" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBanks">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetBanksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBanksResult" type="tns:ArrayOfBank" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBank">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="bank" nillable="true" type="tns:bank" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="bank">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankNo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetBranches">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetBranchesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBranchesResult" type="tns:ArrayOfBranch" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBranch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="branch" nillable="true" type="tns:branch" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="branch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BranchAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BranchDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BranchNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mislaka" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSapakPanasimMaraot">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSapakPanasimMaraotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSapakPanasimMaraotResult" type="tns:ArrayOfSapakGlass" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSapakGlass">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="sapakGlass" nillable="true" type="tns:sapakGlass" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="sapakGlass">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="clubId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="endDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="startDate" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSapakGrira">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSapakGriraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSapakGriraResult" type="tns:ArrayOfSapakGrira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSapakGrira">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="sapakGrira" nillable="true" type="tns:sapakGrira" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="sapakGrira">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="clubId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="endDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="startDate" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSapakHalufi">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSapakHalufiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSapakHalufiResult" type="tns:ArrayOfSapakHalufi" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSapakHalufi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="sapakHalufi" nillable="true" type="tns:sapakHalufi" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="sapakHalufi">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="clubId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="endDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="startDate" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSapakShmashot">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSapakShmashotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSapakShmashotResult" type="tns:ArrayOfSapakShmashot" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSapakShmashot">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="sapakShmashot" nillable="true" type="tns:sapakShmashot" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="sapakShmashot">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="clubId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="endDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="startDate" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSapakVip">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSapakVipResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSapakVipResult" type="tns:ArrayOfSapakVip" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSapakVip">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="sapakVip" nillable="true" type="tns:sapakVip" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="sapakVip">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
+          <s:element minOccurs="0" maxOccurs="1" name="Desc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="clubId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="endDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="startDate" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CarInsuranceCalculationSoapIn">
+    <wsdl:part name="parameters" element="tns:CarInsuranceCalculation" />
+  </wsdl:message>
+  <wsdl:message name="CarInsuranceCalculationSoapOut">
+    <wsdl:part name="parameters" element="tns:CarInsuranceCalculationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CarInsurancePolicyCreateSoapIn">
+    <wsdl:part name="parameters" element="tns:CarInsurancePolicyCreate" />
+  </wsdl:message>
+  <wsdl:message name="CarInsurancePolicyCreateSoapOut">
+    <wsdl:part name="parameters" element="tns:CarInsurancePolicyCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CarInsurancePolicyProductionSoapIn">
+    <wsdl:part name="parameters" element="tns:CarInsurancePolicyProduction" />
+  </wsdl:message>
+  <wsdl:message name="CarInsurancePolicyProductionSoapOut">
+    <wsdl:part name="parameters" element="tns:CarInsurancePolicyProductionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCitiesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCities" />
+  </wsdl:message>
+  <wsdl:message name="GetCitiesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStreetsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStreets" />
+  </wsdl:message>
+  <wsdl:message name="GetStreetsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStreetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBanksSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBanks" />
+  </wsdl:message>
+  <wsdl:message name="GetBanksSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBanksResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBranches" />
+  </wsdl:message>
+  <wsdl:message name="GetBranchesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBranchesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakPanasimMaraotSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSapakPanasimMaraot" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakPanasimMaraotSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSapakPanasimMaraotResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakGriraSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSapakGrira" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakGriraSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSapakGriraResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakHalufiSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSapakHalufi" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakHalufiSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSapakHalufiResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakShmashotSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSapakShmashot" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakShmashotSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSapakShmashotResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakVipSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSapakVip" />
+  </wsdl:message>
+  <wsdl:message name="GetSapakVipSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSapakVipResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AyalonPriceCalculationSoap">
+    <wsdl:operation name="CarInsuranceCalculation">
+      <wsdl:input message="tns:CarInsuranceCalculationSoapIn" />
+      <wsdl:output message="tns:CarInsuranceCalculationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CarInsurancePolicyCreate">
+      <wsdl:input message="tns:CarInsurancePolicyCreateSoapIn" />
+      <wsdl:output message="tns:CarInsurancePolicyCreateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CarInsurancePolicyProduction">
+      <wsdl:input message="tns:CarInsurancePolicyProductionSoapIn" />
+      <wsdl:output message="tns:CarInsurancePolicyProductionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCities">
+      <wsdl:input message="tns:GetCitiesSoapIn" />
+      <wsdl:output message="tns:GetCitiesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStreets">
+      <wsdl:input message="tns:GetStreetsSoapIn" />
+      <wsdl:output message="tns:GetStreetsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBanks">
+      <wsdl:input message="tns:GetBanksSoapIn" />
+      <wsdl:output message="tns:GetBanksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranches">
+      <wsdl:input message="tns:GetBranchesSoapIn" />
+      <wsdl:output message="tns:GetBranchesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakPanasimMaraot">
+      <wsdl:input message="tns:GetSapakPanasimMaraotSoapIn" />
+      <wsdl:output message="tns:GetSapakPanasimMaraotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakGrira">
+      <wsdl:input message="tns:GetSapakGriraSoapIn" />
+      <wsdl:output message="tns:GetSapakGriraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakHalufi">
+      <wsdl:input message="tns:GetSapakHalufiSoapIn" />
+      <wsdl:output message="tns:GetSapakHalufiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakShmashot">
+      <wsdl:input message="tns:GetSapakShmashotSoapIn" />
+      <wsdl:output message="tns:GetSapakShmashotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakVip">
+      <wsdl:input message="tns:GetSapakVipSoapIn" />
+      <wsdl:output message="tns:GetSapakVipSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AyalonPriceCalculationSoap" type="tns:AyalonPriceCalculationSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CarInsuranceCalculation">
+      <soap:operation soapAction="http://tempuri.org/CarInsuranceCalculation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarInsurancePolicyCreate">
+      <soap:operation soapAction="http://tempuri.org/CarInsurancePolicyCreate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarInsurancePolicyProduction">
+      <soap:operation soapAction="http://tempuri.org/CarInsurancePolicyProduction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCities">
+      <soap:operation soapAction="http://tempuri.org/GetCities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStreets">
+      <soap:operation soapAction="http://tempuri.org/GetStreets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanks">
+      <soap:operation soapAction="http://tempuri.org/GetBanks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranches">
+      <soap:operation soapAction="http://tempuri.org/GetBranches" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakPanasimMaraot">
+      <soap:operation soapAction="http://tempuri.org/GetSapakPanasimMaraot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakGrira">
+      <soap:operation soapAction="http://tempuri.org/GetSapakGrira" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakHalufi">
+      <soap:operation soapAction="http://tempuri.org/GetSapakHalufi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakShmashot">
+      <soap:operation soapAction="http://tempuri.org/GetSapakShmashot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakVip">
+      <soap:operation soapAction="http://tempuri.org/GetSapakVip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AyalonPriceCalculationSoap12" type="tns:AyalonPriceCalculationSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CarInsuranceCalculation">
+      <soap12:operation soapAction="http://tempuri.org/CarInsuranceCalculation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarInsurancePolicyCreate">
+      <soap12:operation soapAction="http://tempuri.org/CarInsurancePolicyCreate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarInsurancePolicyProduction">
+      <soap12:operation soapAction="http://tempuri.org/CarInsurancePolicyProduction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCities">
+      <soap12:operation soapAction="http://tempuri.org/GetCities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStreets">
+      <soap12:operation soapAction="http://tempuri.org/GetStreets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBanks">
+      <soap12:operation soapAction="http://tempuri.org/GetBanks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranches">
+      <soap12:operation soapAction="http://tempuri.org/GetBranches" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakPanasimMaraot">
+      <soap12:operation soapAction="http://tempuri.org/GetSapakPanasimMaraot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakGrira">
+      <soap12:operation soapAction="http://tempuri.org/GetSapakGrira" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakHalufi">
+      <soap12:operation soapAction="http://tempuri.org/GetSapakHalufi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakShmashot">
+      <soap12:operation soapAction="http://tempuri.org/GetSapakShmashot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSapakVip">
+      <soap12:operation soapAction="http://tempuri.org/GetSapakVip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AyalonPriceCalculation">
+    <wsdl:port name="AyalonPriceCalculationSoap" binding="tns:AyalonPriceCalculationSoap">
+      <soap:address location="https://ayalonet.ayalon-ins.co.il/AyalonPriceCalculationWCF/AyalonPriceCalculation.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AyalonPriceCalculationSoap12" binding="tns:AyalonPriceCalculationSoap12">
+      <soap12:address location="https://ayalonet.ayalon-ins.co.il/AyalonPriceCalculationWCF/AyalonPriceCalculation.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

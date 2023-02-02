@@ -1,0 +1,89 @@
+/**************
+insurance-details.less
+***********/
+#insurance-accordion {
+
+  .card {
+    opacity: 0;
+    height: 0;
+    &:not(:last-of-type) {
+      border-bottom-left-radius: 10px; //sami
+      //border-bottom-left-radius: 0;
+      border-bottom-right-radius: 10px; //sami
+      //border-bottom-right-radius: 0;
+      border-bottom: 1px solid #c9c9c9; //sami
+      //border-bottom: 1px solid @color-3;
+
+      .card-header {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        //border-bottom: 1px solid @color-3;
+      }
+    }
+
+    &:not(:first-of-type) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+
+      .card-header {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+
+    .card-header {
+      padding: 0.35rem 0.4rem;
+    }
+  }
+
+  .card-current {
+    opacity: 1;
+    height: auto;
+    .card-header {
+      background-color: @color-3 !important;
+
+      a {
+        color: @color-white;
+      }
+    }
+
+    .card-block {
+      padding: 0.2rem 0;
+      .form-radio-label{
+        width: 6rem;
+      }
+    }
+  }
+
+  .card-visited {
+    border-bottom: 1px solid @color-white !important;
+    opacity: 1;
+    height: auto;
+
+    .card-header {
+      background-color: @color-5 !important;
+      color: @color-white;
+
+      a {
+        color: @color-white;
+      }
+    }
+  }
+
+  .card-visited-2 {
+    border-bottom: 1px solid @color-white !important;
+
+    .card-header {
+      background-color: @color-5 !important;
+      color: @color-white;
+
+      a {
+        color: @color-white;
+      }
+    }
+  }
+}
+
+
+
+

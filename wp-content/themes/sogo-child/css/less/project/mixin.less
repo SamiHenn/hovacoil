@@ -1,0 +1,323 @@
+/* mixin.less */
+
+// colors and shapes
+
+.box-shadow(@arguments) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.calc(@prop, @val) {
+        @{prop}: calc(~'@{val}');
+        @{prop}: -moz-calc(~'@{val}');
+        @{prop}: -webkit-calc(~'@{val}');
+        @{prop}: -o-calc(~'@{val}');
+}
+
+// calc usage example
+//.rami{
+//  .calc(width, '100% - 100px');
+//}
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.box-sizing (@type: border-box) {
+    -webkit-box-sizing: @type;
+    -moz-box-sizing: @type;
+    box-sizing: @type;
+}
+
+
+.opacity (@opacity: 0.5) {
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    opacity: @opacity;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(left, @startColor, @endColor);
+    background: -moz-linear-gradient(left, @startColor, @endColor);
+    background: -ms-linear-gradient(left, @startColor, @endColor);
+    background: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.linear-gradient(@degree, @first-color, @second-color, @end-color ) {
+    background: @first-color; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@degree, @first-color, @second-color, @end-color); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@degree, @first-color, @second-color, @end-color); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@degree, @first-color, @second-color, @end-color); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(@degree, @first-color, @second-color, @end-color); /* Standard syntax */
+}
+
+.vertical-gradient(@first-color, @second-color, @end-color ) {
+    background: @first-color; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(@first-color, @second-color, @end-color); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(@first-color, @second-color, @end-color); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(@first-color, @second-color, @end-color); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(@first-color, @second-color, @end-color); /* Standard syntax */
+}
+
+.border_gradient (@startColor: #eee, @endColor: white) {
+    border-image: @startColor;
+    border-image: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    border-image: -webkit-linear-gradient(left, @startColor, @endColor);
+    border-image: -moz-linear-gradient(left, @startColor, @endColor);
+    border-image: -ms-linear-gradient(left, @startColor, @endColor);
+    border-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.background(@size:cover) {
+    -webkit-background-size: @size;
+    -moz-background-size: @size;
+    background-size: @size;
+}
+
+.responsive-img() {
+    @width: 100%;
+    @height: auto;
+}
+
+.button-hover (@bg: #f5f5f5, @color: #900, @border: 1px solid white) {
+    color: lighten(@color, 10%);
+    background: lighten(@bg, 10%);
+}
+
+// flex options
+.display-flex() {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.align-items(@align: center) {
+    -webkit-align-items: @align;
+    -moz-align-items: @align;
+    -ms-align-items: @align;
+    align-items: @align;
+}
+
+.align-self(@align) {
+    -webkit-align-self: @align;
+    -moz-align-self: @align;
+    -ms-align-self: @align;
+    align-self: @align;
+}
+
+
+.d-flex-justify(@justify) {
+    -webkit-box-pack: @justify;
+    -ms-flex-pack: @justify;
+    justify-content: @justify;
+}
+
+.order(@order) {
+    -webkit-box-ordinal-group: @order;
+    -ms-flex-order: @order;
+    order: @order;
+}
+
+.d-flex-center(@align: center) {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: @align;
+    -moz-align-items: @align;
+    -ms-align-items: @align;
+    align-items: @align;
+}
+
+// Usage
+// div{
+// display-flex();
+
+.flex-box(@flex: 1) {
+    -webkit-box-flex: @flex; /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: @flex; /* OLD - Firefox 19- */
+    width: 20%; /* For old syntax, otherwise collapses. */
+    -webkit-flex: @flex; /* Chrome */
+    -ms-flex: @flex; /* IE 10 */
+    flex: @flex;
+}
+
+.flex-display(@display: flex) {
+    display: ~"-webkit-@{display}";
+    display: ~"-moz-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+
+.flex(@columns: initial) {
+    -webkit-flex: @columns;
+    -moz-flex: @columns;
+    -ms-flex: @columns;
+    flex: @columns;
+}
+
+.flex-direction(@direction: row) {
+    -webkit-flex-direction: @direction;
+    -moz-flex-direction: @direction;
+    -ms-flex-direction: @direction;
+    flex-direction: @direction;
+}
+
+.flex-wrap(@wrap: nowrap) {
+    -webkit-flex-wrap: @wrap;
+    -moz-flex-wrap: @wrap;
+    -ms-flex-wrap: @wrap;
+    flex-wrap: @wrap;
+}
+
+// animations
+
+.transition (@transition: all 0.4s) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+.transform(@string) {
+    -webkit-transform: @string;
+    -moz-transform: @string;
+    -ms-transform: @string;
+    -o-transform: @string;
+    transform: @string;
+}
+
+.scale (@factor) {
+    -webkit-transform: scale(@factor);
+    -moz-transform: scale(@factor);
+    -ms-transform: scale(@factor);
+    -o-transform: scale(@factor);
+    transform: scale(@factor);
+}
+
+.rotate (@deg) {
+    -webkit-transform: rotate(@deg);
+    -moz-transform: rotate(@deg);
+    -ms-transform: rotate(@deg);
+    -o-transform: rotate(@deg);
+    transform: rotate(@deg);
+}
+
+
+
+.translate (@x, @y) {
+    -webkit-transform: translate(@x, @y);
+    -moz-transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+    transform: translate(@x, @y);
+}
+
+.translate3d (@x, @y: 0, @z: 0) {
+    -webkit-transform: translate3d(@x, @y, @z);
+    -moz-transform: translate3d(@x, @y, @z);
+    -ms-transform: translate3d(@x, @y, @z);
+    -o-transform: translate3d(@x, @y, @z);
+    transform: translate3d(@x, @y, @z);
+}
+
+.translateY (@x) {
+    -webkit-transform: translateY(@x);
+    -moz-transform: translateY(@x);
+    -ms-transform: translateY(@x);
+    -o-transform: translateY(@x);
+    transform: translateY(@x);
+}
+
+.translateX (@x) {
+    -webkit-transform: translateX(@x);
+    -moz-transform: translateX(@x);
+    -ms-transform: translateX(@x);
+    -o-transform: translateX(@x);
+    transform: translateX(@x);
+}
+
+.skewY (@deg) {
+    -webkit-transform: skewY(@deg);
+    -moz-transform: skewY(@deg);
+    -ms-transform: skewY(@deg);
+    -o-transform: skewY(@deg);
+    transform: skewY(@deg);
+}
+
+.skewX (@deg) {
+    -webkit-transform: skewX(@deg);
+    -moz-transform: skewX(@deg);
+    -ms-transform: skewX(@deg);
+    -o-transform: skewX(@deg);
+    transform: skewX(@deg);
+}
+
+
+.horizontal-align() {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.vertical-align(@position: relative) {
+    position: @position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.xyalign() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+.input-placeholder(@color) {
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: @color;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: @color;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: @color;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: @color;
+    }
+}
+
+.perfect-circle(@size) {
+    height: @size;
+    width: @size;
+    line-height: @size;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* end mixin.less */

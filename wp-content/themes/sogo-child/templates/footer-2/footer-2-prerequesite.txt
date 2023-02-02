@@ -1,0 +1,20 @@
+must have:
+---------
+1. acf plugin
+
+2. classes.less v1.0
+
+3. mixin.less v1.0
+
+4. text.less (for the project)
+
+5. footer-2-functions.php
+
+6. icons:
+    icon-facebook
+
+7. footer-2.less
+
+8. fill acf general fields
+
+9. /images/logo.img

@@ -1,0 +1,131 @@
+/* header-2-mobile.less */
+
+body.mobile {
+
+  .header-2 {
+    height: 10vh;
+    .user {
+      display: none;
+    }
+    .primary-menu {
+      overflow-y: scroll;
+      position: fixed;
+      background: white;
+      top: 10vh;
+      height: 90vh;
+      //height: ~"calc(100vh - 3.133333rem)";
+      //height: 86vh;
+      width: 100%;
+      right: 0;
+      &:before {
+        display: none;
+      }
+      &__hide {
+        right: -100%;
+      }
+      &__button {
+        a {
+          border: 1px solid @color-3;
+        }
+      }
+      .menu {
+        text-align: center;
+        > li {
+          display: block;
+          margin: 0.8rem;
+          &.menu-item-has-children {
+            &:after {
+              content: '';
+              background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%2202851ba6-fc24-45fe-adbf-70d294d05a18%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2027.97%2016.03%22%3E%3Ctitle%20fill%3D%22%23797979%22%3Earrowdown%3C%2Ftitle%3E%3Cpath%20id%3D%22c56ea2dc-c683-4fd0-a909-82eb11273e57%22%20data-name%3D%22arrowdown.svg%22%20d%3D%22M27.69%2C1.65%2C26.29.27A.88.88%2C0%2C0%2C0%2C25%2C.23l0%2C0L14%2C11.09%2C3%2C.27A1%2C1%2C0%2C0%2C0%2C2.32%2C0a.91.91%2C0%2C0%2C0-.65.28L.27%2C1.65a.85.85%2C0%2C0%2C0-.06%2C1.2l.06.06L13.34%2C15.74a.88.88%2C0%2C0%2C0%2C1.25%2C0l0%2C0L27.7%2C2.91a.85.85%2C0%2C0%2C0%2C.06-1.2Z%22%20fill%3D%22%23797979%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+              background-position: center;
+              background-repeat: no-repeat;
+              height: 13px;
+              width: 13px;
+              top: 0.67rem;
+              left: 0;
+              position: absolute;
+              display: inline-block;
+              vertical-align: middle;
+            }
+            a {
+              &:after {
+                display: none;
+              }
+              &[href="#"] {
+                pointer-events: none;
+              }
+            }
+            .sub-menu {
+
+              position: relative;
+              width: inherit;
+              top: 0.4rem;
+              border-bottom: 2px solid #87c9e6;
+              > li {
+                padding: 0;
+                a {
+                  padding: .3rem 0;
+
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .stripes-menu {
+      position: relative;
+      width: .85rem;
+      .transition(transform .3s);
+      cursor: pointer;
+
+      div {
+        width: 100%;
+        height: 2px;
+        background: @color-3;
+        transition: transform 0.3s;
+        &:nth-child(2) {
+          //background-color: @color-4;
+        }
+        &:not(:last-child) {
+          margin-bottom: 6px;
+        }
+      }
+      &.close-menu {
+        padding: 0;
+        position: relative;
+        div {
+          right: 0;
+          width: 0.825rem;
+          &:first-child {
+            .transform(rotate(45deg));
+            position: absolute;
+            top: 0;
+          }
+          &:nth-child(2) {
+            height: 2.0625rem;
+            position: absolute;
+            opacity: 0;
+            top: -1rem;
+            margin: 0;
+          }
+          &:last-child {
+            position: absolute;
+            top: 0;
+            .transform(rotate(-45deg));
+
+          }
+        }
+      }
+    }
+
+    .mobile-logo {
+      img {
+        max-width: 95px;
+      }
+    }
+  }
+
+}

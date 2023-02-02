@@ -1,0 +1,24 @@
+[13-Dec-2017 06:49:59 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/sbsogo/public_html/insurance/ayalon/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sbsogo/public_html/insurance/ayalon/index.php on line 17
+[13-Dec-2017 06:50:29 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/sbsogo/public_html/insurance/ayalon/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sbsogo/public_html/insurance/ayalon/index.php on line 17
+[13-Dec-2017 06:51:52 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/sbsogo/public_html/insurance/ayalon/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sbsogo/public_html/insurance/ayalon/index.php on line 17
+[13-Dec-2017 06:52:00 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/sbsogo/public_html/insurance/ayalon/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sbsogo/public_html/insurance/ayalon/index.php on line 17
+[13-Dec-2017 06:52:28 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/sbsogo/public_html/insurance/ayalon/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sbsogo/public_html/insurance/ayalon/index.php on line 17
+[13-Dec-2017 06:53:01 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/sbsogo/public_html/insurance/ayalon/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sbsogo/public_html/insurance/ayalon/index.php on line 17

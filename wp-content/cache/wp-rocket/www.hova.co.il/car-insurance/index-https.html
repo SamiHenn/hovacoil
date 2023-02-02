@@ -1,0 +1,1059 @@
+<!--?php /* Template Name: page-sami-full-width-color-whiteBg-car-category*/ ?-->
+<!doctype html>
+<html dir="rtl" lang="he-IL" class="desktop">
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, scalable=no">
+    <link rel="icon" href="https://www.hova.co.il/wp-content/themes/sogo-child/favicon.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>מחשבון השוואת ביטוח חובה לרכב ורכישה אונליין | Hova - השוואת מחירים</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&#038;display=swap" /></noscript>
+	<meta name="description" content="השוואת מחירים אונליין בביטוחי חובה לרכב והזמנת הביטוח המשתלם ביותר בקליק - פשוט וקל. מחשבון מחירי ביטוח רכב שיהפוך את הזמנת השירות למשימה קלה, משתלמת וזריזה" />
+	<link rel="canonical" href="https://www.hova.co.il/car-insurance/" />
+	<meta property="og:locale" content="he_IL" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="מחשבון השוואת ביטוח חובה לרכב ורכישה אונליין | Hova - השוואת מחירים" />
+	<meta property="og:description" content="השוואת מחירים אונליין בביטוחי חובה לרכב והזמנת הביטוח המשתלם ביותר בקליק - פשוט וקל. מחשבון מחירי ביטוח רכב שיהפוך את הזמנת השירות למשימה קלה, משתלמת וזריזה" />
+	<meta property="og:url" content="https://www.hova.co.il/car-insurance/" />
+	<meta property="og:site_name" content="Hova חובה - השוואת מחירי ביטוח" />
+	<meta property="article:modified_time" content="2023-01-19T06:21:37+00:00" />
+	<meta property="og:image" content="https://www.hova.co.il/wp-content/uploads/2022/12/newlogoHova-min.png" />
+	<meta property="og:image:width" content="250" />
+	<meta property="og:image:height" content="250" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="זמן קריאה מוערך" />
+	<meta name="twitter:data1" content="17 דקות" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.hova.co.il/#organization","name":"Hova","url":"https://www.hova.co.il/","sameAs":[],"logo":{"@type":"ImageObject","inLanguage":"he-IL","@id":"https://www.hova.co.il/#/schema/logo/image/","url":"https://www.hova.co.il/wp-content/uploads/2022/12/newlogoHova-min.png","contentUrl":"https://www.hova.co.il/wp-content/uploads/2022/12/newlogoHova-min.png","width":250,"height":250,"caption":"Hova"},"image":{"@id":"https://www.hova.co.il/#/schema/logo/image/"}},{"@type":"WebSite","@id":"https://www.hova.co.il/#website","url":"https://www.hova.co.il/","name":"Hova חובה - השוואת מחירי ביטוח","description":"חובה מאפשר לך לבצע השוואת מחירי ביטוח רכב בין 10 חברות ביטוח ולבחור את ההצעה הטובה ביותר.","publisher":{"@id":"https://www.hova.co.il/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.hova.co.il/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"he-IL"},{"@type":"WebPage","@id":"https://www.hova.co.il/car-insurance/","url":"https://www.hova.co.il/car-insurance/","name":"מחשבון השוואת ביטוח חובה לרכב ורכישה אונליין | Hova - השוואת מחירים","isPartOf":{"@id":"https://www.hova.co.il/#website"},"datePublished":"2018-02-11T12:37:25+00:00","dateModified":"2023-01-19T06:21:37+00:00","description":"השוואת מחירים אונליין בביטוחי חובה לרכב והזמנת הביטוח המשתלם ביותר בקליק - פשוט וקל. מחשבון מחירי ביטוח רכב שיהפוך את הזמנת השירות למשימה קלה, משתלמת וזריזה","breadcrumb":{"@id":"https://www.hova.co.il/car-insurance/#breadcrumb"},"inLanguage":"he-IL","potentialAction":[{"@type":"ReadAction","target":["https://www.hova.co.il/car-insurance/"]}]},{"@type":"BreadcrumbList","@id":"https://www.hova.co.il/car-insurance/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"עמוד הבית","item":"https://www.hova.co.il/"},{"@type":"ListItem","position":2,"name":"השוואת ביטוח חובה"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<script type="rocketlazyloadscript">
+dataLayer = [{"title":"\u05d4\u05e9\u05d5\u05d5\u05d0\u05ea \u05d1\u05d9\u05d8\u05d5\u05d7 \u05d7\u05d5\u05d1\u05d4","author":"sogoadmin","wordcount":78,"logged_in":"false","page_id":45,"post_date":"2018-02-11 14:37:25","post_type":"page"}];
+</script>
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N396QPR');</script>
+<!-- End Google Tag Manager --><link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link data-minify="1" rel='stylesheet' id='bootstrap-responsive-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo/assets/css/bootstrap.css?ver=1672271712' type='text/css' media='all' />
+<link rel='stylesheet' id='sogo-animation-css'  href='https://www.hova.co.il/wp-content/themes/sogo/assets/css/animate.min.css?ver=5.8.6' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='sogo-style-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/style.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='sogo-jquery-ui-css-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/jquery-ui/jquery-ui.css?ver=1672271712' type='text/css' media='all' />
+<link rel='stylesheet' id='sogo-select2-css-css'  href='https://www.hova.co.il/wp-content/themes/sogo-child/select2.min.css?ver=63db18cce6880' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-rtl-css'  href='https://www.hova.co.il/wp-includes/css/dist/block-library/style-rtl.min.css?ver=5.8.6' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='contact-form-7-signature-addon-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7-signature-addon/public/css/style.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='contact-form-7-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='contact-form-7-rtl-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles-rtl.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='fontawsome-css'  href='https://www.hova.co.il/wp-content/cache/min/1/font-awesome/4.6.3/css/font-awesome.min.css?ver=1672271713' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='sogo_accessibility-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/sogo-accessibility/public/css/sogo-accessibility-public.css?ver=1672271713' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='slickslider-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo/assets/vendor/slick/slick.css?ver=1672271713' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/plugins/contact-form-7-signature-addon/public/js/signature_pad.min.js?ver=4.2.2' id='contact-form-7-signature-addon-signature-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7-signature-addon/public/js/scripts.js?ver=1672271713' id='contact-form-7-signature-addon-js' defer></script>
+<link rel="https://api.w.org/" href="https://www.hova.co.il/wp-json/" /><link rel="alternate" type="application/json" href="https://www.hova.co.il/wp-json/wp/v2/pages/45" /><link rel="stylesheet" href="https://www.hova.co.il/wp-content/themes/sogo-child/rtl.css" type="text/css" media="screen" /><link rel='shortlink' href='https://www.hova.co.il/?p=45' />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script type="rocketlazyloadscript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-99901908-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    <style>
+        #vehicle-year, #vehicle-brand, #vehicle-sub-brand {
+            pointer-events: all !important;
+        }
+    </style>
+<!-- Facebook Pixel Code -->
+<!--<script type="rocketlazyloadscript">-->
+<!--  !function(f,b,e,v,n,t,s)-->
+<!--  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?-->
+<!--  n.callMethod.apply(n,arguments):n.queue.push(arguments)};-->
+<!--  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';-->
+<!--  n.queue=[];t=b.createElement(e);t.async=!0;-->
+<!--  t.src=v;s=b.getElementsByTagName(e)[0];-->
+<!--  s.parentNode.insertBefore(t,s)}(window, document,'script',-->
+<!--  'https://connect.facebook.net/en_US/fbevents.js');-->
+<!--  fbq('init', '2445096462202220');-->
+<!--  fbq('track', 'PageView');-->
+<!--</script>-->
+<!--<noscript><img height="1" width="1" style="display:none"-->
+<!--  src="https://www.facebook.com/tr?id=2445096462202220&ev=PageView&noscript=1"-->
+<!--/></noscript>-->
+<!-- End Facebook Pixel Code -->
+
+	
+<body style="background-color: #F2F2F2" class="rtl page-template page-template-page-sami-full-width-color-whiteBg-car-category page-template-page-sami-full-width-color-whiteBg-car-category-php page page-id-45 page-parent desktop">
+
+<header class="header-2">
+    <div class="container-fluid">
+
+		
+            <!-- desktop-menu -->
+            <!-- row -->
+            <div class="row py-2 h-100 align-items-center menu-desktop-manipulation">
+
+                <div class="col-lg pl-1 text-right">
+
+                    <!-- row -->
+                    <div class="row">
+
+                        <div class="col-auto align-self-center px-15">
+                            <!-- HOME -->
+                            <a href="https://www.hova.co.il" title="חובה"
+                               class="icon-home-01 hover-2 transition color-6 d-inline-block align-middle mx-15"></a>
+                        </div>
+
+
+						
+
+                        <div class="col-auto">
+                            <!-- MENU -->
+                            <nav class="primary-menu text-left d-inline-block align-middle">
+								<ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a8%d7%90%d7%a9%d7%99" class="menu accessibility_menu"><li id="menu-item-1356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1356"><a href="https://www.hova.co.il/car/">השוואת ביטוח רכב</a></li><li id="menu-item-1401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="https://www.hova.co.il/comprehensive-insurance/">ביטוח מקיף</a></li><li id="menu-item-7625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7625"><a href="https://www.hova.co.il/third-party-insurance/">ביטוח צד ג</a></li><li id="menu-item-1021" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-45 current_page_item menu-item-1021"><a href="https://www.hova.co.il/car-insurance/" aria-current="page">ביטוח חובה לרכב</a></li><li id="menu-item-7855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7855"><a href="https://www.hova.co.il/bdikatik/">בדיקת תיק ביטוחי</a></li><li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-466"><a href="https://www.hova.co.il/about-hova/">אודות</a>
+<ul class="sub-menu">
+	<li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="https://www.hova.co.il/about-hova/how-it-works/">איך זה עובד</a></li>	<li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="https://www.hova.co.il/about-hova/why-us/">למה זה כדאי</a></li></ul>
+<span class='js-open-menu icon-arrowdown-01 align-middle icon-xxs color-6 mx-1 d-inline-block'></span></li><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="https://www.hova.co.il/contact-us/">צור קשר</a></li></ul>                            </nav>
+                        </div>
+
+                        <div class="col-auto align-self-center">
+                            <!-- OFFER BUTTON -->
+                            <a href="https://hova.co.il/car/"
+                               class="s-btn-1 bg-2 border-color-2 color-white d-inline-block align-middle mx-2">
+                                <span>ביטוח רכב</span>
+                                <span class="icon-arrowleft-01-colorwhite icon-x2 d-inline-block align-middle"></span>
+                            </a>
+                        </div>
+							<div style="border-right: 1px solid #c0c0c0; height: 30px" class="text-4 color-4 text-center d-inline-block pr-3 mr-2 align-self-center"><strong><a class="color-4" href="tel:*3504">3504*</a></strong></div>
+                    </div>
+
+                </div>
+
+                <!-- LOGO -->
+                <div class="col-lg-auto pl-15 text-left">
+                    <a href="https://www.hova.co.il" class="header-2__logo d-inline-block ml-15"
+                       title="ביטוח חובה">
+                        <svg style="width: 130px; height: 60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 21"><g fill-rule="evenodd" stroke-miterlimit="10" stroke-width=".96"><path fill="#0070c0" stroke="#0070c0" d="M466.117 409.833c23.457 0 42.447-18.458 42.447-41.157 0-22.699-18.99-41.078-42.447-41.078-23.457 0-42.527 18.38-42.527 41.078 0 22.7 19.07 41.157 42.527 41.157zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#00b0f0" stroke="#00b0f0" d="M508.644 312.36c23.457 0 42.526-18.379 42.526-41.078s-19.069-41.157-42.526-41.157c-23.538 0-42.527 18.458-42.527 41.157 0 22.7 18.99 41.079 42.527 41.079zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#0070c0" stroke="#0070c0" d="M17.314 279.608h65.904v-97.865h95.027v97.865h65.984V26.148h-65.984v105.484H83.218V26.148H17.314zm0 0M390.718 204.756c32.553 0 58.564-10.525 78.032-31.418 15.798-17.043 23.697-37.386 23.697-61.028 0-23.877-7.82-44.377-23.537-61.42-19.07-20.815-45.719-31.183-80.027-31.183-34.388 0-61.117 10.368-80.186 31.182-15.718 17.044-23.537 38.015-23.537 62.913 0 22.385 7.899 42.257 23.696 59.536 19.23 20.893 46.516 31.418 81.862 31.418zm-1.835-52.389c-12.527 0-22.82-4.712-30.638-14.137-6.463-7.62-9.655-16.259-9.655-25.92 0-9.818 3.192-18.536 9.655-26.155 7.819-9.425 18.111-14.138 30.638-14.138 11.25 0 20.745 3.849 28.484 11.625 7.74 7.776 11.649 17.358 11.649 28.668 0 11.153-3.91 20.657-11.729 28.433-7.819 7.776-17.314 11.624-28.404 11.624zm0 0M826.037 203.892c12.287 0 23.777-2.513 34.468-7.619 6.224-2.984 12.527-7.854 19.15-14.687v16.886h61.037V26.07h-61.038v19.165c-5.824-7.305-11.728-12.646-17.633-15.944-10.372-5.891-22.18-8.797-35.425-8.797-21.383 0-40.373 7.383-57.048 22.149-19.947 17.515-29.84 40.764-29.84 69.747 0 29.454 10.132 52.938 30.558 70.532 16.197 13.98 34.787 20.97 55.771 20.97zm16.277-52.546c-12.048 0-22.021-4.634-29.76-13.745-6.224-7.383-9.416-15.787-9.416-25.29 0-9.505 3.192-17.987 9.415-25.37 7.66-9.111 17.553-13.667 29.76-13.667 10.932 0 20.267 3.77 27.767 11.31 7.58 7.462 11.41 16.73 11.41 27.726 0 10.84-3.83 20.029-11.49 27.647-7.58 7.54-16.835 11.39-27.686 11.39zm0 0M506.729 198.472h68.537l41.17-88.361 41.41 88.361h68.138l-89.68-172.324h-40.612zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path></g>
+                             alt="ביטוח חובה"
+                             </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- mobile-menu -->
+            <!-- row -->
+            <div class="row justify-content-between py-2 align-items-center menu-mobile-manipulation d-none">
+
+                <div class="col-auto px-15">
+
+                    <!-- row -->
+                    <div class="row align-items-center">
+
+                        <div class="col-auto px-15">
+                            <!-- STRIPES -->
+                            <div class="stripes-menu d-block">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="col-auto px-15">
+                            <!-- MOBILE OFFER BUTTON -->
+                            <a href="https://hova.co.il/car/"
+                               class="s-button s-button-3 bg-2 border-color-2 color-white d-inline-block align-middle">
+                                <span class="align-middle color-white ">ביטוח רכב</span>
+                                <span class="icon-arrowleft-01 color-white icon-sm d-inline-block align-middle"></span>
+                            </a>
+                        </div>
+							<div style="border-right: 1px solid #c0c0c0; height: 20px" class="text-4 color-4 text-center d-inline-block pr-2 mr-1 align-self-center"><strong><a class="color-4" href="tel:*3504">3504*</a></strong></div>
+                    </div>
+
+                </div>
+
+                <!-- MOBILE MENU  -->
+                <nav class="js-mobile-menu primary-menu primary-menu__hide py-1">
+                    <div class="row  ">
+                        <div class="col-12 col-lg-6 px-15">
+							<ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a8%d7%90%d7%a9%d7%99-1" class="menu accessibility_menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1356"><a href="https://www.hova.co.il/car/">השוואת ביטוח רכב</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="https://www.hova.co.il/comprehensive-insurance/">ביטוח מקיף</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7625"><a href="https://www.hova.co.il/third-party-insurance/">ביטוח צד ג</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-45 current_page_item menu-item-1021"><a href="https://www.hova.co.il/car-insurance/" aria-current="page">ביטוח חובה לרכב</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7855"><a href="https://www.hova.co.il/bdikatik/">בדיקת תיק ביטוחי</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-466"><a href="https://www.hova.co.il/about-hova/">אודות</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="https://www.hova.co.il/about-hova/how-it-works/">איך זה עובד</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="https://www.hova.co.il/about-hova/why-us/">למה זה כדאי</a></li></ul>
+<span class='js-open-menu icon-arrowdown-01 align-middle icon-xxs color-6 mx-1 d-inline-block'></span></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="https://www.hova.co.il/contact-us/">צור קשר</a></li></ul>                        </div>
+                    </div>
+                </nav>
+
+                <div class="col-auto px-15 text-left">
+                    <!-- MOBILE LOGO -->
+                    <a href="https://www.hova.co.il" class="d-inline-block"
+                       title="ביטוח חובה">
+                        <svg style="width: 80px; height: 40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 21"><g fill-rule="evenodd" stroke-miterlimit="10" stroke-width=".96"><path fill="#0070c0" stroke="#0070c0" d="M466.117 409.833c23.457 0 42.447-18.458 42.447-41.157 0-22.699-18.99-41.078-42.447-41.078-23.457 0-42.527 18.38-42.527 41.078 0 22.7 19.07 41.157 42.527 41.157zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#00b0f0" stroke="#00b0f0" d="M508.644 312.36c23.457 0 42.526-18.379 42.526-41.078s-19.069-41.157-42.526-41.157c-23.538 0-42.527 18.458-42.527 41.157 0 22.7 18.99 41.079 42.527 41.079zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#0070c0" stroke="#0070c0" d="M17.314 279.608h65.904v-97.865h95.027v97.865h65.984V26.148h-65.984v105.484H83.218V26.148H17.314zm0 0M390.718 204.756c32.553 0 58.564-10.525 78.032-31.418 15.798-17.043 23.697-37.386 23.697-61.028 0-23.877-7.82-44.377-23.537-61.42-19.07-20.815-45.719-31.183-80.027-31.183-34.388 0-61.117 10.368-80.186 31.182-15.718 17.044-23.537 38.015-23.537 62.913 0 22.385 7.899 42.257 23.696 59.536 19.23 20.893 46.516 31.418 81.862 31.418zm-1.835-52.389c-12.527 0-22.82-4.712-30.638-14.137-6.463-7.62-9.655-16.259-9.655-25.92 0-9.818 3.192-18.536 9.655-26.155 7.819-9.425 18.111-14.138 30.638-14.138 11.25 0 20.745 3.849 28.484 11.625 7.74 7.776 11.649 17.358 11.649 28.668 0 11.153-3.91 20.657-11.729 28.433-7.819 7.776-17.314 11.624-28.404 11.624zm0 0M826.037 203.892c12.287 0 23.777-2.513 34.468-7.619 6.224-2.984 12.527-7.854 19.15-14.687v16.886h61.037V26.07h-61.038v19.165c-5.824-7.305-11.728-12.646-17.633-15.944-10.372-5.891-22.18-8.797-35.425-8.797-21.383 0-40.373 7.383-57.048 22.149-19.947 17.515-29.84 40.764-29.84 69.747 0 29.454 10.132 52.938 30.558 70.532 16.197 13.98 34.787 20.97 55.771 20.97zm16.277-52.546c-12.048 0-22.021-4.634-29.76-13.745-6.224-7.383-9.416-15.787-9.416-25.29 0-9.505 3.192-17.987 9.415-25.37 7.66-9.111 17.553-13.667 29.76-13.667 10.932 0 20.267 3.77 27.767 11.31 7.58 7.462 11.41 16.73 11.41 27.726 0 10.84-3.83 20.029-11.49 27.647-7.58 7.54-16.835 11.39-27.686 11.39zm0 0M506.729 198.472h68.537l41.17-88.361 41.41 88.361h68.138l-89.68-172.324h-40.612zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path></g>
+                             alt="ביטוח חובה"
+                             </svg>
+                    </a>
+                </div>
+
+            </div>
+
+		    </div>
+</header>
+
+
+<div id="page">
+<div id="page" class="site overflow-hidden p-relative #F2F2F2">
+    <div align="center" style="padding-left: 0px;  padding-right: 0px" class="container-fluid bg-8">
+        <!-- CONTENT -->
+        <div class="row justify-content-center">
+            <!-- TEXT -->
+            <div align="center" class="col-lg-12">
+                <div align="center" class="entry-content">
+                    <style>
+.entry-content p:empty { display: none; 
+}
+html {scroll-behavior: smooth;}
+@media (max-width: 974px){
+.minicarmainpic{ 
+width: 100%;
+height: 180px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center bottom
+}
+}
+@media (min-width: 975px){
+.minicarmainpic{ 
+width: 100%;
+height: 550px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center bottom
+}
+}
+</style>
+<section class="main-section-1 p-relative my-0 my-lg-5" style="border-bottom: 0px; background-color: #f2f2f2; background-image: linear-gradient(#f2f2f2, white, white, white, white, white, white, white, white);">
+<div class="col-lg-10 d-inline-block">
+<div class="col-lg-4 mt-4 d-inline-block alignright">
+<div class="text-right col-12">
+<h1 class="color-4 mb-0 mb-lg-3"><span class="text-slider">ביטוח חובה לרכב</span></h1>
+<div class="aligncenter text-4-1 color-black d-inline-block">פוליסת ביטוח חובה הינה סטנדרטית ואחידה בין כל חברות הביטוח. היא מכסה את הנהג, הנוסעים והולכי הרגל מפני נזקי גוף. חובה לרכוש את הביטוח על פי חוק כתנאי לשימוש ברכב..</div>
+<div align="right" style="width: 100%; text-align: right"></div>
+<div style="width: 100%; text-align: center">
+<div class="color-black text-4-1 mr-3 text-right my-2"> <strong> הצעות מחיר אונליין:</strong></div>
+<p><a class="text-4-1 color-white d-inline-block align-middle mb-3 mb-lg-3 col-lg-12 text-center bg-5" style="box-shadow: 0 8px 6px -6px #000; text-decoration: none; line-height: 75px; border-radius: 35px" href="../car-insurance/calc/">השוואת ביטוח חובה</a><a class=" text-4-1 color-6 d-inline-block" style="text-decoration: none" href="#more-info">עוד מידע על ביטוח חובה <span class="icon-arrowdown-01-color7 icon-x1 d-inline-block align-middle pr-4"></span></a></p>
+<div></div>
+</div>
+</div>
+</div>
+<div data-bg="/wp-content/uploads/2022/03/third-party-car-pic.png" class="minicarmainpic col-lg-6 d-inline-block alignleft rocket-lazyload" style="!important">
+</div>
+<p>
+</section>
+<p><!--מה זה ביטוח חובה לרכב--><br />
+<br id="more-info"></p>
+<div class="d-inline-block mt-15 mb-3">
+<h2 class="my-3"><span class="text-slider color-3">מה זה ביטוח חובה לרכב ?</span></h2>
+<div class="color-black text-3 text-right col-lg-9 px-2">
+<div class="my-3">פוליסת ביטוח חובה לרכב מכסה נזקי גוף (בלבד) העלולים להגרם לנהג, לנוסעים ולהולכי רגל כתוצאה משימוש ברכב. החל משנת 1970 בה מדינת ישראל חוקקה חוק המחייב כל בעל רכב ו/או נהג ברכב לרכוש ביטוח המגן מפני תביעות נזקי גוף, מכאן נולד שמו &quot;ביטוח חובה&quot;. המדינה אינה משאירה מקום לשיקול דעת בנושא, כל רכב חייב בביטוח חובה, שימוש ברכב ללא ביטוח חובה מהווה עבירה על החוק.<br />
+<br />
+בסמכות משטרת ישראל לדרוש מנהג ברכב להציג תעודת ביטוח חובה בתוקף ולאכוף מקרים בהם נעשה שימוש ברכב ללא ביטוח חובה. כמו כן, מכוני הרישוי לא יאפשרו לרכב לגשת למבחן רישוי שנתי (טסט) ללא ביטוח חובה תקף.<br />
+<br />
+מחירי ביטוח חובה מפוקחים על ידי רשות שוק ההון במשרד האוצר, המחירים נקבעים על פי רמת הסיכון שמושפעת בעיקר מסוג הרכב ומערכות הבטיחות, גיל ווותק הנהגים הניסיון הביטוחי הקודם.</p>
+<div class="mt-5 text-center"><a class="text-4-1 color-white d-inline-block align-middle mb-4 mx-1 col-lg-4 text-center" style="box-shadow: 0 8px 6px -6px #000; text-decoration: none; line-height: 75px; border-radius: 35px; background-image: linear-gradient(to left, #006FC1, #00afef, #17d2f5)" href="../car-insurance/calc/">השוואת ביטוח חובה</a></div>
+</div>
+</div>
+<p><!--כדאי לדעת--></p>
+<div class="d-inline-block my-5 py-5 bg-white w-100">
+<h2><span class="text-slider color-3">ביטוח חובה &#8211; כדאי לדעת לפני שרוכשים</span></h2>
+<p><!-- תוכן השוואת ביטוח רכב--></p>
+<div class="col-lg-10 m3 text-right">
+<div class="col-lg-5 d-inline-block v-align-top m-lg-3">
+<h3 class="text-2 color-2 mt-2"><strong>פוליסה אחידה</strong></h3>
+<div class="text-4-1 color-black">
+ביטוח חובה הינו מוצר &quot;אחיד&quot;. הכוונה היא, שחברות הביטוח אינן יכולות לסטות ימינה או שמאלה מתנאי הפוליסה אשר אושרו לה על ידי הפיקוח על הביטוח במשרד האוצר.<br />
+לכן עניין המחיר הופך להיות פרט חשוב בזמן קבלת החלטה על רכישת ביטוח. שכן תנאי הביטוח זהים בין החברות.
+</div>
+<p></p>
+<h3 class="text-2 color-2 mt-2"><strong>אין גבול אחריות</strong></h3>
+<div class="text-4-1 color-black">
+בביטוח חובה אין גבול לגובה הכיסוי הניתן על ידי חברת הביטוח. מכיוון שמדובר בנזקי גוף, טווח הפגיעה הכלכלית של המבוטח בעת פגיעה יכול להיות רחב מכמה סיבות: אבדן יכולת השתכרות בשכר גבוה, טיפול רפואי מורכב וממושך ועוד.<br />
+לרוב, תביעות נזקי גוף מגיעות להסדר בין חברת הביטוח והמבוטח / הנפגע, ובחלק מהמקרים על ידי הכרעת בית המשפט.
+</div>
+<p></p>
+<h3 class="text-2 color-2 mt-2"><strong>לא משנה מי אשם</strong></h3>
+<div class="text-4-1 color-black">
+ בניגוד לביטוח צד ג' או מקיף, בהם שאלת האשמה משפיעה על אופן ניהול תביעה. בביטוח חובה קיים סטטוס קוו בין חברות הביטוח לפיו: כל חברה מכסה את המבוטח והנוסעים שהיו נוכחים ברכב המבוטח אצלה.<br />
+עובדה זו מקלה מאוד על ניהול תביעת גוף שכן נחסך מכל הצדדים לנהל דיון והכרעה בעניין האשמה.
+</div>
+<p></p>
+<h3 class="text-2 color-2 mt-2"><strong>פוליסה בתוקף רק עם חותמת &quot;שולם&quot;</strong></h3>
+<div class="text-4-1 color-black">
+תנאי הפוליסה אינם משאירים מקום לספק. פוליסת ביטוח חובה לרכב בתוקף רק לאחר ששולמה והתקבל אישור חתום על גבי התעודה שהפוליסה משולמת.<br />
+ניתן לשלם ביטוח חובה באתר באמצעות כרטיס אשראי בלבד. כמו כן, אנו ממליצים לא לעשות שימוש בכרטיסי אשראי נטענים / כרטיסי דיירקט / דביט וכד', מכיוון שלא כל חברות הביטוח מכבדות את הכרטיסים הללו.<br />
+אם בכל זאת זהו הכרטיס היחיד שיש לך, ניתן לבצע הזמנה באתר ואנו נתאים לך חברת ביטוח שמקבלת כרטיס מהסוג הנ&quot;ל.<br />
+חשוב לציין: עסקת ביטוח חובה הינה עסקת תשלומים &quot;סגורה&quot; והיא תופסת את מסגרת האשראי
+</div>
+<p>
+</div>
+<div class="col-lg-6 d-inline-block v-align-top m-lg-3">
+<h3 class="text-2 color-2 mt-2"><strong>מחירי ביטוח חובה</strong></h3>
+<div class="text-4-1 color-black">
+מחיר הביטוח נקבעים על פי מספר פרמטרים שאושרו על ידי הפיקוח על הביטוח. מן הסתם, גיל הנהג הצעיר ביותר, וותק הנהיגה, בנוסף: נפח מנוע, קיום מערכות בטיחות ברכב, נסיון תביעות גוף ושלילות רשיון ועוד.<br />
+בשנים האחרונות חלו רפורמות שהשפיעו לטובה על מחירי תעודת ביטוח חובה. הרפורמות באו מכיוון משרד האוצר, אך חובה לומר שקיימת בתחום ביטוח החובה תחרות אמיתית על המחיר, במיוחד לאחר כניסת כלי הרכב החדישים והבטוחים לשוק וכמובן מערכות התראה כדוגמת מוביליי, אייוואקס וכד' שהביאו את מחירי הביטוח לרמה נמוכה ביותר.
+</div>
+<p></p>
+<h3 class="text-2 color-2 mt-2"><strong>כיסויים נוספים</strong>&quot;</h3>
+<div class="text-4-1 color-black">
+פוליסת ביטוח חובה הינה אחידה ואיננה מאפשרת הוספת או הסרת כיסויים במסגרת הפוליסה.<br />
+יחד עם זאת אנו מאפשרים ללקוחות האתר להוסיף על ביטוח החובה מנוי שירותי דרך.<br />
+מדובר במנוי שמיועד בדרך כלל מבוטחים עם ביטוח צד ג' ומכסה לא מעט מצבים לא נעימים כגון: גרירת רכב, החלפת פנצ'ר ותיקון שמשות.<br />
+אנו ממליצים כמובן שלכל אחד יהיה לפחות ביטוח צד ג' אם לא מקיף, אך בכל זאת, אנו משאירים את ההחלטה ללקוח.
+</div>
+<p></p>
+<h3 class="text-2 color-2 mt-2"><strong>נהג צפוי, נהג מזדמן ונהג עיקרי</strong></h3>
+<div class="text-4-1 color-black">
+ביטוח החובה מכסה כל נהג מהגיל של הנהג הצעיר ביותר הצפוי לנהוג ברכב.<br />
+משמעות הדבר, שהפוליסה (לביטוח חובה בלבד ולא ביטוח רכוש) תכסה גם נהג מזדמן ובלתי צפוי.<br />
+<br />
+נהג עיקרי – אין הגדרה כזו בביטוח חובה ואם יש אז היא חסרת משמעות.<br />
+הציעו לכם ביטוח חובה זול מאוד לפי גיל נהג מבוגר כנהג &quot;עיקרי&quot;, בזמן שיש לכם נהגים צעירים או חדשים בפוליסה ? זה צריך להדליק לכם נורה אדומה.<br />
+במקרים בהם מציעים לכם ביטוח לפי גיל הנהג העיקרי (כדי להימנע מתשלום עבור ביטוח לנהג צעיר), מסכנים את האפשרות שלכם לתבוע את חברת הביטוח במקרה של תאונה שנגרמה על ידי נהג צעיר.
+</div>
+<p></p>
+<h3 class="text-2 color-2 mt-2"><strong>מאגר המידע הממשלתי ISO</strong></h3>
+<div class="text-4-1 color-black">
+בעת רכישת הפוליסה, כל חברות הביטוח (ללא יוצא מהכלל) מתחברות אונליין למאגר מידע. המאגר מנוהל על ידי חברה שנבחרה במכרז על ידי משרד האוצר ואמונה על ניהול מאגר אחיד לחברות הביטוח.<br />
+באותו מאגר ישנו מידע רלבנטי על המועמד לביטוח מגופי שלטון החוק במדינת ישראל. לעיתים קורה שהמידע במאגר שגוי ויש לבצע ערעור על הנתונים במאגר.<br />
+לדוגמה:<br />
+לקוח שהצהיר שהיתה לו שלילת רישיון אחת בשלוש שנים האחרונות.<br />
+בפועל רשומות על שמו שתי שלילות. הסיבה: שלילה אחת נרשמה על ידי משטרת ישראל ששללה במקום את רשיון הנהיגה. השניה על ידי מערכת בתי המשפט שהאריכו את תקופת השלילה.<br />
+במצב כזה נדרש לערער על המידע במאגר ולבצע &quot;איחוד שלילות&quot;.<br />
+בכל שאלה בנושא ניתן לפנות למאגר iso ב:<br />
+<strong>דוא&quot;ל</strong>: <a class="color-3" href="mailto:contact@isoclaimsearch.co.il" rel="noopener" target="_blank">contact@isoclaimsearch.co.il</a><br />
+<strong>בטלפון</strong>: <a class="color-3" href="tel:1700706644" rel="noopener" target="_blank">1-700-70-66-44</a>
+</div>
+</div>
+</div>
+</div>
+<p><!--בשורה התחתונה--></p>
+<div class="col-lg-11 bg-white mt-lg-3 my-2 mb-5 pt-3 pb-3 d-inline-block text-right aligncenter" style="border: 1px solid #c0c0c0; border-radius: 15px; box-shadow: 5px 8px 6px -4px #c0c0c0">
+<div class="col-lg-5 d-inline-block alignright">
+<div class="my-lg-3 my-3 pb-2 d-inline-block col-lg-12 color-4">
+<h2>
+<div style="border-bottom: 1px solid #0070c0" class="color-4 text-2  py-3">בשורה התחתונה:</div>
+</h2>
+<div class="color-black text-4-1 my-2 pt-2">ביטוח חובה הינו מוצר שחובה לרכוש על פי חוק כדי לעשות שימוש ברכב.<br />
+הפוליסה מכסה נזקי גוף, הכיסוי אחיד בכל חברות הביטוח, אך המחירים לא. לכן כדאי להשוות מחירים ולחסוך את הפערים.</div>
+<div class="color-black text-4-1 my-2">נהוג לרכוש ביטוח חובה יחד עם ביטוח מקיף או צד ג', אם החלטתם שלא לרכוש ביטוח מקיף לרכב מסיבות כלכליות, אנו ממליצים שלא לעשות שימוש ברכב ללא ביטוח צד ג לרכב שאמנם איננו חובה על פי חוק אך חובה עבור השקט הנפשי שלכם והגנה מפני תביעות נזקים שעלולים להגרם לרכושם (כלי רכבם) של אחרים. </div>
+<div class="color-black text-4-1 my-2">אתר חובה הוא היחיד שמאפשר לך להשוות מחירים ולרכוש ביטוח חובה בלבד ללא תלות בביטוח מקיף או צד ג'.
+</div>
+<div class="col-lg-12 text-center mt-3"><a class="text-4-1 color-white d-inline-block align-middle mb-4 col-lg-12 text-center" style="background-color: #ff0083; border: 1px solid #ff0083; box-shadow: 0 8px 6px -6px #000; text-decoration: none; line-height: 75px; border-radius: 35px" href="../car-insurance/calc/">השוואת ביטוח חובה</a></div>
+</div>
+</div>
+<div class="minicarmainpic col-lg-6 d-inline-block alignleft text-center"><img width="100%" height="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" alt="תאונת צד ג" data-lazy-src="/wp-content/themes/sogo-child/images/svg2/two-cars-accident.svg"><noscript><img width="100%" height="100%" src="/wp-content/themes/sogo-child/images/svg2/two-cars-accident.svg" alt="תאונת צד ג"></noscript>
+</div>
+</div>
+<p><!--חברות ביטוח--></p>
+<div class="col-lg-11 bg-white mt-lg-3 my-2 mb-5 pt-3 pb-3 d-inline-block text-right aligncenter" style="border: 1px solid #c0c0c0; border-radius: 15px; box-shadow: 5px 8px 6px -4px #c0c0c0">
+<div class="col-lg-7 d-inline-block alignright">
+<div class="my-lg-3 my-3 pb-2 d-inline-block col-lg-12 color-4">
+<h2>
+<div style="border-bottom: 1px solid #0070c0" class="color-4 text-2  py-3">הצעות מחיר מ 10 חברות ביטוח במחשבון ביטוח חובה לרכב</div>
+</h2>
+<div class="color-black text-4-1 my-2">מחשבון ביטוח רכב חובה יפנה עבורכם אונליין לקבלת הצעות מחיר מ 10 חברות ביטוח (לפי סדר הא'-ב'):<br />
+איילון, הכשרה, הפניקס, הראל, כלל, מגדל, מנורה מבטחים, שומרה, שירביט ושלמה.<br />
+<a class="text-5 color-3" href="https://www.hova.co.il/polisa-therms-hova/" rel="noopener" target="_blank">תנאי פוליסה לביטוח חובה לרכב פרטי ומסחרי – של כל חברות הביטוח</a>
+</div>
+<div class="color-black text-4-1 my-2"><strong>כמה שיותר הצעות כך הסיכוי לחסוך גדול יותר</strong> &#8211; במחשבון הייחודי שלנו תמצאו לא רק הצעות מ 10 חברות ביטוח חובה, אלא גם השוואת הצעות מחיר לביטוח מקיף וחובה או צד ג' וחובה בין 10 חברות הביטוח אונליין.
+</div>
+<p><a class="text-4-1 color-white d-inline-block align-middle mb-2 col-auto px-3  col-lg-9 text-center bg-3" style="text-decoration: none; line-height: 55px; border-radius: 35px" href="../car-insurance/calc/">השוואת ביטוח חובה אונליין</a>
+</div>
+</div>
+<div class="col-lg-4 d-inline-block alignleft text-left"><img width="80%" height="80%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2080%2080'%3E%3C/svg%3E" alt="חברות ביטוח" data-lazy-src="/wp-content/themes/sogo-child/images/svg2/companies-mobile.svg"><noscript><img width="80%" height="80%" src="/wp-content/themes/sogo-child/images/svg2/companies-mobile.svg" alt="חברות ביטוח"></noscript>
+</div>
+</div>
+<p><!--סוף חברות ביטוח--></p>
+<div class="w-100 my-2">
+<div class="col-lg-11 text-right mt-1">
+<!--מאמרים קשורים ושירות לקוחות--></p>
+<div style="width: 100%" class="d-inline-block mt-5">
+<div style="border: 1px solid #c0c0c0; border-radius: 15px" class="col-lg-5 bg-white d-inline-block mb-2">
+<div style="border-bottom: 1px solid #c0c0c0" class="my-3 pb-2 col-12 color-4 d-inline-block text-3">מאמרים קשורים</div>
+<div class="my-0 pb-2 col-12 color-3 d-inline-block text-4-1">
+<div class="text-4-1 color-3 my-3" ><a href="https://www.hova.co.il/drivers-age-limitations/">הגבלת גיל הנהגים בביטוח חובה</a></div>
+<div class="text-4-1 color-3 my-3" ><a href="https://www.hova.co.il/blog/new-driver/">ביטוח לנהג צעיר וחדש</a></div>
+<div class="text-4-1 color-3 my-3" ><a href="https://www.hova.co.il/pool/">ביטוח חובה לכל אחד ב&quot;הפול&quot;</a></div>
+<div class="text-4-1 color-3 my-3" ><a href="https://www.hova.co.il/fake-car-insurance-policy/">איך לזהות תעודת חובה מזויפת</a></div>
+</div>
+</div>
+<div style="border: 1px solid #c0c0c0; border-radius: 15px; float: left" class="col-lg-6 bg-white d-inline-block">
+<div style="border-bottom: 1px solid #c0c0c0" class="my-3 pb-2 col-12 color-4 d-inline-block text-3">כבר מבוטחים אצלנו ?</div>
+<div class="mt-2 col-lg-5 color-black d-inline-block text-4-1 alignright">
+לשירות לקוחות, שירותי גרירה וחירום, טיפול בתביעות, שינויים בפוליסות, הוספת נהג זמני, העתקי פוליסה, ביטול והקפאת פוליסה ועוד:</p>
+<div class="text-4-1 color-3 my-1 col-12 alignright"><a class="s-btn-2 bg-3 border-color-3 color-white d-inline-block align-middle mb-2 px-4" style="text-decoration: none; line-height: 45px" href="https://www.hova.co.il/customer-service/">שירות לקוחות</a></div>
+</div>
+<div class="text-4-1 color-3 col-12 text-center">
+<div class="col-lg-5 d-inline-block alignleft"><img width="100%" height="100%" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" alt="שירות לקוחות" data-lazy-src="/wp-content/themes/sogo-child/images/svg2/customer-service-man-blue.svg"><noscript><img width="100%" height="100%" src="/wp-content/themes/sogo-child/images/svg2/customer-service-man-blue.svg" alt="שירות לקוחות"></noscript></div>
+</div>
+</div>
+</div>
+<section class="section-simple-12 p-relative py-4 bg-8">
+<div class="container-fluid">
+<hr>
+<div style="width: 100%; background-color: #ffffff; padding: 0px;">
+<section class="section-simple-12 p-relative py-4 bg-8">
+<div class="container-fluid">
+<hr>
+<div style="width: 100%; background-color: #ffffff; padding: 0px;">
+<section class="section-posts-1 pt-4 pt-lg-0" style="background-color: #f2f2f2; border-bottom: 0">
+</p>
+<div class="container-fluid">
+<div class="row justify-content-right">
+<span class="text-4 color-4">מידע נוסף</span></p>
+<p>        <!-- התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion1">
+                            <span class="icon"></span><br />
+                            <span class="text-4">מוצר חובה ע&quot;פ חוק.</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion1" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>ביטוח חובה לרכב הינו מוצר חובה ע&quot;פ חוק, לפי פקודת ביטוח רכב מנועי. כך נכתב בפקודה בפרק ב' (חובת הביטוח) בסעיף 2 – חובת פוליסה (בין היתר):</p>
+<p>&quot;<strong>2.(א) </strong> בכפוף להוראות פקודה זו, לא ישתמש אדם &#8211; ולא יגרום ולא יניח שאדם אחר ישתמש &#8211; ברכב מנועי, אלא אם יש על שימושו שלו או של האדם האחר באותו רכב פוליסה בת-תוקף לפי דרישותיה של פקודה זו.<br />
+<strong>(ב)</strong>  העובר על הוראות סעיף קטן (א), דינו &#8211; מאסר שלושה חדשים או קנס 750 לירות, ורשאי בית המשפט, בנוסף לכל עונש אחר, לפסול אותו מקבל או מהחזיק רשיון נהיגה כאמור בסעיף 36א לפקודת התעבורה, או לפסלו מקבל או מהחזיק רשיון רכב לסוג מסויים של רכב או לרכב מסויים, לתקופה שלא תפחת משנים-עשר חודש, זולת אם ראה להורות על פסילה לתקופה קצרה יותר מנסיבות מיוחדות שיפרש בפסק הדין; תחילת הפסילה וחישוב תקופתה יהיו כאמור בסעיף 42 לפקודת התעבורה.<br />
+<strong>(ג)</strong>   מי שנפסל עקב הרשעה לפי סעיף זה יראוהו לענין פקודת התעבורה כאילו נפסל לפי הוראותיה.&quot;</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">השוואת מחירי ביטוח חובה <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- סוף תשובה --></p>
+<p>        <!-- 2התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion2">
+                            <span class="icon"></span><br />
+                            <span class="text-4">פיקוח על מחיר ביטוח החובה</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion2" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>מכיוון שהחוק מחייב ברכישת ביטוח חובה, מוצר זה הינו מוצר בפיקוח של משרד האוצר. הפיקוח נעשה על מגוון פרמטרים:<br />
+1. <strong>מחירי ביטוח חובה</strong> – בין היתר קביעת הפרמטרים שבהם תוכל חברת הביטוח לעשות שימוש כדי לבצע תמחור של מחיר ביטוח חובה לרכב.</p>
+<p>2. <strong>עידוד תחרותיות במחירי ביטוח החובה</strong> – הרפורמה שהחלה בינואר 2019 היא דוגמה מובהקת לכך שהפיקוח על הביטוח התערב לטובת הציבור, בכך שהוזיל משמעותית את מחירי ביטוח החובה בין היתר על ידי עידוד במחיר חובה זול יותר לבעלי מערכות בטיחות מתקדמות, הוזלת תעריפי הפול, הוזלה לפי פרמטר מגדרי ועוד.</p>
+<p>3. <strong>טיב ואחידות הפוליסה</strong> – מדובר במוצר אחיד ומפוקח שחברות הביטוח אינן יכולות לבצע בו שינוי ללא קבלת אישור מהמחוקק (הכנסת) וללא מעורבות הפיקוח על הביטוח.</p>
+<p>4. <strong>רמת השירות</strong> – טיב השירות נמדד ומפורסם על ידי המפקח על הביטוח במשרד האוצר, לכל חברת ביטוח יש ציון למדד השירות. הציון הזה ניתן לחברה לפי שקלולי פרמטרים שעורך משרד המפקח מידי שנה.<br />
+גם במוצרי ביטוח אחרים ישנו פיקוח ואף שהם אינם מוצרי חובה, אך בביטוח חובה לרכב מדובר בסוג כיסוי שכיח ביותר ולכן חשוב לייצר תחרות והשוואת מחירי ביטוח רכב חובה בין החברות.</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">מחשבון ביטוח חובה <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 2סוף תשובה --></p>
+<p>        <!-- 3התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion3">
+                            <span class="icon"></span><br />
+                            <span class="text-4">מחשבון השוואת מחירי ביטוח חובה</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion3" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>מחשבון ביטוח חובה לרכב אותו מפרסם משרד האוצר מציג מידי חודש את תעריף ביטוח חובה של חברות הביטוח השונות. בכך מחשבון הביטוח יוצר שקיפות ומעביר מידע מלא לציבור בעת רכישת ביטוח חובה לרכב. מחשבון ביטוחי חובה של משרד האוצר מציג תעריף שנתי ואת שמה של חברת הביטוח המבטחת.<br />
+בפועל, לרוב, יזום של פניה לחברת הביטוח לרכישת ביטוח חובה, יתקל לרוב בהעברת הפניה לטיפול סוכנות ביטוח מטעם חברת הביטוח (בהנחה שהחברה איננה חברת ביטוח ישירה). לרוב סוכנויות הביטוח (לא כולן) אינן ששות (בלשון המעטה) לשווק ביטוח חובה בלבד אלא בצמוד לפוליסת ביטוח רכוש לרכב (מקיף / צד ג'). מה שמביא אותנו לנושא הבא:
+</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">השוואת ביטוח חובה <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 3סוף תשובה --></p>
+<p>        <!-- 4התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion4">
+                            <span class="icon"></span><br />
+                            <span class="text-4">איסור התניית רכישת ביטוח חובה בעסקה נוספת:</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion4" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>לפי פקודת ביטוח רכב מנועי, סעיף 8 (שעניינו איסור להתנות פוליסה בביטוח נוסף):</p>
+<p>&quot;<strong>8 (א)</strong>  מבטח שנתבקש להוציא פוליסה לפי דרישות סעיף 3, כולן או מקצתן, לא יתנה הוצאתה בעשיית ביטוח נוסף בינו לבין המבקש.<br />
+<strong>8 (ב)</strong>  מבטח המפר הוראת סעיף קטן (א), דינו &#8211; קנס 5,000 לירות. &quot; (מעניין כמה שווים היום חמשת אלפים לירות&#8230;).</p>
+<p>לכן אם הנך מבקש לרכוש ביטוח חובה לרכב מחברה או סוכנות ביטוח וזאת מתנה את העסקה ברכישת ביטוח נוסף, הרי שמדובר בעבירה על החוק.<br />
+זה מביא אותנו לקצת מילים טובות על השירות הייחודי שלנו ☺<br />
+.</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">למחשבון השוואת חובה <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a> </p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 4סוף תשובה --></p>
+<p>        <!-- 5התחלת שאלה --></p>
+<div class="col-lg-12 mb-3"><!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion5">
+                            <span class="icon"></span><br />
+                            <span class="text-4">מדוע כדאי לבצע אצלנו השוואת מחירי ביטוח חובה אונליין ?</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion5" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>אנחנו שומעים זאת כמעט בכל יום מלקוחותינו: &quot;איזה כיף שיש אתכם&quot; , ,כל הכבוד לכם תמשיכו&quot; וכד'. נכון לכתיבת שורות אלו אנו סוכנות הביטוח היחידה בשוק שמבצעת השוואת ביטוח חובה אונליין משווקת ומאפשרת לגולשינו ביטוח חובה בלבד<br />
+בכך החל משנת 2013 אנו משנים סדרי עולם בתחום ביטוח החובה לרכב. אנו מספקים זאת ללקוח בשקיפות, במהירות ובתהליך פשוט ונוח. אנו קוראים ללקוחותינו לא לרכוש ביטוח חובה &quot;אוטומטית&quot; דרך החברה בה הנכם רוכשים ביטוח מקיף או צד ג'. לעיתים ניתן לחסוך מאות שקלים בשנה על ידי השוואות מחירים בביטוח רכב חובה באמצעות מחשבון חובה.
+</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">לקבלת הצעות מחיר אונליין <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 5סוף תשובה --></p>
+<p>        <!-- 6התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion6">
+                            <span class="icon"></span><br />
+                            <span class="text-4">יש לך כבר ביטוח חובה אצלנו וברצונך לחדש אותו ?</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion6" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>
+אנו מקבלים מידי חודש הודעות אימייל בנוסח: &quot;שלום, מבקש שתחדשו לי את הביטוח חובה שלי אצלכם באותו מחיר&quot;. ראשית אנו שמחים על האמון שאנו מקבלים מהלקוחות, אך מחיר ביטוח חובה נקבע בכל שנה על פי תעריף ביטוח חובה בחברות הביטוח.<br />
+כלומר, כפי שכתבנו קודם, משרד האוצר מאשר לחברות הביטוח את המחירים ורק לפי מחירים אלו ישווק ביטוח החובה של אותה חברה. לכן, בכל שנת ביטוח המחיר יכול להשתנות לטובה או לרעה. מעבר לכך, יכול להיות שלא כדאי ללקוח לחדש את ביטוח החובה לפי אותם פרמטרים אלא לבדוק מה המחיר לפי הנתונים הקיימים.</p>
+<p>לדוגמה: לקוח שרכש בשנה שחלפה ביטוח חובה במחיר מסויים לפי גיל נהגים מגיל 20 ומעלה ויכול לרכוש כעת בחידוש ביטוח לכל נהג מגיל 21 (כי גדל בשנה), אז ביטוח החובה שלו יהיה ככל הנראה הרבה יותר זול מאשתקד. לכן חשוב מאוד להשוות מחירי ביטוח חובה אונליין מידי שנה. זה קל, זה נוח , מהיר וחוסך המון.
+</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">חידוש ביטוח חובה <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 6סוף תשובה --></p>
+<p>        <!-- 7התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion7">
+                            <span class="icon"></span><br />
+                            <span class="text-4">תהליך השוואת מחיר ביטוח חובה באתר והשלמת הרכישה:</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion7" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>
+<strong>שלב 1 ממלאים פרטים בסיסיים</strong> – נכנסת למחשבון ביטוח חובה<br />
+כעת הגיע הזמן להתחיל לחסוך. איך ? ממלאים את כל הפרטים בשלב זה ומקליקים להמשך (שימו לב! בשלב הראשון אנו מבקשים את מינימום הפרטים הדרושים על מנת לתת הצעות מחיר).</p>
+<p><strong>שלב 2 תוצאות ההשוואה</strong> – בשלב זה תתקבלנה תוצאות של השוואת מחירים לביטוח רכב חובה מכל חברות הביטוח, ניתן לצפות במחיר המשוקלל , במספר התשלומים המקסימלי ובהערות אם ישנן. עם בחירת ההצעה המשתלמת ביותר יש להקיש על &quot;המשך&quot; משמאל להצעה המתאימה ולעבור לשלב הבא.</p>
+<p><strong>שלב 3 סיום ההזמנה</strong> – לאחר שבחרתם את ההצעה המשתלמת עבורכם. זה השלב האחרון בו ממלאים את הפרטים האישיים כגון פרטי הנהגים , פרטי הרכב ואמצעי תשלום. בסיום מילוי הנתונים יש להקיש על &quot;המשך&quot; ועל ידי כך לשלוח את ההזמנה לסוכנות הביטוח.</p>
+<p><strong>מה קורה מאחורי הקלעים ?</strong></p>
+<p>מיד עם קבלת ההזמנה (במסגרת שעות הפעילות לטיפול בהזמנות) היא נבדקת על ידי מנהל תיק הלקוחות שיבצע אימות נתונים מהיר. במידה והכל תקין מופקת פוליסת ביטוח חובה לרכב ונשלחת בדוא&quot;ל + דואר רגיל.<br />
+במידה ויש צורך בהשלמה או אימות או תיקון פרטים ייצור עמכם קשר טלפוני או במייל מנהל תיק הלקוחות כדי להשלים את החסר.<br />
+ לאחר סיום התהליך תישלח אליך הודעת דוא&quot;ל ובה עותק של תעודת ביטוח חובה + פרטים ליצירת קשר עם סוכנות הביטוח.
+</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">קדימה נתחיל להשוות מחירים <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 7סוף תשובה --></p>
+<p>        <!-- 8התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion8">
+                            <span class="icon"></span><br />
+                            <span class="text-4">כמה ניתן לחסוך בהשוואת מחירי ביטוח חובה ?</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion8" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>התשובה לשאלה כמה כסף ניתן לחסוך על ידי השוואת חובה משתנה מאדם לאדם. הניסיון שלנו מוכיח שהחסכון הממוצע שמושג באמצעות השוואת ביטוח חובה לרכב נע סביב מאות שקלים. בנוסף, גם אם החיסכון במחיר ביטוח חובה שמושג באמצעות השוואת ביטוחי חובה הינו קטן ממאות שקלים עדיין כדאי לבצע השוואת ביטוח חובה  מכיוון שלאורך זמן עלות ביטוח חובה תהיה קטנה ביחס לשוק, זה הכלל לגבי כל מוצר שאנו זקוקים לרכוש מידי שנה, השוואת מחירי ביטוח חובה באמצעות מחשבון ביטוח רכב חובה חוסכת עלויות.<br />
+הדרך הטובה ביותר לדעת כמה אפשר לחסוך היא פשוט לבדוק, להיכנס למחשבון ולבצע השוואה ובתוך כמה שניות לקבל מגוון הצעות מחיר.
+</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">אני רוצה להשוות ולבדוק <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 8סוף תשובה --><br />
+        <!-- 9התחלת שאלה --></p>
+<div class="col-lg-12 mb-3">
+                        <!-- QUESTION  --></p>
+<div class="collapsed question" data-toggle="collapse" data-target="#posts-accordion9">
+                            <span class="icon"></span><br />
+                            <span class="text-4">הסבר על השדות למילוי והפרמטרים שמשפיעים על המחיר.</span>
+                        </div>
+<p><!-- ANSWER --></p>
+<div id="posts-accordion9" class="collapse answer text-main bg-white">
+<div class="answer-inner">
+<div class="entry-content">
+<p>
+<strong>תאריך תחילת ביטוח חובה:</strong><br />
+שנה – שנת תחילת הביטוח תיבחר אוטומטית למעט הצעה בחודש דצמבר.<br />
+חודש – יש לבחור את חודש תחילת הביטוח.<br />
+יום – לבחור את יום תחילת הביטוח.</p>
+<p>חשוב, אם ביטוח החובה שלך מסתיים בסוף החודש, יש לרכוש ביטוח חובה שמתחיל מ 1 לחודש הבא לאחריו. אם תבחר תאריך תחילה שזהה לתאריך הסיום תקבל הצעת ביטוח ל 11 חודשים ויום.</p>
+<p><strong>סוג ודגם הרכב</strong> – רכב פרטי או רכב מסחרי, ניתן לבחור את דגם הרכב לפי יצרן, שנת ייצור ודגם משנה. אם אינכם בטוחים לגבי סוג הרכב ניתן לבדוק ברשיון הרכב &quot;טסט&quot;, אם אינכם מוצאים את דגם הרכב שלכם דברו איתנו.</p>
+<p><strong>סוג תיבת הילוכים</strong> – לא משפיע על מחיר ביטוח החובה.</p>
+<p>האם יש <strong>מערכת התראה על אי שמירת מרחק (FDW) ו/או התראה על סטיה מנתיב (LDW)</strong> &#8211; במידה וקיימת מערכת בטיחות מסוג זה (דוגמת &quot;מובילאי&quot;) תינתן הנחה נוספת. (במידה והמערכת איננה אינטגרלית במפרט הרכב והותקנה לאחר עלייתו לכביש, יתכן ויידרשו אישורי התקנה לאישור המחיר עם ההנחה).</p>
+<p><strong>האם קיימת ברכב מערכת בקרת יציבות (ESP)</strong> – לעיתים שאלה הזו נשאלת ויש לענות עליה, אם אינך בטוח ניתן לבדוק ברשיון הרכב אם בסעיף &quot;בקרת יציבות&quot; כתוב &quot;כן&quot; אז המערכת קיימת, אם הסעיף ריק אז היא איננה קיימת. לרוב המערכת קיימת בכלי רכב משנת 2010 ומעלה ומוגדרת אוטומטית כקיימת.</p>
+<p><strong>הבעלות על הרכב</strong> – אם הרכב בבעלות פרטית יש לבחור &quot;פרטי&quot; , אם הרכב בבעלות חברה, עמותה וכל אפשרות אחרת – יש לבחור &quot;אחרת&quot;.</p>
+<p><strong>נפח מנוע</strong> – בעבר ניתן היה להקליד ידנית את נפח המנוע של הרכב – חשוב לדייק בנתון זה ישפיע על המחיר המוצג. אם תבחרו דגם רכב שנפח המנוע שלו שונה מזה בפועל, אז מחיר ביטוח החובה עשוי להשתנות. בדר&quot;כ כשמדובר ברכב מסחרי אז משקל הרכב  משפיע על המחיר ולכן יש לשים לב.</p>
+<p><strong>כריות אויר</strong> – אם נשאלתם יש לסמן האם יש ברכב כרית אויר אחת לפחות, אם לא נשאלתם, אז המערכת מזהה את מספר כריות אויר לפי קוד הדגם.</p>
+<p><strong>מטרת השימוש ברכב</strong> – אנו יכולים להציע במחשבון רכישת ביטוח חובה רק אם הרכב משמש למטרות חברתיות ופרטיות. בכל מטרות השימוש האחרות לא נוכל להגיש הצעה אונליין מכיוון שמדובר במטרות שימוש מיוחדות שאותן עלינו לבחון בטרם הגשת הצעה, ובדרך כלל לא ניתן לבטחן כגון: הסעת נוסעים בשכר או כנגד תשלום, מטרת מתן שירותי חילוץ או גרירה של רכב מנועי תמורת תשלום ו/או שכר, שירותי השכרת רכב, לימוד נהיגה, שירותי מבחן מעשי (טסט) ועוד.</p>
+<p><strong>גיל הנהג הצעיר ביותר</strong> – יש לבחור את הגיל של הנהג הצעיר ביותר ברכב בדרך קבע. מומלץ בסעיף זה שלא &quot;להתחכם&quot; ולרכוש ביטוח חובה לפי הגיל של הנהג הצעיר הידוע באמת. אינך רוצה בשעת תביעה חו&quot;ח להוכיח כי הנהג הצעיר איננו נוהג בדרך קבע… (במיוחד כשמדובר בבן משפחה או עובד בחברה).</p>
+<p><strong>שנות וותק נהיגה</strong> – של הנהג הצעיר ביותר ברכב. אם קיים נהג מבוגר יותר מהנהג הצעיר ביותר ושיש לו וותק נהיגה נמוך יותר, אנו ממליצים לציין את הוותק הנמוך יותר.</p>
+<p><strong>מספר הרשאים לנהוג</strong> – סעיף זה איננו משפיע על מחיר ביטוח חובה, פרמטר זה יכול להשפיע רק על מחיר ביטוח מקיף ו/או צד ג' לרכב. אם הנך רוכש ביטוח חובה בלבד יש לסמן &quot;נהגים ללא הגבלה&quot; מכיוון שמימילא זה הכיסוי שיתקבל (בביטוח חובה לא ניתן להגביל מספר הנהגים אלא רק את יתר המאפיינים כגון גיל, וותק וכד').</p>
+<p><strong>מין הנהג הצעיר ביותר</strong> – כן, זהו פרמטר שמשפיע על המחיר. אל תשאלו אותנו למה, כך קבע המחוקק וחברות הביטוח משתמשות בפרמטר זה. בחלק מחברות הביטוח יש למסור את פרטי הנהג הצעיר ביותר ולכן יש לענות תשובה אמתית וכנה (גם אם נהגת צעירה משלמת קצת פחות).</p>
+<p><strong>עבר ביטוחי</strong> – העבר הביטוחי הקודם בביטוח צד ג' או מקיף איננו רלבנטי לעניין תמחור ביטוח חובה. כמו גם עיר המגורים, אלו ישפיעו רק על מחיר ביטוח מקיף וצד ג'.</p>
+<p><strong>מספר תביעות גוף</strong> – יש לבחור כמה תביעות גוף היו לכלל המבוטחים בשלוש השנים האחרונות. (תביעה על נזקי גוף איננה תביעה על נזקי רכוש כגון גניבת הרכב או תיקון במוסך)</p>
+<p><strong>מספר שלילות</strong> – יש לבחור כמה שלילות רישיון נהיגה היו לנהגים ברכב בשלושת השנים האחרונות.
+</p>
+<p align="left"><a class="s-btn-1 s-btn-2"  style="text-decoration: none;" href="#">הבנתי &#8211; בואו נתחיל <span class="icon-arrowleft-01 color-3 icon-x2 d-inline-block align-middle"></span></a></p>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>        <!-- 9סוף תשובה -->
+    	 </div>
+</div>
+</section>
+</div>
+<p><!--כפתור בואו נתחיל--></p>
+<div class="mt-3 text-center"><a class="text-4-1 color-white d-inline-block align-middle mb-4 col-lg-4 text-center" style="background-color: #ff0083; border: 1px solid #ff0083; box-shadow: 0 8px 6px -6px #000; text-decoration: none; line-height: 75px; border-radius: 35px" href="https://www.hova.co.il/car-insurance/calc/" rel="noopener">בואו נתחיל להשוות</a></div>
+</div>
+</div>
+<p><!--רכישה מנציג--></p>
+<div class="col-lg-12 bg-white mt-lg-3 mt-0 mb-5 pt-3 pb-3 d-inline-block text-right aligncenter" style="border: 1px solid #c0c0c0; border-radius: 15px; box-shadow: 5px 8px 6px -4px #c0c0c0">
+<div data-bg="/wp-content/themes/sogo-child/images/svg2/woman-desk-phone.svg" class="minicarmainpic col-lg-6 d-inline-block alignleft rocket-lazyload" style="!important">
+</div>
+<div class="col-lg-5 d-inline-block alignright">
+<div style="border-bottom: 1px solid #0070c0;" class="my-lg-3 my-1 pb-2 d-inline-block col-lg-12 color-4">
+<div class="color-4 text-2 mb-1">הצוות שלנו ממתין להזמנה שלך&#8230;</div>
+<div class="color-6 text-4">משווים מחירים ובוחרים את ההצעה הטובה ביותר</div>
+</div>
+<div class="text-center"><a class="text-4-1 color-white d-inline-block align-middle mb-2 mb-lg-3 col-lg-8 text-center bg-3" style="text-decoration: none; line-height: 65px; border-radius: 35px" href="../comprehensive-insurance/calc/">ביטוח מקיף וחובה</a><br />
+<a class="text-4-1 color-white d-inline-block align-middle mb-2 mb-lg-3 col-lg-8 text-center bg-4" style="text-decoration: none; line-height: 65px; border-radius: 35px" href="../third-party-insurance/calc/">ביטוח צד ג וחובה</a><br />
+<a class="text-4-1 color-white d-inline-block align-middle mb-2 mb-lg-3 col-lg-8 text-center bg-5" style="text-decoration: none; line-height: 65px; border-radius: 35px" href="../car-insurance/calc/">ביטוח חובה בלבד</a></div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="row justify-content-between align-items-end border-bottom border-width-x2 border-color-6">
+            <div class="bottom-right-image p-relative">
+                <img width="122" height="74" src="https://www.hova.co.il/wp-content/uploads/2018/02/car.png" class="attachment-full size-full" alt="רכב" />            </div>
+
+            <div class="bottom-left-image p-relative hidden-md-down">
+                <img width="232" height="144" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20232%20144'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/02/skylineblue.png" /><noscript><img width="232" height="144" src="https://www.hova.co.il/wp-content/uploads/2018/02/skylineblue.png" class="attachment-full size-full" alt="" /></noscript>            </div>
+        </div>
+
+</div>
+<!-- /.site -->
+<footer style="width: 100%" class="footer-2 bg-4">
+    <div style="width: 100%" class="container-fluid">
+
+        <div class="row py-3 py-lg-4">
+
+ <!-- SOCIAL -->
+            <div class="mb-2 mb-lg-3 mb-lg-0 col-12 text-center col-lg-2 text-lg-right social mr-lg-5">
+				<div class="d-inline-block mb-2">
+				<a href="https://www.hova.co.il/">
+				<svg style="width: 90px; height: 40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 21"><g fill-rule="evenodd" stroke-miterlimit="10" stroke-width=".96"><path fill="#ffffff" stroke="#0070c0" d="M466.117 409.833c23.457 0 42.447-18.458 42.447-41.157 0-22.699-18.99-41.078-42.447-41.078-23.457 0-42.527 18.38-42.527 41.078 0 22.7 19.07 41.157 42.527 41.157zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#ffffff" stroke="#00b0f0" d="M508.644 312.36c23.457 0 42.526-18.379 42.526-41.078s-19.069-41.157-42.526-41.157c-23.538 0-42.527 18.458-42.527 41.157 0 22.7 18.99 41.079 42.527 41.079zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#ffffff" stroke="#0070c0" d="M17.314 279.608h65.904v-97.865h95.027v97.865h65.984V26.148h-65.984v105.484H83.218V26.148H17.314zm0 0M390.718 204.756c32.553 0 58.564-10.525 78.032-31.418 15.798-17.043 23.697-37.386 23.697-61.028 0-23.877-7.82-44.377-23.537-61.42-19.07-20.815-45.719-31.183-80.027-31.183-34.388 0-61.117 10.368-80.186 31.182-15.718 17.044-23.537 38.015-23.537 62.913 0 22.385 7.899 42.257 23.696 59.536 19.23 20.893 46.516 31.418 81.862 31.418zm-1.835-52.389c-12.527 0-22.82-4.712-30.638-14.137-6.463-7.62-9.655-16.259-9.655-25.92 0-9.818 3.192-18.536 9.655-26.155 7.819-9.425 18.111-14.138 30.638-14.138 11.25 0 20.745 3.849 28.484 11.625 7.74 7.776 11.649 17.358 11.649 28.668 0 11.153-3.91 20.657-11.729 28.433-7.819 7.776-17.314 11.624-28.404 11.624zm0 0M826.037 203.892c12.287 0 23.777-2.513 34.468-7.619 6.224-2.984 12.527-7.854 19.15-14.687v16.886h61.037V26.07h-61.038v19.165c-5.824-7.305-11.728-12.646-17.633-15.944-10.372-5.891-22.18-8.797-35.425-8.797-21.383 0-40.373 7.383-57.048 22.149-19.947 17.515-29.84 40.764-29.84 69.747 0 29.454 10.132 52.938 30.558 70.532 16.197 13.98 34.787 20.97 55.771 20.97zm16.277-52.546c-12.048 0-22.021-4.634-29.76-13.745-6.224-7.383-9.416-15.787-9.416-25.29 0-9.505 3.192-17.987 9.415-25.37 7.66-9.111 17.553-13.667 29.76-13.667 10.932 0 20.267 3.77 27.767 11.31 7.58 7.462 11.41 16.73 11.41 27.726 0 10.84-3.83 20.029-11.49 27.647-7.58 7.54-16.835 11.39-27.686 11.39zm0 0M506.729 198.472h68.537l41.17-88.361 41.41 88.361h68.138l-89.68-172.324h-40.612zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path></g> alt="Hova - השוואת מחירי ביטוח" </svg></a>
+				</div>
+<!--				<div class="text-p color-white d-inlibe-block my-3">-->
+<!--					עקבו אחרינו <script type="rocketlazyloadscript" src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.facebook.com/hova.co.il" layout="button_count" show_faces="false"  font="arial" title=""></fb:like>-->
+<!--				</div>-->
+<!--				phone-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="tel:*3504" title="חייגו אלינו">
+        <span class="icon-phone-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">3504*</span>
+    </a>
+    </div>
+<!--				whatsapp-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/972545908200" title="כתבו לנו בווצאפ">
+        <span class="icon-whatsapp-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">054-5908200</span>
+    </a>
+    </div>
+<!--				email-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="mailto:info@hova.co.il" title="כתבו לנו במייל">
+        <span class="icon-envelope-01 d-inline-block icon-xs color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">info@hova.co.il</span>
+    </a>
+    </div>
+<!--				facebook-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="https://he-il.facebook.com/Hova.co.il/" title="בקרו אותנו בפייסבוק">
+        <span class="icon-facebook2-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">בקרו אותנו בפייסבוק</span>
+    </a>
+    </div>
+<!--				ustomer service-->
+	<div class="d-lg-block my-2">    <a href="../customer-service/" title="שירות ותמיכה">
+        <span class="icon-heart-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">שירות ותמיכה</span>
+    </a>
+    </div>
+<!--				contact-us-->
+	<div class="d-lg-block my-2">    <a href="../contact-us/" title="צור קשר">
+        <span class="icon-paperplane-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">יצירת קשר</span>
+    </a>
+    </div>		    </div>
+
+            <!-- MENU -->
+            <div class="col-12 text-center col-lg-2 text-lg-right ">
+				<aside class="widget"><div class="menu-%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%95%d7%a9%d7%99%d7%a8%d7%95%d7%aa%d7%99%d7%9d-%d7%a0%d7%95%d7%a1%d7%a4%d7%99%d7%9d-container"><ul id="menu-%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%95%d7%a9%d7%99%d7%a8%d7%95%d7%aa%d7%99%d7%9d-%d7%a0%d7%95%d7%a1%d7%a4%d7%99%d7%9d" class="menu accessibility_menu"><li id="menu-item-1514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://www.hova.co.il/car/">השוואת ביטוח רכב</a></li>
+<li id="menu-item-1030" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-45 current_page_item menu-item-1030"><a href="https://www.hova.co.il/car-insurance/" aria-current="page">השוואת ביטוח חובה</a></li>
+<li id="menu-item-1031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="https://www.hova.co.il/comprehensive-insurance/">השוואת ביטוח מקיף וחובה</a></li>
+<li id="menu-item-7840" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7840"><a href="https://www.hova.co.il/third-party-insurance/">ביטוח צד ג לרכב</a></li>
+<li id="menu-item-7854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7854"><a href="https://www.hova.co.il/bdikatik/">בדיקת ביטוחים</a></li>
+<li id="menu-item-794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-794"><a href="https://www.hova.co.il/car-registration-renewal/">חידוש אגרת רישיון רכב</a></li>
+<li id="menu-item-797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-797"><a href="https://www.hova.co.il/police-report/">תשלום דוחות משטרה</a></li>
+<li id="menu-item-801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-801"><a href="https://www.hova.co.il/driving-license-renewal/">חידוש רישיון נהיגה</a></li>
+<li id="menu-item-5341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5341"><a href="https://www.hova.co.il/car/truck-insurance/">ביטוח משאיות</a></li>
+<li id="menu-item-5342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5342"><a href="https://www.hova.co.il/car/insurance-for-taxi/">ביטוח מונית</a></li>
+<li id="menu-item-5343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5343"><a href="https://www.hova.co.il/car/motorcycle-insurance/">ביטוח אופנוע</a></li>
+</ul></div></aside>            </div>
+
+            <!-- MENU -->
+            <div class="col-12 text-center col-lg-2 text-lg-right ">
+				<aside class="widget"><div class="menu-%d7%a4%d7%95%d7%98%d7%a8-3-container"><ul id="menu-%d7%a4%d7%95%d7%98%d7%a8-3" class="menu accessibility_menu"><li id="menu-item-7853" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7853"><a href="https://www.hova.co.il/insurance-companies/">חברות ביטוח</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="https://www.hova.co.il/contact-us/">צור קשר</a></li>
+<li id="menu-item-819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"><a href="https://www.hova.co.il/security/">קניה בטוחה</a></li>
+<li id="menu-item-1515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1515"><a href="https://www.hova.co.il/blog/">מידע שימושי</a></li>
+<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="https://www.hova.co.il/regulations/">תקנון</a></li>
+</ul></div></aside>            </div>
+            <!-- MENU -->
+            <div class="col-12 text-center col-lg-2 text-lg-right ">
+				            </div>
+        </div>
+
+        <!-- COPYRIGHTS -->
+        <div class="row justify-content-center bg-white py-2">
+
+            <div class="col-12 col-lg-8">
+                <!-- row -->
+                <div class="row justify-content-center justify-content-lg-between align-items-center">
+
+                    <div class="col-12 col-lg-auto text-center text-lg-right mb-2 mb-lg-0">
+                        <span class="breadcrumbs-text color-6 d-block">כל הזכויות שמורות לביטוח חובה © 2018 </span>
+                    </div>
+
+                    <div class="col-12 col-lg-auto text-center text-lg-left">
+                            <span class="d-inline-block align-middle color-black breadcrumbs-text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- page loader -->
+<div class="loader-wrapper d-none">
+    <div class="loader-inner">
+
+        <!-- new loader -->
+
+        <div class="new-loader px-2">
+
+            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                 alt="page loader" class="img-fluid mb-2" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logomobile.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logomobile.png"
+                 alt="page loader" class="img-fluid mb-2"></noscript>
+
+            <p class="mb-1 medium color-4 text-p">מחפשים לך ביטוח משתלם....</p>
+
+            <p class="text-p color-6 normal mb-3">המערכת מאתרת עבורך הצעות משתלמות ממגוון חברות ביטוח:</p>
+
+            <div class="loader-slider-wrapper mb-3 bg-white p-2 b-radius-50 border border-color-7 border-width-x1">
+                <div class="js-page-loader-slider loader-logos">
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logophoenixcolor-79x50.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logophoenixcolor-79x50.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logomenorahcolor-89x50.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logomenorahcolor-89x50.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logoclalcolor.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logoclalcolor.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/hachsharat-ha-teshuv.jpg"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/hachsharat-ha-teshuv.jpg"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/harel.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/harel.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/migdal.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/migdal.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2019/09/shirbit-logo-103x30.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2019/09/shirbit-logo-103x30.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					                </div>
+            </div>
+
+            <p class="text-p color-3 medium">ההצעות באתר כוללות הנחות מיוחדות ופירוט תנאי הביטוח באופן הכי שקוף שיש.</p>
+
+        </div>
+		
+        <!-- old loader -->
+
+        <!--        <div class="loader-inner-2">-->
+        <!--            <div class="loader"></div>-->
+        <!--        </div>-->
+    </div>
+</div>
+
+
+<!-- BACK TO TOP-->
+<div id="scrollToTop" class="back-to-top hide hidden-sm-down">
+<!--    <img src="--><!--" alt="back-to-top-button">-->
+
+    <div class="arrow-icon"></div>
+</div>
+
+
+<style>
+            @media (max-width: 991px) {
+            #open_sogoacc {
+                display: none !important
+            }
+
+        
+
+            #open_sogoacc {
+                background: #0780C3;
+                color: #FFF;
+                border-bottom: 1px solid #0780C3;
+                border-right: 1px solid #0780C3;
+            }
+
+            #close_sogoacc {
+                background: #0780C3;
+                color: #fff;
+            }
+
+            #sogoacc div#sogo_font_a button {
+                color: #0780C3;
+
+            }
+
+            body.sogo_readable_font * {
+                font-family: "Arial", sans-serif !important;
+            }
+
+            body.sogo_underline_links a {
+                text-decoration: underline !important;
+            }
+
+    
+
+</style>
+
+
+<div id="sogo_overlay"></div>
+
+<button id="open_sogoacc"
+   aria-label="לחץ &quot;ALT+A&quot; בכדי לפתוח \ לסגור את תפריט הנגישות"
+   tabindex="1"
+   accesskey="a" class="middleleft toggle_sogoacc"><i style="font-size: 30px" class="fa fa-wheelchair"  ></i></button>
+<div id="sogoacc" class="middleleft">
+    <div id="close_sogoacc"
+         class="toggle_sogoacc">נגישות</div>
+    <div class="sogo-btn-toolbar" role="toolbar">
+        <div class="sogo-btn-group">
+						                <button type="button" id="b_n_c" class="btn btn-default">
+                    <span class="sogo-icon-black_and_white" aria-hidden="true"></span>
+					שחור לבן</button>
+						                <button type="button" id="contrasts"
+                        data-css="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public//css/sogo_contrasts.css"
+                        class="btn btn-default">
+                    <span class="sogo-icon sogo-icon-black" aria-hidden="true"></span>
+					חדות כהה </button>
+						                <button type="button" id="contrasts_white"
+                        data-css="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public//css/sogo_contrasts_white.css"
+                        class="btn btn-default">
+                    <span class="sogo-icon-white" aria-hidden="true"></span>
+					חדות בהירה</button>
+						                <button type="button" id="animation_off" class="btn btn-default" >
+                    <span class="sogo-icon-flash" aria-hidden="true"></span>
+					הפסק הבהובים</button>
+						                <button type="button" id="readable_font" class="btn btn-default">
+                    <span class="sogo-icon-font" aria-hidden="true"></span>
+					פונט קריא</button>
+						                <button type="button" id="underline_links" class="btn btn-default">
+                    <span class="sogo-icon-link" aria-hidden="true"></span>
+					הדגש קישורים</button>
+			
+
+        </div>
+        <div id="sogo_font_a" class="sogo-btn-group clearfix">
+            <button id="sogo_a1" data-size="1" type="button"
+                    class="btn btn-default " aria-label="Press to increase font size">א</button>
+            <button id="sogo_a2" data-size="1.1" type="button"
+                    class="btn btn-default" Press to increase font size">א</button>
+            <button id="sogo_a3" data-size="1.4" type="button"
+                    class="btn btn-default" Press to increase font size">א</button>
+        </div>
+        <div class="accessibility-info">
+
+            <div><a   id="sogo_accessibility"
+                    href="#"><i aria-hidden="true" class="fa fa-times-circle-o red " ></i>הפסק נגישות                </a>
+            </div>
+            <div>
+													            </div>
+
+
+        </div>
+
+
+    </div>
+	        <div class="sogo-logo">
+            <a target="_blank" href="https://pluginsmarket.com/downloads/accessibility-plugin/"
+               title="Provided by sogo.co.il">
+                <span>מסופק ע"י: </span>
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="sogo logo" data-lazy-src="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public/css/sogo-logo.png"/><noscript><img src="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public/css/sogo-logo.png" alt="sogo logo"/></noscript>
+
+            </a>
+        </div>
+	</div><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N396QPR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script type='text/javascript' id='sogo-child-scripts-js-extra'>
+/* <![CDATA[ */
+var sogoc = {"map_icon":"https:\/\/www.hova.co.il\/wp-content\/themes\/sogo-child\/images\/location.png","minDate":"0"};
+var sogo = [];
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/scripts.js?ver=1672271713' id='sogo-child-scripts-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo-child/js/select2/select2.full.min.js?ver=63db18cce6880' id='select2-full-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/select2/he.js?ver=1672271713' id='select2-hejs-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/insurance-page.js?ver=1672271713' id='sogo-child-insurance-page-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/jquery-ui/jquery-ui.js?ver=1672271713' id='sogo-child-jquery-ui-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/jquery-validation/dist/jquery.validate.js?ver=1672271713' id='sogo-child-jquery-validate-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/datepicker-he.js?ver=1672271713' id='sogo-child-datepicker-he-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/validate.js?ver=1672271713' id='sogo-child-validate-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/selectBoxIt.js?ver=1672271713' id='sogo-child-selectBoxIt-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/moment.js?ver=1672271713' id='sogo-child-moment-js-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.hova.co.il\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1672271713' id='contact-form-7-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/sogo-accessibility/public/js/navigation.js?ver=1672271713' id='sogo_accessibility.navigation-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/sogo-accessibility/public/js/sogo-accessibility-public.js?ver=1672271713' id='sogo_accessibility-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/%d7%aa%d7%95%d7%a6%d7%90%d7%95%d7%aa_%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%aa_%d7%91%d7%99%d7%98%d7%95%d7%97_%d7%a8%d7%9b%d7%91\/|\/%d7%94%d7%96%d7%9e%d7%a0%d7%aa_%d7%91%d7%99%d7%98%d7%95%d7%97_%d7%97%d7%95%d7%91%d7%94\/|\/\u05ea\u05d5\u05e6\u05d0\u05d5\u05ea_\u05d4\u05e9\u05d5\u05d5\u05d0\u05ea_\u05d1\u05d9\u05d8\u05d5\u05d7_\u05e8\u05db\u05d1\/|\/\u05d4\u05d6\u05de\u05e0\u05ea_\u05d1\u05d9\u05d8\u05d5\u05d7_\u05d7\u05d5\u05d1\u05d4\/|\/hova-order-completed\/|\/makif-order-completed\/|\/zad-g-order-completed\/|\/hova-order-completed\/|\/makif-order-completed\/|\/zad-g-order-completed\/|\/car-insurance\/calc\/|\/comprehensive-insurance\/calc\/|\/third-party-insurance\/calc\/|\/calc\/|\/car-insurance\/calc\/|\/comprehensive-insurance\/calc\/|\/%d7%aa%d7%95%d7%a6%d7%90%d7%95%d7%aa_%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%aa_%d7%91%d7%99%d7%98%d7%95%d7%97_%d7%a8%d7%9b%d7%91\/|\/polibit-dira\/|\/lead-dira\/|\/home-insurance\/|\/click\/|\/customer-service\/change-car\/change-car\/|\/customer-service\/change-car\/|\/customer-service\/gvia\/|\/team-to-newcom\/|\/mortgage-insurance\/|\/team-to-benzi\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.hova.co.il","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/templates/header-2/header-2.js?ver=1672271713' id='sogo-child-header-2-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/templates/footer-2/footer-2.js?ver=1672271713' id='sogo-child-footer-2-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/tether.min.js?ver=5.8.6' id='tether-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/popper.min.js?ver=5.8.6' id='popper-js' defer></script>
+<script type='text/javascript' id='bootstrap-js-extra'>
+/* <![CDATA[ */
+var sogo = {"ajaxurl":"https:\/\/www.hova.co.il\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/bootstrap.min.js?ver=5.8.6' id='bootstrap-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/waypoint/lib/jquery.waypoints.min.js?ver=5.8.6' id='waypoint-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/vendor/slick/slick.min.js?ver=2' id='slickslider-js' defer></script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.hova.co.il/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1675303117 -->

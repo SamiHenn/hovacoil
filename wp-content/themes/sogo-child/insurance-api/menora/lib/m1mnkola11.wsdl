@@ -1,0 +1,71 @@
+<wsdl:definitions name="m1mnkola11" targetNamespace="http://www.m1mnkola11.org/m1mnkola11/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:swh="http://www.shellWiz.com/shellWizHeader/v1.0" xmlns:tns="http://www.m1mnkola11.org/m1mnkola11/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<wsdl:documentation>No Description</wsdl:documentation>
+	<wsdl:types>
+
+		<xsd:schema elementFormDefault="qualified" targetNamespace="http://www.m1mnkola11.org/m1mnkola11/" xmlns:tns="http://www.m1mnkola11.org/m1mnkola11/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+			<xsd:element name="m1mnkola11MessageRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element minOccurs="0" name="PARM_RETURN" type="tns:PARM_RETURN"/><xsd:element minOccurs="0" name="PARM_CHEVRA" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SOCHEN" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RECHEV" type="tns:PARM_RECHEV"/><xsd:element minOccurs="0" name="PARM_TKUFA" type="tns:PARM_TKUFA"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_MISP_NAHAGIM" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH_1" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH_2" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH_3" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TVIOT" type="tns:PARM_TVIOT"/><xsd:element minOccurs="0" name="PARM_YERIDAT_ERECH" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_DIRAT_KARKA" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_HADASH_TMURAT_YASHAN" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAARICHIM" type="tns:PARM_TAARICHIM"/><xsd:element minOccurs="0" name="PARM_REIDERIM1" type="tns:PARM_REIDERIM1"/><xsd:element minOccurs="0" name="PARM_REIDERIM2" type="tns:PARM_REIDERIM2"/><xsd:element minOccurs="0" name="PARM_REIDERIM3" type="tns:PARM_REIDERIM3"/><xsd:element minOccurs="0" name="PARM_REIDERIM4" type="tns:PARM_REIDERIM4"/></xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="m1mnkola11MessageResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="wsrc" type="xsd:int"/>
+						<xsd:element name="wsrcmsg" type="xsd:string"/>
+						<xsd:element minOccurs="0" name="PARM_RETURN" type="tns:PARM_RETURN"/><xsd:element minOccurs="0" name="PARM_CHEVRA" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SOCHEN" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RECHEV" type="tns:PARM_RECHEV"/><xsd:element minOccurs="0" name="PARM_TKUFA" type="tns:PARM_TKUFA"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_MISP_NAHAGIM" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH_1" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH_2" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SUG_BITUACH_3" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TVIOT" type="tns:PARM_TVIOT"/><xsd:element minOccurs="0" name="PARM_YERIDAT_ERECH" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_DIRAT_KARKA" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_HADASH_TMURAT_YASHAN" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAARICHIM" type="tns:PARM_TAARICHIM"/><xsd:element minOccurs="0" name="PARM_REIDERIM1" type="tns:PARM_REIDERIM1"/><xsd:element minOccurs="0" name="PARM_REIDERIM2" type="tns:PARM_REIDERIM2"/><xsd:element minOccurs="0" name="PARM_REIDERIM3" type="tns:PARM_REIDERIM3"/><xsd:element minOccurs="0" name="PARM_REIDERIM4" type="tns:PARM_REIDERIM4"/></xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="PARM_RETURN"><xsd:sequence><xsd:element minOccurs="0" name="PARM_MELEL" type="xsd:string"/><xsd:element minOccurs="0" name="PARM_RETURN_CODE" type="xsd:string"/><xsd:element minOccurs="0" name="PARM_RETURN_TAARIF_HOVA" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RETURN_TAARIF_CASCO" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RETURN_MIGUN" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RETURN_HISHT_MEKIF" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RETURN_HISHT_MEKIF_MAH1" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RETURN_HISHT_TSADG" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_RECHEV"><xsd:sequence><xsd:element minOccurs="0" name="PARM_DEGEM" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_YEAR" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_MISPAR_RISHUY" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_TKUFA"><xsd:sequence><xsd:element minOccurs="0" name="PARM_TAAR_TCHILA" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_SIUM" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_TVIOT"><xsd:sequence><xsd:element minOccurs="0" name="PARM_TVIOT_1" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TVIOT_2" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TVIOT_3" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM2_MISPAR_SHLILOT" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM2_MISPAR_TVIOT" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_TAARICHIM"><xsd:sequence><xsd:element minOccurs="0" name="PARM_TAAR_LEIDA_1" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_RISHAYON_1" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_LEIDA_2" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_RISHAYON_2" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_LEIDA_3" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_RISHAYON_3" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_LEIDA_TSAIR" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_TAAR_RISHAYON_TSAIR" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_MIN_TSAIR" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_REIDERIM1"><xsd:sequence><xsd:element minOccurs="0" name="PARM_SUG_SHIMUSH" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_BITUL_HISHT_AZMIT" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_ARHAVAT_NIZKEY_GUF" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_GVUL_AHARAYUT_750000" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_KOD_PERKLIT" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_ERECH_RADIO" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_ERECH_AVIZERIM" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_REIDERIM2"><xsd:sequence><xsd:element minOccurs="0" name="PARM_KOD_RADIO_TAPE" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_KOD_AVIZERIM" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_KOD_GRIRA" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_REIDERIM3"><xsd:sequence><xsd:element minOccurs="0" name="PARM_ADIF" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_NEHIGA_BSHABAT" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_HAVILAT_SHERUT" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_KINUN_OTOMATI" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_SHEMASHOT" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_RECHEV_OTOMATI" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_UBDAN_GAMUR_50" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_AGANA_MISHPATIT" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_MONEA_BE_GAZ" type="xsd:decimal"/></xsd:sequence></xsd:complexType><xsd:complexType name="PARM_REIDERIM4"><xsd:sequence><xsd:element minOccurs="0" name="PARM_RASHAIM_LINHOG" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_NAHAG_CHADASH" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_KOD_SHIABUD" type="xsd:decimal"/><xsd:element minOccurs="0" name="PARM_BAKARAT_TROM" type="xsd:decimal"/></xsd:sequence></xsd:complexType></xsd:schema>
+		<xsd:schema elementFormDefault="qualified" targetNamespace="http://www.shellWiz.com/shellWizHeader/v1.0" xmlns:swh="http://www.shellWiz.com/shellWizHeader/v1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:element name="ShellWizHeader">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element minOccurs="0" name="user" type="xsd:string">
+						</xsd:element>
+						<xsd:element minOccurs="0" name="env" type="xsd:string">
+						</xsd:element>
+						<xsd:element minOccurs="0" name="ind" type="xsd:string">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="m1mnkola11MessageRequest">
+		<wsdl:part element="swh:ShellWizHeader" name="SWHeaderPart"/>
+		<wsdl:part element="tns:m1mnkola11MessageRequest" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="m1mnkola11MessageResponse">
+		<wsdl:part element="tns:m1mnkola11MessageResponse" name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="m1mnkola11PortType">
+		<wsdl:operation name="m1mnkola11Operation">
+			<wsdl:input message="tns:m1mnkola11MessageRequest"/>
+			<wsdl:output message="tns:m1mnkola11MessageResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="m1mnkola11Binding" type="tns:m1mnkola11PortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="m1mnkola11Operation">
+			<soap:operation soapAction="M1MNKOLA11"/>
+			<wsdl:input>
+				<soap:header message="tns:m1mnkola11MessageRequest" part="SWHeaderPart" use="literal"/>
+				<soap:body parts="parameters" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="m1mnkola11">
+		<wsdl:port binding="tns:m1mnkola11Binding" name="m1mnkola11">
+			<soap:address location="https://ext-api.menora.co.il/M1MNKOLA11"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

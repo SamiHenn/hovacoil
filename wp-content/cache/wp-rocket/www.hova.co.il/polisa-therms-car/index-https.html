@@ -1,0 +1,778 @@
+<!doctype html>
+<html dir="rtl" lang="he-IL" class="desktop">
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let r;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["rocket"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, scalable=no">
+    <link rel="icon" href="https://www.hova.co.il/wp-content/themes/sogo-child/favicon.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>תנאי פוליסה לביטוח רכב פרטי ומסחרי עד 3.5 טון - Hova חובה - השוואת מחירי ביטוח</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&#038;display=swap" /></noscript>
+	<link rel="canonical" href="https://www.hova.co.il/polisa-therms-car/" />
+	<meta property="og:locale" content="he_IL" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="תנאי פוליסה לביטוח רכב פרטי ומסחרי עד 3.5 טון - Hova חובה - השוואת מחירי ביטוח" />
+	<meta property="og:description" content="חברת ביטוח תנאי פוליסת חובה איילון &#8211; תנאי פוליסה הכשרה &#8211; תנאי פוליסה הפניקס &#8211; תנאי פוליסה הראל &#8211; תנאי פוליסה הראל סוויץ&#039; &#8211; תנאי פוליסה הראל אפגרייד &#8211; תנאי פוליסה כלל &#8211; תנאי פוליסה מגדל &#8211; תנאי פוליסה מנורה מבטחים &#8211; תנאי פוליסה שומרה &#8211; תנאי פוליסה שומרה שיא &#8211; תנאי פוליסה שירביט &#8211; תנאי פוליסה שלמה &#8211; תנאי פוליסה שלמה &#8211; תנאי פוליסה לפוליסות החל מ 1.12.2019 לתשומת" />
+	<meta property="og:url" content="https://www.hova.co.il/polisa-therms-car/" />
+	<meta property="og:site_name" content="Hova חובה - השוואת מחירי ביטוח" />
+	<meta property="article:modified_time" content="2019-10-31T13:35:46+00:00" />
+	<meta property="og:image" content="https://www.hova.co.il/wp-content/uploads/2022/12/newlogoHova-min.png" />
+	<meta property="og:image:width" content="250" />
+	<meta property="og:image:height" content="250" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="זמן קריאה מוערך" />
+	<meta name="twitter:data1" content="דקה1" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.hova.co.il/#organization","name":"Hova","url":"https://www.hova.co.il/","sameAs":[],"logo":{"@type":"ImageObject","inLanguage":"he-IL","@id":"https://www.hova.co.il/#/schema/logo/image/","url":"https://www.hova.co.il/wp-content/uploads/2022/12/newlogoHova-min.png","contentUrl":"https://www.hova.co.il/wp-content/uploads/2022/12/newlogoHova-min.png","width":250,"height":250,"caption":"Hova"},"image":{"@id":"https://www.hova.co.il/#/schema/logo/image/"}},{"@type":"WebSite","@id":"https://www.hova.co.il/#website","url":"https://www.hova.co.il/","name":"Hova חובה - השוואת מחירי ביטוח","description":"חובה מאפשר לך לבצע השוואת מחירי ביטוח רכב בין 10 חברות ביטוח ולבחור את ההצעה הטובה ביותר.","publisher":{"@id":"https://www.hova.co.il/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.hova.co.il/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"he-IL"},{"@type":"WebPage","@id":"https://www.hova.co.il/polisa-therms-car/","url":"https://www.hova.co.il/polisa-therms-car/","name":"תנאי פוליסה לביטוח רכב פרטי ומסחרי עד 3.5 טון - Hova חובה - השוואת מחירי ביטוח","isPartOf":{"@id":"https://www.hova.co.il/#website"},"datePublished":"2019-10-28T12:16:13+00:00","dateModified":"2019-10-31T13:35:46+00:00","breadcrumb":{"@id":"https://www.hova.co.il/polisa-therms-car/#breadcrumb"},"inLanguage":"he-IL","potentialAction":[{"@type":"ReadAction","target":["https://www.hova.co.il/polisa-therms-car/"]}]},{"@type":"BreadcrumbList","@id":"https://www.hova.co.il/polisa-therms-car/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"עמוד הבית","item":"https://www.hova.co.il/"},{"@type":"ListItem","position":2,"name":"תנאי פוליסה לביטוח רכב פרטי ומסחרי עד 3.5 טון"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<script type="rocketlazyloadscript">
+dataLayer = [{"title":"\u05ea\u05e0\u05d0\u05d9 \u05e4\u05d5\u05dc\u05d9\u05e1\u05d4 \u05dc\u05d1\u05d9\u05d8\u05d5\u05d7 \u05e8\u05db\u05d1 \u05e4\u05e8\u05d8\u05d9 \u05d5\u05de\u05e1\u05d7\u05e8\u05d9 \u05e2\u05d3 3.5 \u05d8\u05d5\u05df","author":"\u05e1\u05de\u05d9","wordcount":56,"logged_in":"false","page_id":3762,"post_date":"2019-10-28 14:16:13","post_type":"page"}];
+</script>
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N396QPR');</script>
+<!-- End Google Tag Manager --><link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link data-minify="1" rel='stylesheet' id='bootstrap-responsive-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo/assets/css/bootstrap.css?ver=1672271712' type='text/css' media='all' />
+<link rel='stylesheet' id='sogo-animation-css'  href='https://www.hova.co.il/wp-content/themes/sogo/assets/css/animate.min.css?ver=5.8.6' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='sogo-style-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/style.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='sogo-jquery-ui-css-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/jquery-ui/jquery-ui.css?ver=1672271712' type='text/css' media='all' />
+<link rel='stylesheet' id='sogo-select2-css-css'  href='https://www.hova.co.il/wp-content/themes/sogo-child/select2.min.css?ver=63db9304da803' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-rtl-css'  href='https://www.hova.co.il/wp-includes/css/dist/block-library/style-rtl.min.css?ver=5.8.6' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='contact-form-7-signature-addon-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7-signature-addon/public/css/style.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='contact-form-7-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='contact-form-7-rtl-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/css/styles-rtl.css?ver=1672271712' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='fontawsome-css'  href='https://www.hova.co.il/wp-content/cache/min/1/font-awesome/4.6.3/css/font-awesome.min.css?ver=1672271713' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='sogo_accessibility-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/sogo-accessibility/public/css/sogo-accessibility-public.css?ver=1672271713' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='slickslider-css'  href='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo/assets/vendor/slick/slick.css?ver=1672271713' type='text/css' media='all' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/plugins/contact-form-7-signature-addon/public/js/signature_pad.min.js?ver=4.2.2' id='contact-form-7-signature-addon-signature-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7-signature-addon/public/js/scripts.js?ver=1672271713' id='contact-form-7-signature-addon-js' defer></script>
+<link rel="https://api.w.org/" href="https://www.hova.co.il/wp-json/" /><link rel="alternate" type="application/json" href="https://www.hova.co.il/wp-json/wp/v2/pages/3762" /><link rel="stylesheet" href="https://www.hova.co.il/wp-content/themes/sogo-child/rtl.css" type="text/css" media="screen" /><link rel='shortlink' href='https://www.hova.co.il/?p=3762' />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script type="rocketlazyloadscript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-99901908-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    <style>
+        #vehicle-year, #vehicle-brand, #vehicle-sub-brand {
+            pointer-events: all !important;
+        }
+    </style>
+<!-- Facebook Pixel Code -->
+<!--<script type="rocketlazyloadscript">-->
+<!--  !function(f,b,e,v,n,t,s)-->
+<!--  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?-->
+<!--  n.callMethod.apply(n,arguments):n.queue.push(arguments)};-->
+<!--  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';-->
+<!--  n.queue=[];t=b.createElement(e);t.async=!0;-->
+<!--  t.src=v;s=b.getElementsByTagName(e)[0];-->
+<!--  s.parentNode.insertBefore(t,s)}(window, document,'script',-->
+<!--  'https://connect.facebook.net/en_US/fbevents.js');-->
+<!--  fbq('init', '2445096462202220');-->
+<!--  fbq('track', 'PageView');-->
+<!--</script>-->
+<!--<noscript><img height="1" width="1" style="display:none"-->
+<!--  src="https://www.facebook.com/tr?id=2445096462202220&ev=PageView&noscript=1"-->
+<!--/></noscript>-->
+<!-- End Facebook Pixel Code -->
+
+	
+<body style="background-color: #f2f2f2" class="rtl page-template-default page page-id-3762 desktop">
+
+<header class="header-2">
+    <div class="container-fluid">
+
+		
+            <!-- desktop-menu -->
+            <!-- row -->
+            <div class="row py-2 h-100 align-items-center menu-desktop-manipulation">
+
+                <div class="col-lg pl-1 text-right">
+
+                    <!-- row -->
+                    <div class="row">
+
+                        <div class="col-auto align-self-center px-15">
+                            <!-- HOME -->
+                            <a href="https://www.hova.co.il" title="חובה"
+                               class="icon-home-01 hover-2 transition color-6 d-inline-block align-middle mx-15"></a>
+                        </div>
+
+
+						
+
+                        <div class="col-auto">
+                            <!-- MENU -->
+                            <nav class="primary-menu text-left d-inline-block align-middle">
+								<ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a8%d7%90%d7%a9%d7%99" class="menu accessibility_menu"><li id="menu-item-1356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1356"><a href="https://www.hova.co.il/car/">השוואת ביטוח רכב</a></li><li id="menu-item-1401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="https://www.hova.co.il/comprehensive-insurance/">ביטוח מקיף</a></li><li id="menu-item-7625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7625"><a href="https://www.hova.co.il/third-party-insurance/">ביטוח צד ג</a></li><li id="menu-item-1021" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1021"><a href="https://www.hova.co.il/car-insurance/">ביטוח חובה לרכב</a></li><li id="menu-item-7855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7855"><a href="https://www.hova.co.il/bdikatik/">בדיקת תיק ביטוחי</a></li><li id="menu-item-466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-466"><a href="https://www.hova.co.il/about-hova/">אודות</a>
+<ul class="sub-menu">
+	<li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="https://www.hova.co.il/about-hova/how-it-works/">איך זה עובד</a></li>	<li id="menu-item-476" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="https://www.hova.co.il/about-hova/why-us/">למה זה כדאי</a></li></ul>
+<span class='js-open-menu icon-arrowdown-01 align-middle icon-xxs color-6 mx-1 d-inline-block'></span></li><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="https://www.hova.co.il/contact-us/">צור קשר</a></li></ul>                            </nav>
+                        </div>
+
+                        <div class="col-auto align-self-center">
+                            <!-- OFFER BUTTON -->
+                            <a href="https://hova.co.il/car/"
+                               class="s-btn-1 bg-2 border-color-2 color-white d-inline-block align-middle mx-2">
+                                <span>ביטוח רכב</span>
+                                <span class="icon-arrowleft-01-colorwhite icon-x2 d-inline-block align-middle"></span>
+                            </a>
+                        </div>
+							<div style="border-right: 1px solid #c0c0c0; height: 30px" class="text-4 color-4 text-center d-inline-block pr-3 mr-2 align-self-center"><strong><a class="color-4" href="tel:*3504">3504*</a></strong></div>
+                    </div>
+
+                </div>
+
+                <!-- LOGO -->
+                <div class="col-lg-auto pl-15 text-left">
+                    <a href="https://www.hova.co.il" class="header-2__logo d-inline-block ml-15"
+                       title="ביטוח חובה">
+                        <svg style="width: 130px; height: 60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 21"><g fill-rule="evenodd" stroke-miterlimit="10" stroke-width=".96"><path fill="#0070c0" stroke="#0070c0" d="M466.117 409.833c23.457 0 42.447-18.458 42.447-41.157 0-22.699-18.99-41.078-42.447-41.078-23.457 0-42.527 18.38-42.527 41.078 0 22.7 19.07 41.157 42.527 41.157zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#00b0f0" stroke="#00b0f0" d="M508.644 312.36c23.457 0 42.526-18.379 42.526-41.078s-19.069-41.157-42.526-41.157c-23.538 0-42.527 18.458-42.527 41.157 0 22.7 18.99 41.079 42.527 41.079zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#0070c0" stroke="#0070c0" d="M17.314 279.608h65.904v-97.865h95.027v97.865h65.984V26.148h-65.984v105.484H83.218V26.148H17.314zm0 0M390.718 204.756c32.553 0 58.564-10.525 78.032-31.418 15.798-17.043 23.697-37.386 23.697-61.028 0-23.877-7.82-44.377-23.537-61.42-19.07-20.815-45.719-31.183-80.027-31.183-34.388 0-61.117 10.368-80.186 31.182-15.718 17.044-23.537 38.015-23.537 62.913 0 22.385 7.899 42.257 23.696 59.536 19.23 20.893 46.516 31.418 81.862 31.418zm-1.835-52.389c-12.527 0-22.82-4.712-30.638-14.137-6.463-7.62-9.655-16.259-9.655-25.92 0-9.818 3.192-18.536 9.655-26.155 7.819-9.425 18.111-14.138 30.638-14.138 11.25 0 20.745 3.849 28.484 11.625 7.74 7.776 11.649 17.358 11.649 28.668 0 11.153-3.91 20.657-11.729 28.433-7.819 7.776-17.314 11.624-28.404 11.624zm0 0M826.037 203.892c12.287 0 23.777-2.513 34.468-7.619 6.224-2.984 12.527-7.854 19.15-14.687v16.886h61.037V26.07h-61.038v19.165c-5.824-7.305-11.728-12.646-17.633-15.944-10.372-5.891-22.18-8.797-35.425-8.797-21.383 0-40.373 7.383-57.048 22.149-19.947 17.515-29.84 40.764-29.84 69.747 0 29.454 10.132 52.938 30.558 70.532 16.197 13.98 34.787 20.97 55.771 20.97zm16.277-52.546c-12.048 0-22.021-4.634-29.76-13.745-6.224-7.383-9.416-15.787-9.416-25.29 0-9.505 3.192-17.987 9.415-25.37 7.66-9.111 17.553-13.667 29.76-13.667 10.932 0 20.267 3.77 27.767 11.31 7.58 7.462 11.41 16.73 11.41 27.726 0 10.84-3.83 20.029-11.49 27.647-7.58 7.54-16.835 11.39-27.686 11.39zm0 0M506.729 198.472h68.537l41.17-88.361 41.41 88.361h68.138l-89.68-172.324h-40.612zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path></g>
+                             alt="ביטוח חובה"
+                             </svg>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- mobile-menu -->
+            <!-- row -->
+            <div class="row justify-content-between py-2 align-items-center menu-mobile-manipulation d-none">
+
+                <div class="col-auto px-15">
+
+                    <!-- row -->
+                    <div class="row align-items-center">
+
+                        <div class="col-auto px-15">
+                            <!-- STRIPES -->
+                            <div class="stripes-menu d-block">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="col-auto px-15">
+                            <!-- MOBILE OFFER BUTTON -->
+                            <a href="https://hova.co.il/car/"
+                               class="s-button s-button-3 bg-2 border-color-2 color-white d-inline-block align-middle">
+                                <span class="align-middle color-white ">ביטוח רכב</span>
+                                <span class="icon-arrowleft-01 color-white icon-sm d-inline-block align-middle"></span>
+                            </a>
+                        </div>
+							<div style="border-right: 1px solid #c0c0c0; height: 20px" class="text-4 color-4 text-center d-inline-block pr-2 mr-1 align-self-center"><strong><a class="color-4" href="tel:*3504">3504*</a></strong></div>
+                    </div>
+
+                </div>
+
+                <!-- MOBILE MENU  -->
+                <nav class="js-mobile-menu primary-menu primary-menu__hide py-1">
+                    <div class="row  ">
+                        <div class="col-12 col-lg-6 px-15">
+							<ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a8%d7%90%d7%a9%d7%99-1" class="menu accessibility_menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1356"><a href="https://www.hova.co.il/car/">השוואת ביטוח רכב</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1401"><a href="https://www.hova.co.il/comprehensive-insurance/">ביטוח מקיף</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7625"><a href="https://www.hova.co.il/third-party-insurance/">ביטוח צד ג</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1021"><a href="https://www.hova.co.il/car-insurance/">ביטוח חובה לרכב</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7855"><a href="https://www.hova.co.il/bdikatik/">בדיקת תיק ביטוחי</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-466"><a href="https://www.hova.co.il/about-hova/">אודות</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="https://www.hova.co.il/about-hova/how-it-works/">איך זה עובד</a></li>	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-476"><a href="https://www.hova.co.il/about-hova/why-us/">למה זה כדאי</a></li></ul>
+<span class='js-open-menu icon-arrowdown-01 align-middle icon-xxs color-6 mx-1 d-inline-block'></span></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a href="https://www.hova.co.il/contact-us/">צור קשר</a></li></ul>                        </div>
+                    </div>
+                </nav>
+
+                <div class="col-auto px-15 text-left">
+                    <!-- MOBILE LOGO -->
+                    <a href="https://www.hova.co.il" class="d-inline-block"
+                       title="ביטוח חובה">
+                        <svg style="width: 80px; height: 40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 21"><g fill-rule="evenodd" stroke-miterlimit="10" stroke-width=".96"><path fill="#0070c0" stroke="#0070c0" d="M466.117 409.833c23.457 0 42.447-18.458 42.447-41.157 0-22.699-18.99-41.078-42.447-41.078-23.457 0-42.527 18.38-42.527 41.078 0 22.7 19.07 41.157 42.527 41.157zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#00b0f0" stroke="#00b0f0" d="M508.644 312.36c23.457 0 42.526-18.379 42.526-41.078s-19.069-41.157-42.526-41.157c-23.538 0-42.527 18.458-42.527 41.157 0 22.7 18.99 41.079 42.527 41.079zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#0070c0" stroke="#0070c0" d="M17.314 279.608h65.904v-97.865h95.027v97.865h65.984V26.148h-65.984v105.484H83.218V26.148H17.314zm0 0M390.718 204.756c32.553 0 58.564-10.525 78.032-31.418 15.798-17.043 23.697-37.386 23.697-61.028 0-23.877-7.82-44.377-23.537-61.42-19.07-20.815-45.719-31.183-80.027-31.183-34.388 0-61.117 10.368-80.186 31.182-15.718 17.044-23.537 38.015-23.537 62.913 0 22.385 7.899 42.257 23.696 59.536 19.23 20.893 46.516 31.418 81.862 31.418zm-1.835-52.389c-12.527 0-22.82-4.712-30.638-14.137-6.463-7.62-9.655-16.259-9.655-25.92 0-9.818 3.192-18.536 9.655-26.155 7.819-9.425 18.111-14.138 30.638-14.138 11.25 0 20.745 3.849 28.484 11.625 7.74 7.776 11.649 17.358 11.649 28.668 0 11.153-3.91 20.657-11.729 28.433-7.819 7.776-17.314 11.624-28.404 11.624zm0 0M826.037 203.892c12.287 0 23.777-2.513 34.468-7.619 6.224-2.984 12.527-7.854 19.15-14.687v16.886h61.037V26.07h-61.038v19.165c-5.824-7.305-11.728-12.646-17.633-15.944-10.372-5.891-22.18-8.797-35.425-8.797-21.383 0-40.373 7.383-57.048 22.149-19.947 17.515-29.84 40.764-29.84 69.747 0 29.454 10.132 52.938 30.558 70.532 16.197 13.98 34.787 20.97 55.771 20.97zm16.277-52.546c-12.048 0-22.021-4.634-29.76-13.745-6.224-7.383-9.416-15.787-9.416-25.29 0-9.505 3.192-17.987 9.415-25.37 7.66-9.111 17.553-13.667 29.76-13.667 10.932 0 20.267 3.77 27.767 11.31 7.58 7.462 11.41 16.73 11.41 27.726 0 10.84-3.83 20.029-11.49 27.647-7.58 7.54-16.835 11.39-27.686 11.39zm0 0M506.729 198.472h68.537l41.17-88.361 41.41 88.361h68.138l-89.68-172.324h-40.612zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path></g>
+                             alt="ביטוח חובה"
+                             </svg>
+                    </a>
+                </div>
+
+            </div>
+
+		    </div>
+</header>
+
+
+<div id="page">
+<div id="page" class="site overflow-hidden p-relative #f2f2f2">
+
+
+    <!-- BANNER -->
+    
+
+
+    <!--BREADCRUMBS-->
+<section class="breadcrumbs pt-1 pb-2 pb-lg-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div id="breadcrumbs"><span><span><a href="https://www.hova.co.il/">עמוד הבית</a> &gt; <span class="breadcrumb_last" aria-current="page">תנאי פוליסה לביטוח רכב פרטי ומסחרי עד 3.5 טון</span></span></span></div>            </div>
+        </div>
+    </div>
+</section>
+    <div class="container-fluid">
+
+        <!-- CONTENT -->
+        <div class="row justify-content-center">
+            <!-- TEXT -->
+            <div class="col-lg-8">
+                <h1 class="text-1 color-4">תנאי פוליסה לביטוח רכב פרטי ומסחרי עד 3.5 טון</h1>
+                <div class="entry-content">
+                    <style><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span><br />
+#polisaTherms {  border-collapse: collapse;  width: 100%;}#polisaTherms td, #polisaTherms th {  border: 1px solid #ddd;  padding: 8px;}#polisaTherms tr:nth-child(even){background-color: #f2f2f2;}#polisaTherms tr:hover {background-color: #ddd;}#polisaTherms th {  padding-top: 12px;  padding-bottom: 12px;  text-align: left;  background-color: #0070C0;  color: white;  border: 0px;}<br /></style>
+<table width="100%" id="polisaTherms" class="text-3 color-6" dir="rtl">
+<tbody>
+<tr>
+<th style="text-align: right;" width="50%">חברת ביטוח</th>
+<th style="text-align: right;" width="50%">תנאי פוליסת חובה</th>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- איילון --><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32">
+  <path fill="#0950a3" d="M40.73 9.26h4.75a.67.67 0 01.58.29c1.13 1.36 2.27 2.73 3.52 4 .11.11.23.35.41.24s.11-.33.11-.49a27.75 27.75 0 00-.48-3.63c0-.3 0-.41.33-.4h3.54c.23 0 .29.06.3.29.05 1.76.15 3.49.23 5.26 0 .84.1 1.72.11 2.57a.73.73 0 00.23.47l2.91 3a.2.2 0 01.1.2h-4.61a1.13 1.13 0 01-.5-.23c-1.28-1.48-2.48-3.05-3.8-4.51a4 4 0 00-.48-.43c-.26-.19-.43-.11-.45.19a11.22 11.22 0 000 1.16c.08 1.18.17 2.35.29 3.55 0 .24-.3.41-.3.41h-3.34c-.23 0-.3 0-.33-.3-.08-1.05 0-2.13-.08-3.18-.09-1.72-.14-3.46-.14-5.2a.84.84 0 00-.33-.7c-.76-.71-1.49-1.45-2.24-2.19zM12.31 4.09h4.36c.2 0 .26.13.34.26a12.9 12.9 0 01.83 2.43l.39 1.31c.3 1 .57 1.17 1.71 1.23s2.41 0 3.63 0a2.7 2.7 0 012.35 1.32 4.94 4.94 0 01.79 2.69v7.41c0 .3-.09.35-.36.35h-4c-.29 0-.34-.09-.34-.34v-6.78a1.87 1.87 0 00-.73-1.6 1.56 1.56 0 00-1-.26h-3a3 3 0 01-3.22-2.33c-.39-1.24-.72-2.53-1.07-3.8a6.75 6.75 0 00-.68-1.89zM11 28.59H6.68c-.25 0-.23-.15-.26-.3-.34-1.24-.67-2.51-1-3.77-1-3.93-2.08-7.89-3.1-11.82A11 11 0 001 9.32a.52.52 0 01.33-.06h3.86a.46.46 0 01.45.25 11.92 11.92 0 011.29 3.29C7.47 14.87 8 17 8.54 19.06c.83 3.14 1.65 6.3 2.48 9.44v.09zM7.84 9.26h4.23a.47.47 0 01.44.23 12.19 12.19 0 011.15 2.89l2.21 8.23a1.83 1.83 0 00.06.25c.05.16 0 .24-.17.24h-4.1c-.29 0-.26-.23-.3-.35l-1.31-4.91c-.39-1.47-.82-2.94-1.21-4.44a7.09 7.09 0 00-1-2.14zM34.44 9.26h4.32c.19 0 .26.11.36.25a10.44 10.44 0 011.19 2.94l.84 3.22c.11.4.11.4-.3.4h-3.74a.44.44 0 01-.5-.33c-.3-1.23-.62-2.42-1-3.64a8.51 8.51 0 00-1.17-2.84zM27.43 9.26h4.33c.19 0 .24.1.34.23a10.78 10.78 0 011.27 3.23c.3 1.13.53 2 .82 3.06.06.23.06.3-.2.29H30c-.33 0-.3-.21-.35-.4-.36-1.28-.7-2.6-1-3.89a8.41 8.41 0 00-1.22-2.52z"/>
+  <circle cx="73.43" cy="15.93" r="12.37" fill="#0950a3"/>
+  <path fill="#0950a3" d="M83.31 8.18v.21a12.28 12.28 0 01-3.49 10c-.16.19-.19.28 0 .48l3.86 3.85c.19.19.26.13.38-.08a12.39 12.39 0 001.73-9 12 12 0 00-2.48-5.46zM75.13 3.54A10.87 10.87 0 0179 4.7a.31.31 0 01.19.26 12.56 12.56 0 01-2.75 9.91c-.28.35-.28.34-.62 0L66.61 5.7l-.11-.15a7.86 7.86 0 012.28-1.23 13 13 0 015.78-.88 2.44 2.44 0 01.57.1zM68 27.12a16 16 0 010-3.32 12.64 12.64 0 012.8-6.71c.17-.19.25-.08.36 0 1.25 1.32 2.53 2.63 3.84 3.91 1.72 1.7 3.42 3.42 5.15 5.09.23.25.23.34 0 .49a16.11 16.11 0 01-1.68.93 12 12 0 01-2.6.73l-1.24.21h-.19a15.93 15.93 0 01-3.71-.29 12.6 12.6 0 01-2.31-.79.41.41 0 01-.42-.25zM63 9l4 4c.45.43.44.43 0 .88a12.25 12.25 0 00-3.13 9.74 1 1 0 010 .43 11.75 11.75 0 01-2.83-5.95 12.74 12.74 0 011.81-8.94z"/>
+  <path fill="#0950a3" d="M83.31 8.18a12.14 12.14 0 012.48 5.43 12.53 12.53 0 01-1.73 9c-.11.2-.19.25-.38.08l-3.86-3.85c-.19-.2-.16-.29 0-.48a12.22 12.22 0 003.49-10z"/>
+  <circle cx="73.43" cy="15.93" r="12.37" fill="#fbd635"/>
+  <path fill="#fbd635" d="M83.31 8.18v.21a12.28 12.28 0 01-3.49 10c-.16.19-.19.28 0 .48l3.86 3.85c.19.19.26.13.38-.08a12.39 12.39 0 001.73-9 12 12 0 00-2.48-5.46z"/>
+  <path fill="#0950a3" d="M75.13 3.54A10.87 10.87 0 0179 4.7a.31.31 0 01.19.26 12.56 12.56 0 01-2.75 9.91c-.28.35-.28.34-.62 0L66.61 5.7l-.11-.15a7.86 7.86 0 012.28-1.23 13 13 0 015.78-.88 2.44 2.44 0 01.57.1zM68 27.12a16 16 0 010-3.32 12.64 12.64 0 012.8-6.71c.17-.19.25-.08.36 0 1.25 1.32 2.53 2.63 3.84 3.91 1.72 1.7 3.42 3.42 5.15 5.09.23.25.23.34 0 .49a16.11 16.11 0 01-1.68.93 12 12 0 01-2.6.73l-1.24.21h-.19a15.93 15.93 0 01-3.71-.29 12.6 12.6 0 01-2.31-.79.41.41 0 01-.42-.25zM63 9l4 4c.45.43.44.43 0 .88a12.25 12.25 0 00-3.13 9.74 1 1 0 010 .43 11.75 11.75 0 01-2.83-5.95 12.74 12.74 0 011.81-8.94zM83.31 8.18a12.14 12.14 0 012.48 5.43 12.53 12.53 0 01-1.73 9c-.11.2-.19.25-.38.08l-3.86-3.85c-.19-.2-.16-.29 0-.48a12.22 12.22 0 003.49-10z"/>
+</svg>
+</td>
+<td width="50%" height="100px">
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/איילון-רכב.pdf" rel="noopener noreferrer">איילון &#8211; תנאי פוליסה</a>
+</td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- הכשרה--><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32"><defs><clipPath id="a"><path fill="none" d="M70.81 18.4C68 13.19 68.93 7.55 76.49 6.29c4.09-.63 7.55.63 7.23 5.36a6.21 6.21 0 01-.47 2.35c-.31.79-.63 1.73-.94 2.67-1.73 3.94-3.93 5.84-6.15 5.84-2.2 0-3.93-1.45-5.35-4.12m5-13.7c-10.7 1.57-12.11 9.75-8 17.16 4.56 8.17 11.32 7.86 16-2.52a29.78 29.78 0 001.42-3.77 12.41 12.41 0 00.63-3.3c.63-5.68-2.83-7.87-7.55-7.87a12.42 12.42 0 00-2.53.3"/></clipPath><clipPath id="b"><path fill="none" d="M70.81 18.4C68 13.19 68.93 7.55 76.33 6.45c4.09-.63 7.55.63 7.08 5.2a6.4 6.4 0 01-.47 2.35c-.32.79-.63 1.73-1 2.67-1.72 3.94-3.93 5.84-6.14 5.84-1.73 0-3.62-1.45-5-4.12m5-12.6C66.73 7.22 65.63 14 69.07 20.28c3.77 6.94 9.59 6.62 13.52-2a27.85 27.85 0 001.26-3.3 19.16 19.16 0 00.63-2.83C85 7.38 82 5.49 78 5.49c-.77.16-1.4.16-2.17.31"/>
+</clipPath></defs><g clip-path="url(#a)"><path fill="#bb2025" d="M63.69 4.39h22.8v25.47h-22.8z"/></g><g clip-path="url(#b)"><path fill="#ed1c24" d="M65.58 5.65h19.18v21.54H65.58z"/>
+</g><path fill="#ed1c24" d="M79.42 11.64a2.51 2.51 0 00-2.68 1.25l-1.57 2.68.63-6A1.3 1.3 0 0074.38 8a1.73 1.73 0 00-1.73 1.58L72 16.2a1.78 1.78 0 001.88 2 2 2 0 001.89-1.1l1.57-3v.16l-.31 2.36V17a1.51 1.51 0 001.41 1.26 1.72 1.72 0 001.73-1.57l.16-1.1.16-1.42c.47-1.59-.32-2.36-1.1-2.51M37.05 14.34a1.81 1.81 0 00-1.85 2l-.51 3.71a3.85 3.85 0 01-4.21 3.54c-1.68 0-3-.85-2.7-2.87l.51-4.38v-.17a1.56 1.56 0 00-1.52-2c-1.34 0-1.85.68-2 2l-.33 2.53-.17 1.69c-.34 2.69 1.85 5.23 5.91 5.23 4.38 0 7.58-2 7.92-5.57l.5-3.71c.34-2-1.19-2-1.53-2M4.54 25.29H1l.51-4.55c.33-1.35 1-2.19 2.19-2a1.67 1.67 0 011.51 2zm6.9 0H7.76s.5-4.37.84-6.41-.68-2.35-2-2.35H2.7a.94.94 0 01-.84-1 1.12 1.12 0 011.18-1h5.24c3.54 0 4.38 1.52 4 3.54-.35 2.54-.86 7.26-.86 7.26M21.57 25.29H18l.84-6.41c.17-1.68-.33-2.35-1.85-2.35h-2.66a.84.84 0 01-.85-1 1.13 1.13 0 011.18-1h3.54c3.54 0 4.54 1.51 4.38 3.53zM43.45 25.29h-3.17a.84.84 0 01-.84-1 1.13 1.13 0 011.18-1h2.87c1.34 0 2.52-1.52 2.86-3.37.17-1.85-.67-3.54-2-3.54H41a.84.84 0 01-.84-1 1.13 1.13 0 011.18-1h3.2c3.37 0 5.74 2.53 5.4 5.41a6.42 6.42 0 01-6.41 5.54M54.44 25.29H50.9l.5-4.55c.17-1.35.85-2.19 2-2a1.67 1.67 0 011.52 2z"/><path fill="#ed1c24" d="M61.31 25.29H57.8s.51-4.37.84-6.41-.67-2.35-2-2.35h-3.89a.94.94 0 01-.84-1 1.12 1.12 0 011.18-1h5.24c3.53 0 4.38 1.52 4 3.54-.52 2.54-1 7.26-1 7.26M31.68 14.17c-1-.17-1.69.51-1.86 1.86l-.5 4c0 .67 0 1.85 1.35 1.85 1 0 1.68-.5 1.85-1.85l.5-4a1.42 1.42 0 00-1.34-1.86"/>
+</svg>
+</td>
+<td width="50%" height="100px">
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/הכשרה-רכב.pdf" rel="noopener noreferrer">הכשרה &#8211; תנאי פוליסה</a></td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- הפניקס--><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32"><path fill="#ee8814" d="M21.94 28.13a14.15 14.15 0 01-3-4.19 14.21 14.21 0 01-1.41-6.65 28.9 28.9 0 01.38-3.6 8.83 8.83 0 00-.2-4.09 21.76 21.76 0 00-2-5.11 8.64 8.64 0 00-2.72-3c-.13-.09-.29-.17-.08-.35h.48l1 .23a6.83 6.83 0 012.15 1 9.68 9.68 0 003 1.51L20 4c.28.13.32.28.11.53A1.58 1.58 0 0119 5a10.1 10.1 0 01-1 .08 26.25 26.25 0 012.29 3.94A14.77 14.77 0 0130.88 2.8a14.28 14.28 0 019.2 2.09l-.51-.09-.57-.07A15.94 15.94 0 0021.44 15a16.77 16.77 0 00-1.1 7.25 14.21 14.21 0 001.58 5.71.58.58 0 01.06.15.78.78 0 00-.04.02z"/><path fill="#014682" d="M1 3.38a7.85 7.85 0 012.85-.66 12 12 0 0111 5 8.6 8.6 0 011.74 3.82 10.63 10.63 0 010 3.33 20.5 20.5 0 00-.32 3.41 11.1 11.1 0 00.64 3.23 1.89 1.89 0 01.09.25 5.17 5.17 0 01-.63-.33A6.16 6.16 0 0114 18.67a12.36 12.36 0 01-1.1-3.87c-.15-1.07-.22-2.15-.41-3.22a8.93 8.93 0 00-2.13-4.25 11.3 11.3 0 00-6.67-3.79A8.93 8.93 0 001 3.43a.09.09 0 010-.05zM86 26.54h-3V21a3 3 0 00-3-3.2 5 5 0 00-3.1.73.89.89 0 01-.16.09.18.18 0 00-.09 0c-.18-.52-.34-1-.5-1.56a.41.41 0 01.18-.34 5.81 5.81 0 012.63-1 8.13 8.13 0 013.83.18 4.45 4.45 0 013.14 3.1c.07 2.51.07 5 .07 7.54z"/><path fill="#024683" d="M26.81 15.62h5.9c3.26.18 5.14 2.31 5 5.58a5.18 5.18 0 01-2.18 4.44c-2.88 2-7.16 1-8.41-2.42a5.86 5.86 0 01-.34-1.84V15.8a.68.68 0 01.03-.18zm3.27 1.88v4.28a5.48 5.48 0 00.36 1.59 1.93 1.93 0 001.32 1.25 1.87 1.87 0 002.35-1.34A7.12 7.12 0 0034.2 19a1.83 1.83 0 00-1.7-1.47 19.55 19.55 0 00-2.42-.03z"/><path fill="#024682" d="M64.1 23.21c.64.37 1.25.8 1.88 1.09a4 4 0 003.11.11 3 3 0 002-2 5.57 5.57 0 000-3.11 2.35 2.35 0 00-2.88-1.74A1.83 1.83 0 0067 20.24a1.32 1.32 0 010 1.45c-.19.3-.34.64-.5.93a3.21 3.21 0 01-2.52-3.31 3.84 3.84 0 013.45-3.76 11.65 11.65 0 012.83 0c.86.07 1.75 0 2.63 0a6.17 6.17 0 01.86 0c.45 0 .61.43.34.82a2.75 2.75 0 01-.59.59c-.47.36-.47.41-.18.93a6.61 6.61 0 01.39 5.46 4.47 4.47 0 01-2.77 2.81 6.86 6.86 0 01-6.39-.66.68.68 0 01-.39-.74c.05-.5 0-1 0-1.52-.08.02-.06 0-.06-.03zM44.7 26.66v-2.5a4.43 4.43 0 00.65-.09 1.18 1.18 0 001.09-1.13 14.44 14.44 0 000-2.63 2.93 2.93 0 00-3-2.65 4.93 4.93 0 00-3.06.75 1.42 1.42 0 00-.23.13c-.18-.54-.36-1.09-.52-1.63 0-.09.09-.23.16-.29a5.58 5.58 0 012.67-1 7.75 7.75 0 014.08.27 4.23 4.23 0 013 3.42 7.24 7.24 0 010 1.23v2.76a3 3 0 01-1.91 2.88 7.27 7.27 0 01-2.93.48z"/><path fill="#014582" d="M61.38 26.32h-5.57v-2.27h2.92v-4.67c0-1.31-.7-1.88-2-1.74h-.21v-2.23a7.17 7.17 0 012.57.05 2.92 2.92 0 012.64 3.22V26zM42.43 30.85h-3v-10h3z"/><path fill="#024683" d="M51.5 15.66h2.92v5.15a.59.59 0 01-.25.52c-.72.57-1.43 1.16-2.15 1.72a1.88 1.88 0 01-.55.25z"/><path fill="#004581" d="M78.93 20.88v5.66H76v-5.66z"/><path fill="#ee8814" d="M22.25 30.76a.45.45 0 000 .11l-.07-.07s.05-.04.07-.04z"/></svg>
+</td>
+<td width="50%" height="100px">
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/הפניקס-רכב.pdf" rel="noopener noreferrer">הפניקס &#8211; תנאי פוליסה</a>
+</td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- הראל--><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32">
+  <path fill="#505456" d="M24.64 22.47a3.79 3.79 0 00.15-.73v-6.28h4.89a.38.38 0 010 .13v4.59a4.45 4.45 0 01-3.07 4.29c-.21.09-.4.15-.63.26 1.41 2.24 2.83 4.48 4.31 6.81H25.28a.66.66 0 01-.66-.41c-1.27-2.39-2.53-4.74-3.8-7.1-.09-.15-.17-.33-.28-.5-.44.11-.46.43-.46.77v7.24h-4.89v-.06c0-1.88 0-3.74.08-5.6a4.75 4.75 0 012.92-4.29c.21-.11.43-.21.68-.36-1.46-1.9-2.9-3.8-4.42-5.77h5.52a.65.65 0 01.61.37c1.19 2.09 2.42 4.17 3.64 6.25.09.13.15.24.23.37a.72.72 0 00.19.02z"/>
+  <path fill="#319e3b" d="M70.36 14.69A4.76 4.76 0 0073 16.34a4.05 4.05 0 004-1.24 9.46 9.46 0 002.81-5.85 11.18 11.18 0 00-1.95-7.95c-.19-.3-.38-.63-.6-.93V.25a8.09 8.09 0 013.8 1.43A11.63 11.63 0 0185 7a11.74 11.74 0 01.3 8.7 9.92 9.92 0 01-4.8 5.47 6.48 6.48 0 01-6.56-.33 6.5 6.5 0 01-3.58-5.4c-.02-.19 0-.44 0-.75z"/>
+  <path fill="#f7b309" d="M72 10.45a13.78 13.78 0 00-1.15 1.35 5.47 5.47 0 00-.41 5.46 10.84 10.84 0 007.33 6.31 13.48 13.48 0 004.52.34h.6c-.38.41-.64.79-1 1.11a9.06 9.06 0 01-6.48 2.45A12.77 12.77 0 0167 24.75a9.86 9.86 0 01-3.82-9.2 6 6 0 015.47-5.29 8 8 0 013.35.19z"/>
+  <path fill="#0188c9" d="M76.81 14.71c-.06-.25-.1-.47-.13-.66a5.35 5.35 0 00-4.5-4.05 10.45 10.45 0 00-8.59 2.27 11.72 11.72 0 00-3.43 4.43c-.11.2-.19.39-.34.65a7.64 7.64 0 01-.71-3.07 10.55 10.55 0 012.51-6.88 11.84 11.84 0 016.88-4.71 9.8 9.8 0 018.7 2 6 6 0 011.56 7.16 9.05 9.05 0 01-1.95 2.86z"/>
+  <path fill="#505456" d="M3.78 31.23C5.2 27 6.62 22.88 8 18.68H1v-7.93h4.93v4.71h7a13.59 13.59 0 01-.44 4.54c-1.32 3.5-2.49 7.09-3.74 10.7a.65.65 0 01-.75.53c-1.26-.05-2.51 0-3.74 0a3.4 3.4 0 01-.48 0zM44.94 18.89v-3.43h8.72a8.48 8.48 0 011.83.21 3.52 3.52 0 012.87 3.5c.06.64.08 1.28.08 1.92v10.45H53.3V21c0-1.64-.43-2.09-2.14-2.09h-6.22zM41.9 31.75h-5.1V20.39c-.11-1-.54-1.47-1.59-1.47h-3.77v-3.24h.06c2.27 0 4.54 0 6.83.12a3.52 3.52 0 013.5 3.48c.07.53.09 1.07.11 1.6v10.4a1.44 1.44 0 00-.04.47z"/>
+  <path fill="#515557" d="M49.87 22.07v9.68h-4.93v-8.63c1.61-.35 3.23-.71 4.93-1.05z"/>
+</svg>
+</td>
+<td width="50%" height="80px">
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/הראל-רכב.pdf" rel="noopener noreferrer">הראל &#8211; תנאי פוליסה</a><br />
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/הראל-סוויץ.pdf" rel="noopener noreferrer">הראל סוויץ' &#8211; תנאי פוליסה</a><br />
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/הראל-אפגרייד.pdf" rel="noopener noreferrer">הראל אפגרייד &#8211; תנאי פוליסה</a>
+</td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- כלל--><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32">
+  <path fill="#152b76" d="M13.37 24.78H9.53c-.38 0-.49-.07-.41-.47.2-1 .37-2 .51-3 0-.38.28-.34.52-.34h5.33a5.69 5.69 0 001.23-.11 2.24 2.24 0 001.82-1.73 15.46 15.46 0 00.4-2.24 1.57 1.57 0 00-1.56-2c-1.21-.16-2.43 0-3.65-.11a7.2 7.2 0 01-2.34-.5c-1.65-.69-2.33-2.12-2-4.12.11-.61.26-1.21.33-1.82 0-.31.12-.43.44-.42h4.09c.39 0 .4.16.34.44s-.12.68-.19 1a1.14 1.14 0 00.85 1.47 4.13 4.13 0 001.16.18 37.41 37.41 0 014 .11c2.48.27 3.75 1.53 3.72 4A15.06 15.06 0 0123 20.94c-1.07 2.58-3.18 3.66-5.85 3.79-1.25.06-2.51 0-3.77 0zM28.74 24.78h-4.19c-.38 0-.45-.13-.39-.47.18-.93.34-1.86.49-2.8.06-.37.18-.54.62-.53h5.33c2 0 2.95-.84 3.13-2.57.05-.47.16-.93.25-1.39a1.59 1.59 0 00-1.53-2.11c-1.21-.16-2.43 0-3.65-.11a7.07 7.07 0 01-2.23-.44 3.3 3.3 0 01-2.14-3.92c.1-.69.25-1.37.35-2.07 0-.32.17-.44.52-.43h4c.31 0 .46 0 .35.4s-.12.81-.21 1.21a1 1 0 00.67 1.24 3.12 3.12 0 001.32.27c1 0 2-.05 3 0a7.92 7.92 0 012.59.44 3.27 3.27 0 012 2.37 8.07 8.07 0 010 3.21 14.87 14.87 0 01-1 4 5.92 5.92 0 01-4.75 3.49 33.33 33.33 0 01-4.53.21zM43.89 24.78h-4.34c-.58 0-.63-.18-.53-.65.18-.89.37-1.78.48-2.68 0-.42.22-.48.59-.47h6.57a4.56 4.56 0 001.22-.12 2.37 2.37 0 001.89-2c.15-.73.27-1.46.38-2.2.14-.9-.45-1.57-1.53-1.7a13.24 13.24 0 00-1.54-.08h-5.71c-.51 0-.58-.15-.49-.59.19-.95.35-1.9.51-2.86 0-.23.12-.36.39-.35 3.25.07 6.49-.15 9.73.13 2.67.23 3.75 1.56 3.69 4.26a16.81 16.81 0 01-.81 4.84 6.15 6.15 0 01-6.1 4.42h-4.4z"/>
+  <path fill="#0371bb" d="M71 19.75l-.33.51a4.1 4.1 0 01-3.17-3.07 4.67 4.67 0 01.06-1.58 3.84 3.84 0 00-3.09-3.84 6.6 6.6 0 00-3.47-.36c-.51.05-1 .17-1.57.28.25-1.44.49-2.85.74-4.26.09-.52.53-.32.83-.4h3.45a8.7 8.7 0 013.85 1.11 2.55 2.55 0 00.63.18 7.8 7.8 0 013.22 3.41A8.21 8.21 0 0171 19.75z"/>
+  <path fill="#152b76" d="M64.45 11.77a3.84 3.84 0 013.09 3.84 4.67 4.67 0 00-.06 1.58 4.11 4.11 0 003.17 3.07 7.46 7.46 0 004.11.16 2 2 0 01.24 0c.43-.06.65 0 .54.55-.24 1.12-.39 2.26-.59 3.38 0 .26-.11.52-.48.55-2.87.28-5.68.2-8.28-1.27a10.91 10.91 0 01-2.39-2.06 6.68 6.68 0 00-.88-1.29 8.19 8.19 0 011.09-8c.13-.18.29-.34.44-.51z"/>
+  <path fill="#0371bb" d="M62.92 20.25a6.68 6.68 0 01.88 1.29 10.91 10.91 0 002.39 2.06 16 16 0 01-8.61 1.27c-.26 0-.51 0-.43-.4.24-1.29.48-2.59.71-3.88 0-.25.08-.39.37-.3a8.79 8.79 0 004.69-.04z"/>
+  <path fill="#152b76" d="M72.14 11.72a7.8 7.8 0 00-3.22-3.41c.92-.35 1.88-.6 2.81-.89A18.47 18.47 0 0176.85 7c1.12 0 1.17 0 1 1.13s-.41 2.09-.56 3.15c-.06.35-.1.44-.48.33a8.29 8.29 0 00-4.67.11z"/>
+</svg></td>
+<td width="50%" height="100px">
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/כלל-רכב.pdf" rel="noopener noreferrer">כלל &#8211; תנאי פוליסה</a></td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- מגדל--><br />
+<svg width="100px"  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 90 25">
+  <path fill="#0e2d6d" d="M71.65 0v1.5a.22.22 0 01-.2.2h-7.6V0h1.5v.4c0 .4 0 .4.4.4l.1-.1V0h1.6v.8h.6V0h1.6v.8h.5V0zM66 11.8v.6h1v-.6h1.6v.6h1v-.6h1.6v.6h1v-.6h1.9v.1c-.2.5-.5 1-.7 1.5 0 .1-.1.1-.2.1h-4.7v-.2c-.1-.3-.3-.6-.6-.6a.58.58 0 00-.6.6c0 .2-.1.2-.2.2h-4.3a.22.22 0 01-.2-.2 9.35 9.35 0 00-.8-1.5h1.6v.6h1v-.6zM71.85 18h-3.4c-.2-.4-.3-.6-.7-.6a.75.75 0 00-.7.6h-3.4v-1.6H72V18zM63.65 7h8.2v.1c-.2.5-.5 1-.7 1.5 0 .1-.1.1-.2.1h-6.3c-.1 0-.1 0-.2-.1zM64.55 11V9.5a.1.1 0 01.1-.1h6.4V11zM65 6.4V4.8h5.7v1.6zM70.65 2.3V4H65V2.3zM63.55 20.3v-1.6H67v1.6zM68.45 18.7h3.4v1.6h-3.4zM61.65 23.3h12.1c.3.5.7 1 1.2 1.7h-14.4c.45-.7.8-1.2 1.1-1.7zM62.25 22.6c.4-.6.8-1.1 1.1-1.6h8.8a14.17 14.17 0 011.1 1.6zM72.75 14c-.3.6-.6 1.1-.9 1.7h-3.3V14zM67.15 14v1.6h-3.3c-.3-.5-.5-1-.9-1.6zM47.85 10.56l-1.3-.2a.46.46 0 01-.4-.5v-1.3c0-.2.2-.5.4-.5.5 0 .9-.1 1.3-.1 1.8-.1 3.7-.3 5.5-.3a8.76 8.76 0 013.2.7 3 3 0 012 3c.1 2 .1 4.1 0 6.1a2.35 2.35 0 01-2.4 2.3h-3.5a.47.47 0 01-.5-.5l-.1-1.6a.47.47 0 01.5-.5l2.5-.1v-5.8c0-.2-.1-.4-.2-.4-1-.6-2-.3-3.1-.3a.46.46 0 00-.5.4l-.9 7.9c-.1.7-.3.9-.5.9h-2.3a.47.47 0 01-.5-.5 18.4 18.4 0 01.4-4.1c.1-1.6.3-3 .4-4.6zM17.65 19.26c1.2-2.7 3.3-7.3 3.8-8.5.1-.1 0-.3-.2-.3h-5.9a.27.27 0 01-.3-.3v-4.7a.27.27 0 01.3-.3H18a.27.27 0 01.3.3v2.1a.22.22 0 00.2.2h5.7c2 0 2 .7 1.1 2.7-1.2 2.7-2.5 5.5-3.7 8.2a1.34 1.34 0 01-1.4.8H18c-.14 0-.35.03-.35-.2zM34.85 19.66h-2.8a.43.43 0 01-.4-.4c0-4.7-.2-7 .5-8.5.1-.1 0-.3-.2-.3h-4.9a.55.55 0 01-.5-.3 6.17 6.17 0 01-.2-1.8.43.43 0 01.4-.4c1.8-.2 8-.1 9.7-.1a.66.66 0 01.5.4 5.4 5.4 0 010 1.8.43.43 0 01-.4.4l-.9.1a.46.46 0 00-.5.4l-.3 1.8v6.9zM40.55 10.46l-1.5-.1a.47.47 0 01-.5-.5v-1.5a.47.47 0 01.5-.5 29.44 29.44 0 014.2 0 .47.47 0 01.5.5 49.43 49.43 0 002.1 10.7.5.5 0 01-.5.6h-2.2a.55.55 0 01-.5-.3l-.6-1.2a7.49 7.49 0 01-1.8 1.3 3.24 3.24 0 01-2.2.3.55.55 0 01-.3-.5v-1.7s.7-.1 1.1-.2c1.7-.3 2.5-1.3 2.2-3-.05-1.36-.3-2.6-.5-3.9z"/>
+</svg>
+</td>
+<td width="50%" height="100px"><a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/מגדל-רכב.pdf" rel="noopener noreferrer">מגדל &#8211; תנאי פוליסה</a></td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- מנורה--><br />
+<svg width="100px"  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32">
+  <path fill="#540000" d="M9.32 28.86H1.45v-.3-4.79a4.32 4.32 0 00-.47-2 7.32 7.32 0 012.26-.54A14.06 14.06 0 015 21.17a5.77 5.77 0 013.18.94 2.53 2.53 0 011.16 2.16c-.01 1.52-.02 3.05-.02 4.59zm-2.08-1.42v-1.79-.73a1.81 1.81 0 00-.44-1.49 3.17 3.17 0 00-2.8-.72c-.25.05-.27.16-.27.37V27.44zM43.05 27.53l.59.06a2 2 0 002.15-1.33 3 3 0 000-2.59 1.64 1.64 0 00-1.87-1 1.81 1.81 0 00-1.53 1.29 3 3 0 00-.15.93v4h-2.17c-.08-2.48.12-5-.12-7.49h1.95a.25.25 0 01.16.14c0 .22.07.45.12.67a.93.93 0 00.1.2.91.91 0 00.19-.13 2.72 2.72 0 012.18-1.09 3.44 3.44 0 013.71 3.16 4.55 4.55 0 01-.47 2.65 3.29 3.29 0 01-2.64 1.88 11.22 11.22 0 01-1.64 0 .2.2 0 01-.13-.08c-.14-.43-.27-.8-.43-1.27zM40 11h2a.27.27 0 01.2.16c.07.26.1.55.16.86.07 0 .18 0 .21-.1.92-1.44 3.11-1.36 4.19-.68a3.37 3.37 0 011.64 2.42 4.21 4.21 0 01-1.23 3.91 3 3 0 01-1.79.85c-.48 0-1 0-1.46.05a.33.33 0 01-.39-.29c-.1-.36-.23-.71-.35-1.09h.59a2 2 0 002.1-1.31 2.94 2.94 0 000-2.57 1.69 1.69 0 00-1.85-1 2 2 0 00-1.52 1.29 4.13 4.13 0 00-.16.92v4h-2.18v-.28-5.79c0-.44-.08-.9-.16-1.35zM22.64 21.37h2.12v3.83a2.5 2.5 0 00.44 1.52 1.69 1.69 0 001.27.68 1.84 1.84 0 001.92-1.74 3.64 3.64 0 00-.11-1.85 1.59 1.59 0 00-1.43-1.13h-.94a6.54 6.54 0 01.56-1.08 1 1 0 01.71-.29 3.26 3.26 0 012.69 1.05 2.83 2.83 0 01.81 1.74 4.88 4.88 0 01-.23 2.51 3.58 3.58 0 01-2.8 2.33 4.84 4.84 0 01-3-.38 3.3 3.3 0 01-1.87-2.37 5.05 5.05 0 01-.11-1v-3.52zM16 28.82l-.1-.1h-2.05a.22.22 0 010-.13V22c0-.19 0-.31.2-.36l2.43-.46a4.75 4.75 0 012.37.22 3.42 3.42 0 012.35 2 3.35 3.35 0 01.2 1v4.46h-2.15v-.29-3.86a2.12 2.12 0 00-.5-1.41 1.86 1.86 0 00-1.15-.61c-.46-.06-.93 0-1.4-.07-.24 0-.21.15-.21.3v5.9zM31.47 23c0-.26 0-.5.07-.75v-.07c0-.19 0-.45.1-.54a1.57 1.57 0 01.69-.23 17.23 17.23 0 011.89-.17 4.33 4.33 0 012.69.82 2.34 2.34 0 011 1.77c.09 1.17.09 2.3.09 3.45v.16h1v1.42h-7.74v-1.42h4.63c0-1 .07-2 0-3a2 2 0 00-1.8-1.74 4.36 4.36 0 00-2.62.3zM14.47 12.63c0-.38.08-.78.15-1.19a.3.3 0 01.17-.21 10.15 10.15 0 012.21-.47 5.73 5.73 0 012.71.36 3 3 0 012.05 2.4v4.88h-2.09v-.24-3.88a1.89 1.89 0 00-1.31-1.88 4 4 0 00-2.23-.17c-.56.1-1.13.27-1.66.4zM34.29 12.23c.09-.35.17-.72.28-1.09a.37.37 0 01.18-.21 3.13 3.13 0 011.57-.18 3.36 3.36 0 011.44.44 1.8 1.8 0 01.89 1.48v5.73h-4.71V17h2.54v-.28-3.35a1.11 1.11 0 00-1.23-1.18zM29.24 18.4h-2.08v-.26-3.63a2.23 2.23 0 00-.52-1.6 2.17 2.17 0 00-1.15-.64 4.43 4.43 0 00-3.09.36c.06-.44.1-.86.16-1.29a.21.21 0 01.11-.15 4.8 4.8 0 011.79-.43 6.93 6.93 0 01.91 0 4.82 4.82 0 012.74.83 2.62 2.62 0 011.15 2.09q0 1.74.06 3.48c-.01.37-.06.84-.08 1.24zM30.83 18.4v-7.34H33v7.34z"/>
+  <path fill="#540000" d="M16.71 18.4h-2.12v-4.09h2.12zM10.49 26v-4.63h2.12v3.24a.29.29 0 01-.08.22L10.62 26a.56.56 0 01-.13 0z"/>
+  <path fill="#f6bf29" d="M66.4 21.39c.78-.66 1.43-1.31 2.22-2.09 1.7-2 3.27-3.92 4.83-6l6.28-8.63c.13-.13.26-.26.39-.26 2-.52 3.79-.92 5.75-1.44H86c-.13.26-.39.65-.52.92-2.62 4.18-5.1 8.49-7.84 12.54-.53.92-1.18 1.83-1.7 2.62a42.92 42.92 0 01-2.88 3.79c-.26.26-.39.52-.65.78-.13 0-.26-.13-.39-.13-1.57-.52-3.14-1.05-4.71-1.7-.26-.14-.65-.14-.91-.4z"/>
+  <path fill="#540000" d="M66.4 21.39c.26.26.52.26.78.39 1.57.52 3.14 1.18 4.71 1.7.13 0 .26.13.39.13a25.23 25.23 0 01-1.83 2 28.2 28.2 0 01-2.35 1.7A13.91 13.91 0 0163 29a10.6 10.6 0 01-11.37-7.19 12.84 12.84 0 01-.13-5.88.48.48 0 01.13-.39c.39 0 .65.26.91.26a8.45 8.45 0 00.4 3.66 5.47 5.47 0 001.43 2.35 6.87 6.87 0 004.84 2.35 10 10 0 005.79-1.6 15.16 15.16 0 001.4-1.17z"/>
+  <path fill="#f6bf29" d="M61 18.77a13.22 13.22 0 002-.91 23.73 23.73 0 004.31-3.66c1.57-1.7 3-3.66 4.45-5.49.65-.91 1.3-1.7 2-2.61.09-.1.09-.1.24-.1 1.3-.39 2.61-.66 3.92-1H78c-.13.13-.26.39-.39.52-1.83 2.49-3.53 5-5.23 7.45-1.44 2-2.88 3.79-4.44 5.62a28.65 28.65 0 01-2.1 2 .45.45 0 01-.26.13h-.13c-1.44-.52-2.74-1-4.18-1.56-.1-.25-.27-.25-.27-.39zM58 10a4 4 0 00-.78 1.7 3.81 3.81 0 000 2.09 2 2 0 002 1.44 6.27 6.27 0 003.27-1.18 15.54 15.54 0 003.26-3.27c.92-1.17 1.83-2.22 2.75-3.4l.26-.26c1-.26 2.09-.52 3-.78h.13a16.16 16.16 0 01-1.31 1.7c-1.18 1.57-2.48 3.27-3.79 4.7-.79.79-1.44 1.57-2.35 2.36a12.34 12.34 0 01-3.66 2.22 3.28 3.28 0 01-2.22.13A2.8 2.8 0 0156.33 15a6.39 6.39 0 01.53-3.79 5.5 5.5 0 00.65-.91c.13-.3.26-.3.49-.3z"/>
+  <path fill="#540101" d="M61 18.77c0 .14.13.14.26.27 1.44.52 2.74.91 4.18 1.56h.13a5.8 5.8 0 01-2 1.18 8.86 8.86 0 01-3.53.92 5.85 5.85 0 01-5.62-3.53 7.81 7.81 0 01-.65-3c.13 0 .39.13.52.13a2 2 0 00.92.26A3.82 3.82 0 0058.56 19a4 4 0 002.44-.23z"/>
+  <path fill="#f6bf29" d="M64.44 8.32c-.26.52-.53.91-.79 1.44-.78 1.17-1.43 2.35-2.22 3.53-.13.13-.13.26-.26.39a.58.58 0 01-.65 0 .32.32 0 01-.13-.53c.39-1 .65-2.09 1-3.13a1.71 1.71 0 01.13-.79.28.28 0 01.3-.23c.79-.26 1.57-.39 2.49-.65zM55.29 16.55a3.46 3.46 0 01-.92-.26c-.13 0-.39-.13-.52-.13a12.27 12.27 0 01.52-3 21 21 0 011.05-2.35.93.93 0 01.78-.39c-.26.39-.39.92-.65 1.31a8.32 8.32 0 00-.55 3.52 3.85 3.85 0 00.29 1.3zM52.54 15.77c-.26 0-.52-.26-.91-.26a14.71 14.71 0 011.83-4.18c.13-.4.39-.27.65-.4A15.05 15.05 0 0053.2 13a21.11 21.11 0 00-.66 2.77z"/>
+</svg>
+</td>
+<td width="50%" height="100px"><a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/מנורה-רכב.pdf" rel="noopener noreferrer">מנורה מבטחים &#8211; תנאי פוליסה</a></td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- שומרה--><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32"><path fill="#2a2c7e" d="M83.46 21.22v4.61H21.81v-4.61zm-34.88 2.33a1.73 1.73 0 001.7 1.81 2 2 0 001.79-1.78 2 2 0 00-1.78-1.79c-.78.01-1.91.93-1.71 1.76zm7.84 0a1.77 1.77 0 00-1.75-1.78 1.91 1.91 0 00-1.74 1.82 2 2 0 001.81 1.76 1.85 1.85 0 001.68-1.77zM67.16 20.3v-7.43c0-.76.11-1.53.17-2.35h-1.16V6.35h4.1a1.38 1.38 0 011.2 1.47V16H73v-5.44l-.81-.06V6.35h4.22c.59 0 1.08.77 1.08 1.52V16h1.66v-5.44l-.94-.06V6.35h3.16c1.62 0 2.13.51 2.13 2.15v8.06a5.62 5.62 0 01-.5 2.17 3 3 0 01-2.87 1.63H67.41a.86.86 0 01-.25-.06zM50.88 20.35h-4.39v-9.79l-.91-.06V6.41a1.84 1.84 0 01.42-.06c1.48.16 3-.37 4.46.33.13.06.36 0 .53-.11a6.58 6.58 0 015.27.31 4.56 4.56 0 012.68 4.18v9.26h-7.2v-4.24h2.75v-4.59c0-.73-.67-1-1.3-1.17A1.79 1.79 0 0050.87 12c.05 2.78.01 5.53.01 8.35zM33.88 20.35h-4.55v-9.8h-7.51v-4.2h9.92a2.06 2.06 0 012.12 2c.04 3.96.02 7.94.02 12zM45 20.35h-4.54v-9.79h-6.11V6.35h7.98A2.56 2.56 0 0145 8.79c.06 3.83 0 7.66 0 11.56zM61.05 10.52h-1.53V6.35h5c.62 0 1.08.79 1.08 1.65v12.32h-4.55z"/><path fill="#2a2c7e" d="M26 20.34h-4.2v-8.59H26z"/><circle cx="8.91" cy="10.08" r="6.02" fill="#2a2c7e"/><circle cx="9.15" cy="26.89" r="1.86" fill="#e8b11f"/><circle cx="4.4" cy="26.89" r="1.86" fill="#e8b11f"/><circle cx="13.8" cy="26.89" r="1.86" fill="#e8b11f"/><path fill="#e8b11f" d="M9.36 3.25a7.29 7.29 0 00-.88 14.53l-.12 2.73a1.79 1.79 0 00-1.15 1.75 1.15 1.15 0 000 .37 1.84 1.84 0 002 1.67 1.86 1.86 0 001.66-2 2 2 0 00-1.15-1.75L9.85 18v-.14a7.31 7.31 0 006.77-7.25 7.28 7.28 0 00-7.26-7.36zm5.51 6.83a6 6 0 01-5 5.88V14l1.61-1.63a.92.92 0 00.59.24 1 1 0 00.92-1 .92.92 0 00-1.84 0v.12l-1.41 1.48-.12-2.66 1.84-1.85a.92.92 0 00.59.24A1 1 0 0013 8a.92.92 0 00-1.84 0v.11L9.62 9.63 9.5 5.45h-.67v4.06l-1.39-1.4V8a1 1 0 00-.8-.81A1 1 0 005.58 8a1 1 0 00.9.94.92.92 0 00.59-.24l1.74 1.61L8.68 13 7.3 11.59a.84.84 0 00-.86-.71.92.92 0 000 1.84.72.72 0 00.56-.19l1.7 1.72L8.58 16a6 6 0 116.29-6z"/>
+</svg>
+</td>
+<td width="50%" height="100px">
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/שומרה-רכב.pdf" rel="noopener noreferrer">שומרה &#8211; תנאי פוליסה</a><br />
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/שומרה-שיא.pdf" rel="noopener noreferrer">שומרה שיא &#8211; תנאי פוליסה</a>
+</td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- שירביט--><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 32"><defs><clipPath id="b"><path fill="none" d="M11.63 8.55a7.77 7.77 0 00-6.28 3.19H5v.16a7.69 7.69 0 00-.49 6.28c4.38-1.82 10.09-3.56 15.07-3a7.72 7.72 0 00-2.66-5.39h-.12l-.26-.2a7.73 7.73 0 00-4.51-1.45"/></clipPath><clipPath id="c"><path fill="none" d="M4.06 8.16h14.47V22.3H4.06z" transform="rotate(-54 11.302 15.227)"/></clipPath><clipPath id="d"><path fill="none" d="M3.34 7.9h16.62v16.7H3.34z" transform="rotate(-54 11.649 16.244)"/></clipPath><clipPath id="e"><path fill="none" d="M4.52 11.13a8.73 8.73 0 001.94 12.23 8.83 8.83 0 0012.29-1.94A8.71 8.71 0 0016.81 9.2a8.84 8.84 0 00-12.29 1.93"/></clipPath><clipPath id="h"><path fill="none" d="M11.63 8.55a7.77 7.77 0 00-6.28 3.19H5v.16a7.69 7.69 0 00-.49 6.28c4.38-1.82 10.09-3.56 15.07-3a7.72 7.72 0 00-2.66-5.39h-.12l-.26-.2a7.73 7.73 0 00-4.51-1.45"/></clipPath><clipPath id="i"><path fill="none" d="M4.06 8.16h14.47V22.3H4.06z" transform="rotate(-54 11.302 15.227)"/></clipPath><mask id="f" width="38.84" height="39.56" x="-7.96" y="-3.46" maskUnits="userSpaceOnUse"><path fill="url(#a)" d="M-2.02 3.26h27.31v27.2H-2.02z" transform="rotate(-41.6 11.639 16.862)"/></mask><mask id="g" width="19.95" height="20.02" x="1.32" y="5.22" maskUnits="userSpaceOnUse"><path fill="#fff" d="M17.93 20.8a7.8 7.8 0 01-10.86 1.73 7.71 7.71 0 01-1.73-10.78A7.8 7.8 0 0116.2 10a7.8 7.8 0 00-10.85 1.74 7.69 7.69 0 00-1 7.12c4.38-1.82 10.09-3.56 15.07-3a7.67 7.67 0 01-1.46 5"/><path fill="none" stroke="#fff" stroke-width="1.845" d="M17.92 20.82A7.7 7.7 0 0016.2 10a7.8 7.8 0 00-10.85 1.74 7.7 7.7 0 001.72 10.79 7.8 7.8 0 0010.85-1.71z"/></mask><linearGradient id="a" x1="-1009.93" x2="-1009.7" y1="-176.7" y2="-176.7" gradientTransform="matrix(0 -56.53 -56.53 0 -9976.89 -57073.04)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1"/></linearGradient></defs><g data-name="Layer 1"><path fill="#5a5b5d" d="M18.75 21.42A8.71 8.71 0 0016.81 9.2a8.83 8.83 0 00-12.29 1.93 8.73 8.73 0 001.94 12.23 8.83 8.83 0 0012.29-1.94"/><g clip-path="url(#e)" mask="url(#f)"><path fill="#fff" d="M-2.89 21.91s18.66-11.3 28.09-4.45L23.55-3.46-8 1.53z"/></g><g mask="url(#g)"><path fill="#ae1e23" d="M17.93 20.8a7.8 7.8 0 01-10.86 1.73 7.71 7.71 0 01-1.73-10.78A7.8 7.8 0 0116.2 10a7.8 7.8 0 00-10.85 1.74 7.69 7.69 0 00-1 7.12c4.38-1.82 10.09-3.56 15.07-3a7.67 7.67 0 01-1.46 5"/><path fill="#adafb1" d="M11.62 24.05a7.77 7.77 0 117.74-9 7.7 7.7 0 01-1.36 5.8 7.84 7.84 0 01-6.38 3.2zm0-15.44a7.72 7.72 0 00-6.25 3.16A7.66 7.66 0 007.1 22.48a7.75 7.75 0 0010.78-1.7 7.67 7.67 0 00-6.24-12.17z"/><g mask="url(#j)"><path fill="#231f20" d="M.014 18.061l9.77-13.445 13.51 9.816-9.769 13.445z" style="fill:#231f20" opacity=".75"/></g></g><path fill="#fff" d="M5.59 18c.61 2.82 3.77 4.4 6.54 4.35s5.38-2.73 5.28-4.11-2-2.59-2.82-2.75c-2.71-.59-3.2-.88-3.27-1.8s.76-1.12 1.49-1.26c2.66-.5 5.24 1.64 5.24 1.64a6.7 6.7 0 00-7-4.23c-2.31.26-5.15 1.93-5.1 4.06C6 15.65 8 16.24 9 16.29c1.63.08 3.19.47 3.28 1.75s-1.14 1.58-1.95 1.64C9.09 19.77 5.59 18 5.59 18"/><path fill="#231f20" d="M84 9.19h-4v5.05a5.61 5.61 0 01-.28 1.94 2.61 2.61 0 01-.9 1.11 4.35 4.35 0 01-.86.47c-.31.15-.69.29-1.11.45s-.74.24-1.14.36l-1 .25-.21-1.21 1.26-.51a11.61 11.61 0 001.2-.58 2.92 2.92 0 001.15-1.1 4.75 4.75 0 00.35-2.05V9.19h-3.71l.1 3.84a1.07 1.07 0 01-.13.64 2 2 0 01-.76.45l-.75-5-3.94.09v.13l2.28 14.07 1.63-.21a25.39 25.39 0 004.52-1 12 12 0 003.38-1.58A6.53 6.53 0 0083.26 18a9.94 9.94 0 00.66-3.71zm-15.25 8.23v-6.71c0-1-.41-1.52-1.25-1.52h-4.67v4.37h2v4.75zm-6.53 5.64V12.89v-.9c0-.33 0-.62-.07-.86a4.35 4.35 0 00-.19-.79 1.54 1.54 0 00-1.59-1.15h-7.85v4.37h5.56a.26.26 0 01.06.13.87.87 0 010 .21v9.16zm-9-4.32h-1.5l.15-8c0-1-.41-1.56-1.3-1.56h-8.36v4.37h5.47l.11 5.18h-5.46l-.5 4.32h10.85zm-11.8-1.32v-6.71c0-1-.41-1.52-1.25-1.52h-4.68v4.37h1.95v4.75zm-6.33-6.8c0-.95-.36-1.43-1.15-1.43h-5.23l-.52 4.35 2.74-.12v2.6a1.91 1.91 0 01-.8 1.74 4.3 4.3 0 01-.71.37 8.11 8.11 0 01-1.21.41L27 9.09l-4.21.07v.13l2.13 14.05 1-.13c.6-.06 1.19-.15 1.77-.26s1.28-.3 1.86-.48a11 11 0 001.81-.69 7.88 7.88 0 001.54-.94 5.23 5.23 0 001.63-2.12 8.21 8.21 0 00.53-2.93z"/>
+</g>
+</svg>
+</td>
+<td width="50%" height="100px"><a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/שירביט-רכב.pdf" rel="noopener noreferrer">שירביט &#8211; תנאי פוליסה</a></td>
+</tr>
+<tr>
+<td width="50%" height="100px">
+<!-- שלמה--><br />
+<svg width="100px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 87 32">
+  <path fill="#7a7a7c" d="M1 11.47a24.36 24.36 0 017.33-.21 2.59 2.59 0 012.35 2.6c.08 2.59 0 5.19.07 7.78 0 .92-.55.94-1.22.95s-1.2-.16-1.19-1v-5.93c0-2.21-.23-2.44-2.41-2.43-2.77 0-2.33-.27-2.36 2.4 0 1.8-.1 3.61 0 5.41.09 1.34-.45 1.73-1.66 1.56H.99z"/>
+  <path fill="#ed8814" d="M79.05 22.84c-3 0-4.21-.95-4.8-3.95-.42-2.15-.79-4.32-1.19-6.48-.09-.49-.42-1.14.48-1.16.71 0 1.67-.41 1.87.83.23 1.39.48 2.77.75 4.15.06.32-.09.83.36.9s.75-.4.9-.8a21 21 0 00.78-4c.1-.59.23-1.08 1-1.12 1.35-.08 1.52.06 1.28 1.41-.11.65-.25 1.29-.33 2a4 4 0 01-2.5 3.57c-.55.23-1.15.48-.93 1.34a1.6 1.6 0 001.55 1.34c2.84.24 3.49-.24 4.07-3 .38-1.81.75-3.61 1.15-5.42a1.42 1.42 0 012-1.15c.55.18.49.58.41.95-.48 2.33-.89 4.66-1.49 7-.67 2.68-2.12 3.6-5.36 3.59zM51.75 18.22v-3.16a2.13 2.13 0 00-.57-1.7c-.76-.71-.5-1.17.19-1.8s1.29-.55 1.81.19c.38.55.72.57 1.28.15 1.65-1.22 3.52-.93 5.3-.42a2.4 2.4 0 011.65 2.46c0 1.89.09 3.79 0 5.68a3.52 3.52 0 01-5.13 2.91c-.61-.29-.52-.74-.52-1.21s.38-.58.81-.62c2.52-.22 2.58-.29 2.58-2.87v-2.9a1.62 1.62 0 00-1.7-1.65h-.52c-2.76 0-2.84 0-2.84 2.73v5.41c0 .95-.38 1.19-1.26 1.2s-1.12-.42-1.09-1.22c.05-1.07.02-2.12.01-3.18z"/>
+  <path fill="#7a7a7c" d="M15.66 16.89v-4.62c0-.94.47-1.07 1.24-1.06s1.26.06 1.24 1c-.05 2.41 0 4.83 0 7.25 0 .91.32 1.3 1.21 1.26h1.05c2.19 0 2.62-.45 2.64-2.62C23 17.09 23 16 23 15c0-1.22-.52-1.81-1.74-1.76-.72 0-1.29 0-1.25-1s.65-1 1.34-1c2.78-.12 3.87.86 3.95 3.64v3.69c-.08 2.77-1.22 4-4 4.22a24 24 0 01-4.86-.28c-.74-.08-.77-.58-.77-1.13zM34 22.59h-3.56c-.79 0-1.22-.2-1.21-1.11s.46-1 1.17-.95c1.23 0 2.46-.05 3.69 0H35a.18.18 0 00.18-.18v-.91-4.74a1.26 1.26 0 00-1.35-1.44h-3.29c-.57 0-1-.09-.92-.78 0-.52-.08-1.11.68-1.2a13.93 13.93 0 015.11 0 2.56 2.56 0 012.06 2.13 40.69 40.69 0 01.19 5.52v1.46a.19.19 0 00.19.18h.45a.37.37 0 01.37.35v1.11c0 .55-.46.58-.86.58H34z"/>
+  <path fill="#ed8814" d="M66.94 22.58c-1.08.17-1.21-.32-.87-1.27.81-2.23 1.53-4.48 2.35-6.71.35-1 .22-1.38-.9-1.33-1.32.06-2.64 0-3.95 0-.73 0-1-.26-1-1V8.45c0-.87.46-1 1.17-1s1.14.11 1.19 1c.17 2.77.2 2.77 3 2.77h2.77c.92 0 1.31.24 1 1.23q-1.7 4.66-3.27 9.34c-.26.79-.8.83-1.49.79zM49.55 17.88v3.16c0 .8.15 1.57-1.12 1.58s-1.21-.8-1.21-1.65v-5.54c0-1.68-.43-2.13-2.08-2.17h-4.09c-.56 0-.94-.1-.93-.77s0-1.18.83-1.22a24.34 24.34 0 015.91 0 3 3 0 012.68 3.06v.26z"/>
+  <path fill="#7a7a7c" d="M14.41 16.88v4.61c0 .78-.24 1.13-1.05 1.1s-1.31 0-1.3-1v-9.35c0-1 .55-1 1.28-1s1.1.25 1.07 1.07c-.04 1.5 0 3.04 0 4.57zM28.66 14.52v1.83c0 .87 0 1.51-1.19 1.48s-1.32-.5-1.28-1.44c.05-1.4 0-2.8 0-4.2 0-1 .61-1 1.3-1s1.23 0 1.17.94c-.04.81 0 1.6 0 2.39z"/>
+  <path fill="#ed8814" d="M42.73 19.48v1.7c0 .83 0 1.42-1.14 1.44s-1.26-.63-1.2-1.49a16.52 16.52 0 01.2-3.78c.24-.78.67-1.19 1.52-1.05s.56.85.61 1.35.01 1.22.01 1.83zM61.24 7.88c-.06.67-.42 1.12-1.08 1.1a1 1 0 01-1-1.13 1 1 0 011.04-1.08c.68.01.99.46 1.04 1.11z"/>
+</svg>
+</td>
+<td width="50%" height="100px">
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/שלמה-רכוש.pdf" rel="noopener noreferrer">שלמה &#8211; תנאי פוליסה</a><br />
+<a class="text-5" target="_blank" href="https://www.hova.co.il/wp-content/uploads/2019/10/shlomo-polisa-rechev-ad-3.5-ton-rechush-vegimel-1.pdf" rel="noopener noreferrer">שלמה &#8211; תנאי פוליסה לפוליסות החל מ 1.12.2019</a></td>
+</td>
+</tr>
+</tbody>
+</table>
+<p>לתשומת לבך, חוברת תנאי הפוליסה המצורפת בעמוד זה עבור כל חברת ביטוח הינה החוברת העדכנית ביותר הידועה לנו. במידה ובתאריך תחילת הפוליסה שלך חברת הביטוח פרסמה חוברת תנאי פוליסה עדכנית יותר אזי תנאיה יגברו על זאת המקושרת כאן. בכל מקרה באפשרותך לגלוש באתר החברה המבטחת ולאתר אצלה את חוברת תנאי הפוליסה העדכניים.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row justify-content-between align-items-end border-bottom border-width-x2 border-color-6">
+            <div class="bottom-right-image p-relative">
+                <img width="122" height="74" src="https://www.hova.co.il/wp-content/uploads/2018/02/car.png" class="attachment-full size-full" alt="רכב" />            </div>
+
+            <div class="bottom-left-image p-relative hidden-md-down">
+                <img width="232" height="144" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20232%20144'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/02/skylineblue.png" /><noscript><img width="232" height="144" src="https://www.hova.co.il/wp-content/uploads/2018/02/skylineblue.png" class="attachment-full size-full" alt="" /></noscript>            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- /.site -->
+<footer style="width: 100%" class="footer-2 bg-4">
+    <div style="width: 100%" class="container-fluid">
+
+        <div class="row py-3 py-lg-4">
+
+ <!-- SOCIAL -->
+            <div class="mb-2 mb-lg-3 mb-lg-0 col-12 text-center col-lg-2 text-lg-right social mr-lg-5">
+				<div class="d-inline-block mb-2">
+				<a href="https://www.hova.co.il/">
+				<svg style="width: 90px; height: 40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 21"><g fill-rule="evenodd" stroke-miterlimit="10" stroke-width=".96"><path fill="#ffffff" stroke="#0070c0" d="M466.117 409.833c23.457 0 42.447-18.458 42.447-41.157 0-22.699-18.99-41.078-42.447-41.078-23.457 0-42.527 18.38-42.527 41.078 0 22.7 19.07 41.157 42.527 41.157zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#ffffff" stroke="#00b0f0" d="M508.644 312.36c23.457 0 42.526-18.379 42.526-41.078s-19.069-41.157-42.526-41.157c-23.538 0-42.527 18.458-42.527 41.157 0 22.7 18.99 41.079 42.527 41.079zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path><path fill="#ffffff" stroke="#0070c0" d="M17.314 279.608h65.904v-97.865h95.027v97.865h65.984V26.148h-65.984v105.484H83.218V26.148H17.314zm0 0M390.718 204.756c32.553 0 58.564-10.525 78.032-31.418 15.798-17.043 23.697-37.386 23.697-61.028 0-23.877-7.82-44.377-23.537-61.42-19.07-20.815-45.719-31.183-80.027-31.183-34.388 0-61.117 10.368-80.186 31.182-15.718 17.044-23.537 38.015-23.537 62.913 0 22.385 7.899 42.257 23.696 59.536 19.23 20.893 46.516 31.418 81.862 31.418zm-1.835-52.389c-12.527 0-22.82-4.712-30.638-14.137-6.463-7.62-9.655-16.259-9.655-25.92 0-9.818 3.192-18.536 9.655-26.155 7.819-9.425 18.111-14.138 30.638-14.138 11.25 0 20.745 3.849 28.484 11.625 7.74 7.776 11.649 17.358 11.649 28.668 0 11.153-3.91 20.657-11.729 28.433-7.819 7.776-17.314 11.624-28.404 11.624zm0 0M826.037 203.892c12.287 0 23.777-2.513 34.468-7.619 6.224-2.984 12.527-7.854 19.15-14.687v16.886h61.037V26.07h-61.038v19.165c-5.824-7.305-11.728-12.646-17.633-15.944-10.372-5.891-22.18-8.797-35.425-8.797-21.383 0-40.373 7.383-57.048 22.149-19.947 17.515-29.84 40.764-29.84 69.747 0 29.454 10.132 52.938 30.558 70.532 16.197 13.98 34.787 20.97 55.771 20.97zm16.277-52.546c-12.048 0-22.021-4.634-29.76-13.745-6.224-7.383-9.416-15.787-9.416-25.29 0-9.505 3.192-17.987 9.415-25.37 7.66-9.111 17.553-13.667 29.76-13.667 10.932 0 20.267 3.77 27.767 11.31 7.58 7.462 11.41 16.73 11.41 27.726 0 10.84-3.83 20.029-11.49 27.647-7.58 7.54-16.835 11.39-27.686 11.39zm0 0M506.729 198.472h68.537l41.17-88.361 41.41 88.361h68.138l-89.68-172.324h-40.612zm0 0" transform="matrix(.04896 0 0 -.04973 0 21.007)"></path></g> alt="Hova - השוואת מחירי ביטוח" </svg></a>
+				</div>
+<!--				<div class="text-p color-white d-inlibe-block my-3">-->
+<!--					עקבו אחרינו <script type="rocketlazyloadscript" src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.facebook.com/hova.co.il" layout="button_count" show_faces="false"  font="arial" title=""></fb:like>-->
+<!--				</div>-->
+<!--				phone-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="tel:*3504" title="חייגו אלינו">
+        <span class="icon-phone-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">3504*</span>
+    </a>
+    </div>
+<!--				whatsapp-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/972545908200" title="כתבו לנו בווצאפ">
+        <span class="icon-whatsapp-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">054-5908200</span>
+    </a>
+    </div>
+<!--				email-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="mailto:info@hova.co.il" title="כתבו לנו במייל">
+        <span class="icon-envelope-01 d-inline-block icon-xs color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">info@hova.co.il</span>
+    </a>
+    </div>
+<!--				facebook-->
+	<div class="d-lg-block my-2">    <a target="_blank" rel="noopener noreferrer" href="https://he-il.facebook.com/Hova.co.il/" title="בקרו אותנו בפייסבוק">
+        <span class="icon-facebook2-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">בקרו אותנו בפייסבוק</span>
+    </a>
+    </div>
+<!--				ustomer service-->
+	<div class="d-lg-block my-2">    <a href="../customer-service/" title="שירות ותמיכה">
+        <span class="icon-heart-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">שירות ותמיכה</span>
+    </a>
+    </div>
+<!--				contact-us-->
+	<div class="d-lg-block my-2">    <a href="../contact-us/" title="צור קשר">
+        <span class="icon-paperplane-01 d-inline-block icon-s color-white align-middle"></span>
+        <span class="align-middle text-p color-white hover-1 transition">יצירת קשר</span>
+    </a>
+    </div>		    </div>
+
+            <!-- MENU -->
+            <div class="col-12 text-center col-lg-2 text-lg-right ">
+				<aside class="widget"><div class="menu-%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%95%d7%a9%d7%99%d7%a8%d7%95%d7%aa%d7%99%d7%9d-%d7%a0%d7%95%d7%a1%d7%a4%d7%99%d7%9d-container"><ul id="menu-%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%95%d7%aa-%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%95%d7%a9%d7%99%d7%a8%d7%95%d7%aa%d7%99%d7%9d-%d7%a0%d7%95%d7%a1%d7%a4%d7%99%d7%9d" class="menu accessibility_menu"><li id="menu-item-1514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1514"><a href="https://www.hova.co.il/car/">השוואת ביטוח רכב</a></li>
+<li id="menu-item-1030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1030"><a href="https://www.hova.co.il/car-insurance/">השוואת ביטוח חובה</a></li>
+<li id="menu-item-1031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="https://www.hova.co.il/comprehensive-insurance/">השוואת ביטוח מקיף וחובה</a></li>
+<li id="menu-item-7840" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7840"><a href="https://www.hova.co.il/third-party-insurance/">ביטוח צד ג לרכב</a></li>
+<li id="menu-item-7854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7854"><a href="https://www.hova.co.il/bdikatik/">בדיקת ביטוחים</a></li>
+<li id="menu-item-794" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-794"><a href="https://www.hova.co.il/car-registration-renewal/">חידוש אגרת רישיון רכב</a></li>
+<li id="menu-item-797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-797"><a href="https://www.hova.co.il/police-report/">תשלום דוחות משטרה</a></li>
+<li id="menu-item-801" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-801"><a href="https://www.hova.co.il/driving-license-renewal/">חידוש רישיון נהיגה</a></li>
+<li id="menu-item-5341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5341"><a href="https://www.hova.co.il/car/truck-insurance/">ביטוח משאיות</a></li>
+<li id="menu-item-5342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5342"><a href="https://www.hova.co.il/car/insurance-for-taxi/">ביטוח מונית</a></li>
+<li id="menu-item-5343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5343"><a href="https://www.hova.co.il/car/motorcycle-insurance/">ביטוח אופנוע</a></li>
+</ul></div></aside>            </div>
+
+            <!-- MENU -->
+            <div class="col-12 text-center col-lg-2 text-lg-right ">
+				<aside class="widget"><div class="menu-%d7%a4%d7%95%d7%98%d7%a8-3-container"><ul id="menu-%d7%a4%d7%95%d7%98%d7%a8-3" class="menu accessibility_menu"><li id="menu-item-7853" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7853"><a href="https://www.hova.co.il/insurance-companies/">חברות ביטוח</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="https://www.hova.co.il/contact-us/">צור קשר</a></li>
+<li id="menu-item-819" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-819"><a href="https://www.hova.co.il/security/">קניה בטוחה</a></li>
+<li id="menu-item-1515" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1515"><a href="https://www.hova.co.il/blog/">מידע שימושי</a></li>
+<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="https://www.hova.co.il/regulations/">תקנון</a></li>
+</ul></div></aside>            </div>
+            <!-- MENU -->
+            <div class="col-12 text-center col-lg-2 text-lg-right ">
+				            </div>
+        </div>
+
+        <!-- COPYRIGHTS -->
+        <div class="row justify-content-center bg-white py-2">
+
+            <div class="col-12 col-lg-8">
+                <!-- row -->
+                <div class="row justify-content-center justify-content-lg-between align-items-center">
+
+                    <div class="col-12 col-lg-auto text-center text-lg-right mb-2 mb-lg-0">
+                        <span class="breadcrumbs-text color-6 d-block">כל הזכויות שמורות לביטוח חובה © 2018 </span>
+                    </div>
+
+                    <div class="col-12 col-lg-auto text-center text-lg-left">
+                            <span class="d-inline-block align-middle color-black breadcrumbs-text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- page loader -->
+<div class="loader-wrapper d-none">
+    <div class="loader-inner">
+
+        <!-- new loader -->
+
+        <div class="new-loader px-2">
+
+            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                 alt="page loader" class="img-fluid mb-2" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logomobile.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logomobile.png"
+                 alt="page loader" class="img-fluid mb-2"></noscript>
+
+            <p class="mb-1 medium color-4 text-p">מחפשים לך ביטוח משתלם....</p>
+
+            <p class="text-p color-6 normal mb-3">המערכת מאתרת עבורך הצעות משתלמות ממגוון חברות ביטוח:</p>
+
+            <div class="loader-slider-wrapper mb-3 bg-white p-2 b-radius-50 border border-color-7 border-width-x1">
+                <div class="js-page-loader-slider loader-logos">
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logophoenixcolor-79x50.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logophoenixcolor-79x50.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logomenorahcolor-89x50.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logomenorahcolor-89x50.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/logoclalcolor.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/logoclalcolor.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/hachsharat-ha-teshuv.jpg"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/hachsharat-ha-teshuv.jpg"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/harel.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/harel.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2018/06/migdal.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2018/06/migdal.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					
+                        <div class="mx-1">
+                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"
+                                 alt=""
+                                 class="mx-auto img-fluid" data-lazy-src="https://www.hova.co.il/wp-content/uploads/2019/09/shirbit-logo-103x30.png"><noscript><img src="https://www.hova.co.il/wp-content/uploads/2019/09/shirbit-logo-103x30.png"
+                                 alt=""
+                                 class="mx-auto img-fluid"></noscript>
+                        </div>
+
+					                </div>
+            </div>
+
+            <p class="text-p color-3 medium">ההצעות באתר כוללות הנחות מיוחדות ופירוט תנאי הביטוח באופן הכי שקוף שיש.</p>
+
+        </div>
+		
+        <!-- old loader -->
+
+        <!--        <div class="loader-inner-2">-->
+        <!--            <div class="loader"></div>-->
+        <!--        </div>-->
+    </div>
+</div>
+
+
+<!-- BACK TO TOP-->
+<div id="scrollToTop" class="back-to-top hide hidden-sm-down">
+<!--    <img src="--><!--" alt="back-to-top-button">-->
+
+    <div class="arrow-icon"></div>
+</div>
+
+
+<style>
+            @media (max-width: 991px) {
+            #open_sogoacc {
+                display: none !important
+            }
+
+        
+
+            #open_sogoacc {
+                background: #0780C3;
+                color: #FFF;
+                border-bottom: 1px solid #0780C3;
+                border-right: 1px solid #0780C3;
+            }
+
+            #close_sogoacc {
+                background: #0780C3;
+                color: #fff;
+            }
+
+            #sogoacc div#sogo_font_a button {
+                color: #0780C3;
+
+            }
+
+            body.sogo_readable_font * {
+                font-family: "Arial", sans-serif !important;
+            }
+
+            body.sogo_underline_links a {
+                text-decoration: underline !important;
+            }
+
+    
+
+</style>
+
+
+<div id="sogo_overlay"></div>
+
+<button id="open_sogoacc"
+   aria-label="לחץ &quot;ALT+A&quot; בכדי לפתוח \ לסגור את תפריט הנגישות"
+   tabindex="1"
+   accesskey="a" class="middleleft toggle_sogoacc"><i style="font-size: 30px" class="fa fa-wheelchair"  ></i></button>
+<div id="sogoacc" class="middleleft">
+    <div id="close_sogoacc"
+         class="toggle_sogoacc">נגישות</div>
+    <div class="sogo-btn-toolbar" role="toolbar">
+        <div class="sogo-btn-group">
+						                <button type="button" id="b_n_c" class="btn btn-default">
+                    <span class="sogo-icon-black_and_white" aria-hidden="true"></span>
+					שחור לבן</button>
+						                <button type="button" id="contrasts"
+                        data-css="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public//css/sogo_contrasts.css"
+                        class="btn btn-default">
+                    <span class="sogo-icon sogo-icon-black" aria-hidden="true"></span>
+					חדות כהה </button>
+						                <button type="button" id="contrasts_white"
+                        data-css="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public//css/sogo_contrasts_white.css"
+                        class="btn btn-default">
+                    <span class="sogo-icon-white" aria-hidden="true"></span>
+					חדות בהירה</button>
+						                <button type="button" id="animation_off" class="btn btn-default" >
+                    <span class="sogo-icon-flash" aria-hidden="true"></span>
+					הפסק הבהובים</button>
+						                <button type="button" id="readable_font" class="btn btn-default">
+                    <span class="sogo-icon-font" aria-hidden="true"></span>
+					פונט קריא</button>
+						                <button type="button" id="underline_links" class="btn btn-default">
+                    <span class="sogo-icon-link" aria-hidden="true"></span>
+					הדגש קישורים</button>
+			
+
+        </div>
+        <div id="sogo_font_a" class="sogo-btn-group clearfix">
+            <button id="sogo_a1" data-size="1" type="button"
+                    class="btn btn-default " aria-label="Press to increase font size">א</button>
+            <button id="sogo_a2" data-size="1.1" type="button"
+                    class="btn btn-default" Press to increase font size">א</button>
+            <button id="sogo_a3" data-size="1.4" type="button"
+                    class="btn btn-default" Press to increase font size">א</button>
+        </div>
+        <div class="accessibility-info">
+
+            <div><a   id="sogo_accessibility"
+                    href="#"><i aria-hidden="true" class="fa fa-times-circle-o red " ></i>הפסק נגישות                </a>
+            </div>
+            <div>
+													            </div>
+
+
+        </div>
+
+
+    </div>
+	        <div class="sogo-logo">
+            <a target="_blank" href="https://pluginsmarket.com/downloads/accessibility-plugin/"
+               title="Provided by sogo.co.il">
+                <span>מסופק ע"י: </span>
+                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="sogo logo" data-lazy-src="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public/css/sogo-logo.png"/><noscript><img src="https://www.hova.co.il/wp-content/plugins/sogo-accessibility/public/css/sogo-logo.png" alt="sogo logo"/></noscript>
+
+            </a>
+        </div>
+	</div><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N396QPR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script type='text/javascript' id='sogo-child-scripts-js-extra'>
+/* <![CDATA[ */
+var sogoc = {"map_icon":"https:\/\/www.hova.co.il\/wp-content\/themes\/sogo-child\/images\/location.png","minDate":"0"};
+var sogo = [];
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/scripts.js?ver=1672271713' id='sogo-child-scripts-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo-child/js/select2/select2.full.min.js?ver=63db9304da803' id='select2-full-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/select2/he.js?ver=1672271713' id='select2-hejs-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/insurance-page.js?ver=1672271713' id='sogo-child-insurance-page-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/jquery-ui/jquery-ui.js?ver=1672271713' id='sogo-child-jquery-ui-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/jquery-validation/dist/jquery.validate.js?ver=1672271713' id='sogo-child-jquery-validate-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/datepicker-he.js?ver=1672271713' id='sogo-child-datepicker-he-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/validate.js?ver=1672271713' id='sogo-child-validate-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/selectBoxIt.js?ver=1672271713' id='sogo-child-selectBoxIt-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/js/moment.js?ver=1672271713' id='sogo-child-moment-js-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.hova.co.il\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/contact-form-7/includes/js/index.js?ver=1672271713' id='contact-form-7-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/sogo-accessibility/public/js/navigation.js?ver=1672271713' id='sogo_accessibility.navigation-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/plugins/sogo-accessibility/public/js/sogo-accessibility-public.js?ver=1672271713' id='sogo_accessibility-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/%d7%aa%d7%95%d7%a6%d7%90%d7%95%d7%aa_%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%aa_%d7%91%d7%99%d7%98%d7%95%d7%97_%d7%a8%d7%9b%d7%91\/|\/%d7%94%d7%96%d7%9e%d7%a0%d7%aa_%d7%91%d7%99%d7%98%d7%95%d7%97_%d7%97%d7%95%d7%91%d7%94\/|\/\u05ea\u05d5\u05e6\u05d0\u05d5\u05ea_\u05d4\u05e9\u05d5\u05d5\u05d0\u05ea_\u05d1\u05d9\u05d8\u05d5\u05d7_\u05e8\u05db\u05d1\/|\/\u05d4\u05d6\u05de\u05e0\u05ea_\u05d1\u05d9\u05d8\u05d5\u05d7_\u05d7\u05d5\u05d1\u05d4\/|\/hova-order-completed\/|\/makif-order-completed\/|\/zad-g-order-completed\/|\/hova-order-completed\/|\/makif-order-completed\/|\/zad-g-order-completed\/|\/car-insurance\/calc\/|\/comprehensive-insurance\/calc\/|\/third-party-insurance\/calc\/|\/calc\/|\/car-insurance\/calc\/|\/comprehensive-insurance\/calc\/|\/%d7%aa%d7%95%d7%a6%d7%90%d7%95%d7%aa_%d7%94%d7%a9%d7%95%d7%95%d7%90%d7%aa_%d7%91%d7%99%d7%98%d7%95%d7%97_%d7%a8%d7%9b%d7%91\/|\/polibit-dira\/|\/lead-dira\/|\/home-insurance\/|\/click\/|\/customer-service\/change-car\/change-car\/|\/customer-service\/change-car\/|\/customer-service\/gvia\/|\/team-to-newcom\/|\/mortgage-insurance\/|\/team-to-benzi\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/www.hova.co.il","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/templates/header-2/header-2.js?ver=1672271713' id='sogo-child-header-2-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/cache/min/1/wp-content/themes/sogo-child/templates/footer-2/footer-2.js?ver=1672271713' id='sogo-child-footer-2-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/tether.min.js?ver=5.8.6' id='tether-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/popper.min.js?ver=5.8.6' id='popper-js' defer></script>
+<script type='text/javascript' id='bootstrap-js-extra'>
+/* <![CDATA[ */
+var sogo = {"ajaxurl":"https:\/\/www.hova.co.il\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/bootstrap.min.js?ver=5.8.6' id='bootstrap-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/js/waypoint/lib/jquery.waypoints.min.js?ver=5.8.6' id='waypoint-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.hova.co.il/wp-content/themes/sogo/assets/vendor/slick/slick.min.js?ver=2' id='slickslider-js' defer></script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.hova.co.il/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1675334405 -->

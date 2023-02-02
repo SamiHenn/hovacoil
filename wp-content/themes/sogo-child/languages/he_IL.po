@@ -1,0 +1,3025 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sogo ChildTheme\n"
+"POT-Creation-Date: 2019-04-03 13:55+0300\n"
+"PO-Revision-Date: 2021-12-15 10:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: Sogo <wpmaster@sogoc.o.il>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:30 page-thank-you.php:31
+msgid "Back to homepage"
+msgstr "חזרה לעמוד הבית"
+
+#: functions.php:39
+msgid "Site Link Footer"
+msgstr "קישורים פוטר"
+
+#: functions.php:152
+msgid "Theme General Settings"
+msgstr "הגדרות כלליות"
+
+#: functions.php:153
+msgid "Theme Settings"
+msgstr "אפשרויות"
+
+#: functions.php:162
+msgid "404"
+msgstr "טקסט עמוד 404"
+
+#: functions.php:362
+msgid "Next Page &raquo;"
+msgstr "עמוד הבא &raquo;"
+
+#: functions.php:463 functions.php:3417
+msgid "Social"
+msgstr "רשת חברתית"
+
+#: functions.php:592
+msgid "Search"
+msgstr "חפשי"
+
+#: functions.php:596
+msgid "Search for:"
+msgstr ""
+
+#: functions.php:2108
+msgid "You don`t have permission to do that"
+msgstr ""
+
+#: functions.php:2134
+msgid "Insurance params was send successfully"
+msgstr ""
+
+#: functions.php:3460
+msgid "Visit us on facebook"
+msgstr "בקרו אותנו בפייסבוק"
+
+#: index.php:25 templates/section-posts-1.php:39
+#: templates/section-posts-1.php:90
+msgid "Continue Reading"
+msgstr "המשך קריאה"
+
+#: lib/widget.php:134
+msgid "Left sidebar image -hova"
+msgstr ""
+
+#: lib/widget.php:142
+msgid "Bottom sidebar image -hova"
+msgstr ""
+
+#: lib/widget.php:150
+msgid "Left sidebar image -zad 3"
+msgstr ""
+
+#: lib/widget.php:158
+msgid "Bottom sidebar image  - zad 3"
+msgstr ""
+
+#: lib/widget.php:167
+msgid "Left sidebar image - mekif"
+msgstr ""
+
+#: lib/widget.php:175
+msgid "Bottom sidebar image - mekif"
+msgstr ""
+
+#: page-contact.php:36 templates/insurance-compare/contact-us-1.php:55
+#: templates/insurance-compare/contact-us-1.php:60
+#: templates/insurance-compare/insurance-compare-3.php:468
+#: templates/insurance-compare/insurance-compare-3_backup.php:523
+msgid "Email"
+msgstr "דוא\"ל"
+
+#: page-contact.php:46 templates/insurance-compare/contact-us-2.php:45
+#: templates/insurance-compare/contact-us-2.php:50
+#: templates/insurance-compare/contact-us-no-results.php:85
+#: templates/insurance-compare/contact-us-no-results.php:90
+msgid "Phone"
+msgstr "טלפון"
+
+#: page-house-ins.php:41 page-iframe-insurance-hova.php:188
+#: page-iframe-insurance-hova.php:250 page-iframe-insurance-makif.php:188
+#: page-iframe-insurance-makif.php:250 page-iframe-insurance-zadg.php:185
+#: page-iframe-insurance-zadg.php:246
+#: templates/insurance-compare/insurance-compare-1.php:46
+#: templates/insurance-compare/insurance-compare-1.php:102
+msgid "Insurance period"
+msgstr "תקופת הביטוח"
+
+#: page-house-ins.php:181 templates/form/button-continue.php:2
+msgid "Continue"
+msgstr "המשך"
+
+#: page-house-ins.php:212
+msgid "Results"
+msgstr ""
+
+#: page-iframe-insurance-hova.php:65 page-iframe-insurance-makif.php:65
+#: page-iframe-insurance-zadg.php:66
+msgid "Car insurance"
+msgstr "ביטוח רכב"
+
+#: page-iframe-insurance-hova.php:87 page-iframe-insurance-makif.php:87
+#: page-iframe-insurance-zadg.php:88 page-insurance-compare-1.php:94
+#: page-insurance-compare-3.php:156
+msgid "Personal details"
+msgstr "פרטים בסיסיים"
+
+#: page-iframe-insurance-hova.php:95 page-iframe-insurance-makif.php:95
+#: page-iframe-insurance-zadg.php:96 page-insurance-compare-1.php:102
+#: page-insurance-compare-3.php:164
+msgid "Search results"
+msgstr "השוואת מחירים"
+
+#: page-iframe-insurance-hova.php:103 page-iframe-insurance-makif.php:103
+#: page-iframe-insurance-zadg.php:104 page-insurance-compare-1.php:110
+#: page-insurance-compare-3.php:172
+msgid "Get policy"
+msgstr "הזמנת פוליסה"
+
+#: page-iframe-insurance-hova.php:212 page-iframe-insurance-hova.php:215
+#: page-iframe-insurance-makif.php:212 page-iframe-insurance-makif.php:215
+#: page-iframe-insurance-zadg.php:209 page-iframe-insurance-zadg.php:212
+#: templates/insurance-compare/insurance-compare-1.php:70
+#: templates/insurance-compare/insurance-compare-1.php:73
+msgid "Insurance starting date"
+msgstr "תאריך תחילת ביטוח"
+
+#: page-iframe-insurance-hova.php:306 page-iframe-insurance-makif.php:307
+#: page-iframe-insurance-zadg.php:303
+#: templates/insurance-compare/insurance-compare-1.php:162
+msgid "Car characteristics"
+msgstr "מאפייני הרכב"
+
+#: page-iframe-insurance-hova.php:329 page-iframe-insurance-hova.php:334
+#: page-iframe-insurance-hova.php:337 page-iframe-insurance-makif.php:330
+#: page-iframe-insurance-makif.php:335 page-iframe-insurance-makif.php:338
+#: page-iframe-insurance-zadg.php:326 page-iframe-insurance-zadg.php:331
+#: page-iframe-insurance-zadg.php:334
+#: templates/insurance-compare/insurance-compare-1.php:185
+#: templates/insurance-compare/insurance-compare-1.php:190
+#: templates/insurance-compare/insurance-compare-1.php:193
+msgid "Vehicle manufacturer"
+msgstr "יצרן"
+
+#: page-iframe-insurance-hova.php:346 page-iframe-insurance-hova.php:350
+#: page-iframe-insurance-makif.php:348 page-iframe-insurance-makif.php:352
+#: page-iframe-insurance-zadg.php:344 page-iframe-insurance-zadg.php:348
+#: templates/insurance-compare/insurance-compare-1.php:203
+#: templates/insurance-compare/insurance-compare-1.php:207
+msgid "Vehicle year"
+msgstr "שנת ייצור"
+
+#: page-iframe-insurance-hova.php:355 page-iframe-insurance-makif.php:357
+#: page-iframe-insurance-zadg.php:353
+#: templates/insurance-compare/insurance-compare-1.php:211
+msgid "year"
+msgstr "שנה"
+
+#: page-iframe-insurance-hova.php:364 page-iframe-insurance-hova.php:368
+#: page-iframe-insurance-hova.php:372 page-iframe-insurance-hova.php:389
+#: page-iframe-insurance-makif.php:367 page-iframe-insurance-makif.php:371
+#: page-iframe-insurance-makif.php:375 page-iframe-insurance-makif.php:393
+#: page-iframe-insurance-zadg.php:363 page-iframe-insurance-zadg.php:367
+#: page-iframe-insurance-zadg.php:371 page-iframe-insurance-zadg.php:389
+#: templates/insurance-compare/insurance-compare-1.php:220
+#: templates/insurance-compare/insurance-compare-1.php:225
+#: templates/insurance-compare/insurance-compare-1.php:230
+#: templates/insurance-compare/insurance-compare-1.php:247
+msgid "Vehicle brand"
+msgstr "דגם"
+
+#: page-iframe-insurance-hova.php:381 page-iframe-insurance-hova.php:385
+#: page-iframe-insurance-makif.php:385 page-iframe-insurance-makif.php:389
+#: page-iframe-insurance-zadg.php:381 page-iframe-insurance-zadg.php:385
+#: templates/insurance-compare/insurance-compare-1.php:240
+#: templates/insurance-compare/insurance-compare-1.php:244
+msgid "Vehicle sub brand"
+msgstr "דגם משנה"
+
+#: page-iframe-insurance-hova.php:406 page-iframe-insurance-hova.php:409
+#: page-iframe-insurance-makif.php:412 page-iframe-insurance-makif.php:415
+#: page-iframe-insurance-zadg.php:407 page-iframe-insurance-zadg.php:410
+#: templates/insurance-compare/insurance-compare-1.php:266
+#: templates/insurance-compare/insurance-compare-1.php:269
+msgid "Gears"
+msgstr "סוג תיבת הילוכים"
+
+#: page-iframe-insurance-hova.php:430 page-iframe-insurance-makif.php:436
+#: page-iframe-insurance-zadg.php:431
+#: templates/insurance-compare/insurance-compare-1.php:292
+msgid "Manual"
+msgstr "ידני"
+
+#: page-iframe-insurance-hova.php:438 page-iframe-insurance-makif.php:444
+#: page-iframe-insurance-zadg.php:439
+#: templates/insurance-compare/insurance-compare-1.php:300
+msgid "Automatic"
+msgstr "אוטומטי"
+
+#: page-iframe-insurance-hova.php:452 page-iframe-insurance-hova.php:455
+#: page-iframe-insurance-makif.php:459 page-iframe-insurance-makif.php:462
+#: page-iframe-insurance-zadg.php:454 page-iframe-insurance-zadg.php:457
+#: templates/insurance-compare/insurance-compare-1.php:315
+#: templates/insurance-compare/insurance-compare-1.php:318
+msgid "Vehicle ownership"
+msgstr "בעלות הרכב"
+
+#: page-iframe-insurance-hova.php:476 page-iframe-insurance-makif.php:483
+#: page-iframe-insurance-zadg.php:478
+#: templates/insurance-compare/insurance-compare-1.php:338
+msgid "Private"
+msgstr "פרטית"
+
+#: page-iframe-insurance-hova.php:484 page-iframe-insurance-makif.php:491
+#: page-iframe-insurance-zadg.php:486
+#: templates/insurance-compare/insurance-compare-1.php:346
+msgid "Other"
+msgstr "אחר"
+
+#: page-iframe-insurance-hova.php:500 page-iframe-insurance-hova.php:503
+#: page-iframe-insurance-makif.php:508 page-iframe-insurance-makif.php:511
+#: page-iframe-insurance-zadg.php:503 page-iframe-insurance-zadg.php:506
+#: templates/insurance-compare/insurance-compare-1.php:366
+#: templates/insurance-compare/insurance-compare-1.php:369
+msgid "Is there keeping distance system"
+msgstr "מערכת התראה על אי  שמירת מרחק (לדוגמה מובילאיי)"
+
+#: page-iframe-insurance-hova.php:524 page-iframe-insurance-hova.php:570
+#: page-iframe-insurance-hova.php:879 page-iframe-insurance-hova.php:1147
+#: page-iframe-insurance-makif.php:532 page-iframe-insurance-makif.php:579
+#: page-iframe-insurance-makif.php:889 page-iframe-insurance-makif.php:1157
+#: page-iframe-insurance-zadg.php:527 page-iframe-insurance-zadg.php:574
+#: page-iframe-insurance-zadg.php:883 page-iframe-insurance-zadg.php:1151
+#: templates/insurance-compare/insurance-compare-1.php:390
+#: templates/insurance-compare/insurance-compare-1.php:436
+#: templates/insurance-compare/insurance-compare-1.php:483
+#: templates/insurance-compare/insurance-compare-1.php:787
+#: templates/insurance-compare/insurance-compare-1.php:1038
+#: templates/insurance-compare/insurance-compare-1.php:1084
+#: templates/insurance-compare/insurance-compare-3.php:337
+#: templates/insurance-compare/insurance-compare-3_backup.php:421
+msgid "Yes"
+msgstr "כן"
+
+#: page-iframe-insurance-hova.php:532 page-iframe-insurance-hova.php:578
+#: page-iframe-insurance-hova.php:887 page-iframe-insurance-hova.php:1155
+#: page-iframe-insurance-makif.php:540 page-iframe-insurance-makif.php:587
+#: page-iframe-insurance-makif.php:897 page-iframe-insurance-makif.php:1165
+#: page-iframe-insurance-zadg.php:535 page-iframe-insurance-zadg.php:582
+#: page-iframe-insurance-zadg.php:891 page-iframe-insurance-zadg.php:1159
+#: templates/insurance-compare/insurance-compare-1.php:398
+#: templates/insurance-compare/insurance-compare-1.php:444
+#: templates/insurance-compare/insurance-compare-1.php:491
+#: templates/insurance-compare/insurance-compare-1.php:795
+#: templates/insurance-compare/insurance-compare-1.php:1046
+#: templates/insurance-compare/insurance-compare-1.php:1092
+#: templates/insurance-compare/insurance-compare-3.php:346
+#: templates/insurance-compare/insurance-compare-3_backup.php:430
+msgid "No"
+msgstr "לא"
+
+#: page-iframe-insurance-hova.php:546 page-iframe-insurance-hova.php:549
+#: page-iframe-insurance-makif.php:555 page-iframe-insurance-makif.php:558
+#: page-iframe-insurance-zadg.php:550 page-iframe-insurance-zadg.php:553
+#: templates/insurance-compare/insurance-compare-1.php:413
+#: templates/insurance-compare/insurance-compare-1.php:416
+msgid "Is there deviation system from lane"
+msgstr "מערכת התראה על סטיה מנתיב (לדוגמה מובילאיי)"
+
+#: page-iframe-insurance-hova.php:629 page-iframe-insurance-makif.php:639
+#: page-iframe-insurance-zadg.php:633
+#: templates/insurance-compare/insurance-compare-1.php:540
+msgid "Driver characteristics"
+msgstr "מאפייני הנהגים"
+
+#: page-iframe-insurance-hova.php:652 page-iframe-insurance-hova.php:672
+#: page-iframe-insurance-hova.php:675 page-iframe-insurance-makif.php:662
+#: page-iframe-insurance-makif.php:682 page-iframe-insurance-makif.php:685
+#: page-iframe-insurance-zadg.php:656 page-iframe-insurance-zadg.php:676
+#: page-iframe-insurance-zadg.php:679
+#: templates/insurance-compare/insurance-compare-1.php:562
+#: templates/insurance-compare/insurance-compare-1.php:582
+#: templates/insurance-compare/insurance-compare-1.php:585
+msgid "Youngest driver's age"
+msgstr "גיל הנהג הצעיר ביותר"
+
+#: page-iframe-insurance-hova.php:683 page-iframe-insurance-hova.php:703
+#: page-iframe-insurance-hova.php:706 page-iframe-insurance-makif.php:693
+#: page-iframe-insurance-makif.php:713 page-iframe-insurance-makif.php:716
+#: page-iframe-insurance-zadg.php:687 page-iframe-insurance-zadg.php:707
+#: page-iframe-insurance-zadg.php:710
+#: templates/insurance-compare/insurance-compare-1.php:593
+#: templates/insurance-compare/insurance-compare-1.php:613
+#: templates/insurance-compare/insurance-compare-1.php:615
+msgid "Lowest driving seniority"
+msgstr "וותק הנהיגה הנמוך ביותר"
+
+#: page-iframe-insurance-hova.php:721 page-iframe-insurance-hova.php:725
+#: page-iframe-insurance-hova.php:733 page-iframe-insurance-makif.php:731
+#: page-iframe-insurance-makif.php:735 page-iframe-insurance-makif.php:743
+#: page-iframe-insurance-zadg.php:725 page-iframe-insurance-zadg.php:729
+#: page-iframe-insurance-zadg.php:737
+#: templates/insurance-compare/insurance-compare-1.php:629
+#: templates/insurance-compare/insurance-compare-1.php:634
+#: templates/insurance-compare/insurance-compare-1.php:642
+msgid "Number allowed to drive"
+msgstr "מספר הרשאים לנהוג"
+
+#: page-iframe-insurance-hova.php:750 page-iframe-insurance-hova.php:753
+#: page-iframe-insurance-makif.php:760 page-iframe-insurance-makif.php:763
+#: page-iframe-insurance-zadg.php:754 page-iframe-insurance-zadg.php:757
+#: templates/insurance-compare/insurance-compare-1.php:658
+#: templates/insurance-compare/insurance-compare-1.php:661
+#: templates/insurance-compare/insurance-compare-3.php:278
+#: templates/insurance-compare/insurance-compare-3_backup.php:367
+msgid "Youngest driver's gender"
+msgstr "מין הנהג הצעיר ביותר"
+
+#: page-iframe-insurance-hova.php:774 page-iframe-insurance-makif.php:784
+#: page-iframe-insurance-zadg.php:778
+#: templates/insurance-compare/insurance-compare-1.php:681
+#: templates/insurance-compare/insurance-compare-3.php:294
+#: templates/insurance-compare/insurance-compare-3.php:876
+#: templates/insurance-compare/insurance-compare-3_backup.php:378
+#: templates/insurance-compare/insurance-compare-3_backup.php:894
+#: templates/insurance-compare/insurance-compare-3_backup.php:1065
+#: templates/insurance-compare/insurance-compare-3_backup.php:1710
+msgid "Male"
+msgstr "זכר"
+
+#: page-iframe-insurance-hova.php:782 page-iframe-insurance-makif.php:792
+#: page-iframe-insurance-zadg.php:786
+#: templates/insurance-compare/insurance-compare-1.php:689
+#: templates/insurance-compare/insurance-compare-3.php:303
+#: templates/insurance-compare/insurance-compare-3.php:886
+#: templates/insurance-compare/insurance-compare-3_backup.php:387
+#: templates/insurance-compare/insurance-compare-3_backup.php:903
+#: templates/insurance-compare/insurance-compare-3_backup.php:1076
+#: templates/insurance-compare/insurance-compare-3_backup.php:1718
+msgid "Female"
+msgstr "נקבה"
+
+#: page-iframe-insurance-hova.php:833 page-iframe-insurance-makif.php:843
+#: page-iframe-insurance-zadg.php:837
+#: templates/insurance-compare/insurance-compare-1.php:741
+msgid "Insurance records"
+msgstr "עבר ביטוחי"
+
+#: page-iframe-insurance-hova.php:855 page-iframe-insurance-hova.php:858
+#: page-iframe-insurance-makif.php:865 page-iframe-insurance-makif.php:868
+#: page-iframe-insurance-zadg.php:859 page-iframe-insurance-zadg.php:862
+#: templates/insurance-compare/insurance-compare-1.php:763
+#: templates/insurance-compare/insurance-compare-1.php:766
+msgid "Was there insurance before"
+msgstr "האם היה לך או לבן/בת זוג רשום ביטוח מקיף/צד ג' בשלוש שנים האחרונות"
+
+#: page-iframe-insurance-hova.php:905 page-iframe-insurance-hova.php:909
+#: page-iframe-insurance-makif.php:915 page-iframe-insurance-makif.php:919
+#: page-iframe-insurance-makif.php:926 page-iframe-insurance-zadg.php:909
+#: page-iframe-insurance-zadg.php:913 page-iframe-insurance-zadg.php:920
+#: templates/insurance-compare/insurance-compare-1.php:810
+#: templates/insurance-compare/insurance-compare-1.php:814
+#: templates/insurance-compare/insurance-compare-1.php:821
+msgid "A year ago"
+msgstr "סוג ביטוח לפני שנה"
+
+#: page-iframe-insurance-hova.php:930 page-iframe-insurance-hova.php:934
+#: page-iframe-insurance-makif.php:940 page-iframe-insurance-makif.php:944
+#: page-iframe-insurance-makif.php:951 page-iframe-insurance-zadg.php:934
+#: page-iframe-insurance-zadg.php:938 page-iframe-insurance-zadg.php:945
+#: templates/insurance-compare/insurance-compare-1.php:835
+#: templates/insurance-compare/insurance-compare-1.php:839
+#: templates/insurance-compare/insurance-compare-1.php:846
+msgid "Two years ago"
+msgstr "סוג ביטוח לפני שנתיים"
+
+#: page-iframe-insurance-hova.php:955 page-iframe-insurance-hova.php:959
+#: page-iframe-insurance-makif.php:965 page-iframe-insurance-makif.php:969
+#: page-iframe-insurance-makif.php:976 page-iframe-insurance-makif.php:1001
+#: page-iframe-insurance-zadg.php:959 page-iframe-insurance-zadg.php:963
+#: page-iframe-insurance-zadg.php:970 page-iframe-insurance-zadg.php:995
+#: templates/insurance-compare/insurance-compare-1.php:860
+#: templates/insurance-compare/insurance-compare-1.php:864
+#: templates/insurance-compare/insurance-compare-1.php:871
+msgid "Three years ago"
+msgstr "סוג ביטוח לפני 3 שנים"
+
+#: page-iframe-insurance-hova.php:980 page-iframe-insurance-hova.php:984
+#: page-iframe-insurance-makif.php:990 page-iframe-insurance-makif.php:994
+#: page-iframe-insurance-zadg.php:984 page-iframe-insurance-zadg.php:988
+#: templates/insurance-compare/insurance-compare-1.php:887
+#: templates/insurance-compare/insurance-compare-1.php:896
+#: templates/insurance-compare/insurance-compare-1.php:903
+msgid "Did you had law suites in last 3 years"
+msgstr "האם הוגשו תביעות 3 שנים אחרונות"
+
+#: page-iframe-insurance-hova.php:1016 page-iframe-insurance-hova.php:1020
+#: page-iframe-insurance-hova.php:1052 page-iframe-insurance-makif.php:1026
+#: page-iframe-insurance-makif.php:1030 page-iframe-insurance-makif.php:1037
+#: page-iframe-insurance-makif.php:1062 page-iframe-insurance-zadg.php:1020
+#: page-iframe-insurance-zadg.php:1024 page-iframe-insurance-zadg.php:1031
+#: page-iframe-insurance-zadg.php:1056
+#: templates/insurance-compare/insurance-compare-1.php:923
+#: templates/insurance-compare/insurance-compare-1.php:927
+#: templates/insurance-compare/insurance-compare-1.php:934
+msgid "What year was the law suite"
+msgstr "באיזה שנה היה הנזק בתביעה"
+
+#: page-iframe-insurance-hova.php:1041 page-iframe-insurance-hova.php:1045
+#: page-iframe-insurance-makif.php:1051 page-iframe-insurance-makif.php:1055
+#: page-iframe-insurance-zadg.php:1045 page-iframe-insurance-zadg.php:1049
+#: templates/insurance-compare/insurance-compare-1.php:1139
+#: templates/insurance-compare/insurance-compare-1.php:1146
+#: templates/insurance-compare/insurance-compare-1.php:1153
+msgid "Where there body claims"
+msgstr "סה\"כ תביעות גוף ב 3 שנים אחרונות"
+
+#: page-iframe-insurance-hova.php:1102 page-iframe-insurance-makif.php:1112
+#: page-iframe-insurance-zadg.php:1106
+#: templates/insurance-compare/insurance-compare-1.php:992
+msgid "Additional information"
+msgstr "מידע נוסף על הנהגים ברכב"
+
+#: page-iframe-insurance-hova.php:1124 page-iframe-insurance-hova.php:1127
+#: page-iframe-insurance-makif.php:1134 page-iframe-insurance-makif.php:1137
+#: page-iframe-insurance-zadg.php:1128 page-iframe-insurance-zadg.php:1131
+#: templates/insurance-compare/insurance-compare-1.php:1015
+#: templates/insurance-compare/insurance-compare-1.php:1018
+msgid "Criminal record"
+msgstr "האם יש עבר פלילי"
+
+#: page-iframe-insurance-hova.php:1173 page-iframe-insurance-hova.php:1177
+#: page-iframe-insurance-hova.php:1185 page-iframe-insurance-makif.php:1183
+#: page-iframe-insurance-makif.php:1187 page-iframe-insurance-makif.php:1195
+#: page-iframe-insurance-zadg.php:1177 page-iframe-insurance-zadg.php:1181
+#: page-iframe-insurance-zadg.php:1189
+#: templates/insurance-compare/insurance-compare-1.php:1112
+#: templates/insurance-compare/insurance-compare-1.php:1116
+#: templates/insurance-compare/insurance-compare-1.php:1124
+msgid "License suspensions"
+msgstr "סה\"כ שלילות רשיון ב 3 שנים אחרונות"
+
+#: page-iframe-insurance-hova.php:1201 page-iframe-insurance-makif.php:1211
+#: page-iframe-insurance-zadg.php:1204
+#: templates/insurance-compare/insurance-compare-1.php:1173
+msgid "City of residence"
+msgstr "עיר מגורים (להקליד ולבחור מתוך האפשרויות)"
+
+#: page-iframe-insurance-hova.php:1232 page-iframe-insurance-makif.php:1242
+#: page-iframe-insurance-zadg.php:1232
+#: templates/insurance-compare/insurance-compare-1.php:1222
+#: templates/insurance-compare/insurance-compare-3.php:1424
+#: templates/insurance-compare/insurance-compare-3_backup.php:1607
+msgid "Agree to the using condition"
+msgstr ""
+"מסירת המידע, איסופו, שמירתו והשימוש בו תלויים בהסכמתך. בלחיצה על כפתור \"המשך"
+"\" אתה מאשר ומסכים כי כל המידע שנמסר וימסר על ידך, יישלח, ייאסף וישמר במאגרי "
+"המידע של החברה ושל סוכנויות ו/או חברות הביטוח שבהסכם עם החברה, ויעשה בו "
+"שימוש, לרבות קבלת הטבות שיווקיות במיילים, בטלפון ו- SMS או בכל מדיה "
+"אלקטרונית אחרת, וכי הנך מצהיר ומאשר כי קראת והבנת את תקנון האתר:"
+
+#: page-iframe-insurance-hova.php:1236 page-iframe-insurance-makif.php:1246
+#: page-iframe-insurance-zadg.php:1236
+#: templates/insurance-compare/insurance-compare-1.php:1226
+#: templates/insurance-compare/insurance-compare-3.php:1428
+#: templates/insurance-compare/insurance-compare-3_backup.php:1611
+msgid "to site terms"
+msgstr "תקנון האתר"
+
+#: page-iframe-insurance-hova.php:1266 page-iframe-insurance-makif.php:1276
+#: page-iframe-insurance-zadg.php:1266
+#: templates/insurance-compare/contact-us-1.php:74
+#: templates/insurance-compare/contact-us-2.php:64
+#: templates/insurance-compare/contact-us-no-results.php:104
+#: templates/insurance-compare/insurance-compare-1.php:1253
+#: templates/insurance-compare/insurance-compare-3.php:1453
+#: templates/insurance-compare/insurance-compare-3_backup.php:1637
+msgid "Send"
+msgstr "המשך"
+
+#: page-iframe-insurance-hova.php:1333 page-iframe-insurance-makif.php:1343
+#: page-iframe-insurance-zadg.php:1333 page-insurance-compare-1.php:192
+#: page-insurance-compare-3.php:244
+msgid "Please note - the start date of insurance"
+msgstr "לתשומת לבך - תאריך תחילת ביטוח"
+
+#: page-iframe-insurance-hova.php:1339 page-iframe-insurance-makif.php:1349
+#: page-iframe-insurance-zadg.php:1339 page-insurance-compare-1.php:198
+#: page-insurance-compare-3.php:250
+msgid "If you have insurance that ends on "
+msgstr "אם יש לך ביטוח שמסתיים ב "
+
+#: page-iframe-insurance-hova.php:1340 page-iframe-insurance-makif.php:1350
+#: page-iframe-insurance-zadg.php:1340 page-insurance-compare-1.php:200
+#: page-insurance-compare-3.php:251
+msgid "You must select beginning insurance starting from "
+msgstr "עליך לבחור תחילת ביטוח החל מ "
+
+#: page-iframe-insurance-hova.php:1344 page-iframe-insurance-makif.php:1354
+#: page-iframe-insurance-zadg.php:1343 page-insurance-compare-1.php:205
+#: page-insurance-compare-3.php:254
+msgid "Change to "
+msgstr "לשנות ל "
+
+#: page-iframe-insurance-hova.php:1347 page-iframe-insurance-makif.php:1357
+#: page-iframe-insurance-zadg.php:1344 page-insurance-compare-1.php:208
+#: page-insurance-compare-3.php:256
+msgid "Leave "
+msgstr "להשאיר "
+
+#: page-insurance-compare-2.php:254
+msgid "Important to know"
+msgstr "חשוב לדעת"
+
+#: page-insurance-compare-2.php:310
+msgid "Total"
+msgstr "סה\"כ"
+
+#: page-insurance-compare-2.php:310
+msgid "suggestion for car insurance"
+msgstr "הצעות"
+
+#: page-insurance-compare-2.php:310
+msgid "for"
+msgstr "ל"
+
+#: page-insurance-compare-2.php:315
+msgid "for year"
+msgstr "שנת"
+
+#: page-insurance-compare-2.php:328
+msgid "insurance period"
+msgstr "תקופת ביטוח"
+
+#: page-insurance-compare-2.php:330
+msgid "until"
+msgstr "עד"
+
+#: page-insurance-compare-2.php:345 page-insurance-compare-2.php:376
+msgid "No results found"
+msgstr "לא נמצאו תוצאות"
+
+#: page-insurance-compare-2.php:368 page-insurance-compare-2.php:390
+msgid "The most affordable price"
+msgstr "ההצעה הטובה ביותר"
+
+#: search.php:20
+msgid "Search Result For"
+msgstr "תוצאות חיפוש עבור"
+
+#: search.php:51
+msgid "no results found, please try another search"
+msgstr "לא נמצאו תוצאות חיפוש, אנא נסו חיפוש אחר"
+
+#: templates/.footer-2.php:20
+msgid "Visit Us On Facebook"
+msgstr "בקרו אותנו בפייסבוק"
+
+#: templates/.footer-2.php:47
+msgid "All right reserved to BITUACH HOVA"
+msgstr "כל הזכויות שמורות לביטוח חובה"
+
+#: templates/.header-2.php:32 templates/.header-2.php:71
+#: templates/header-2.php:32 templates/header-2.php:71
+msgid "OFFER In A Click"
+msgstr "הצעה בקליק"
+
+#: templates/.header-2.php:57 templates/header-2.php:57
+msgid "Costumer Service"
+msgstr "שירות לקוחות"
+
+#: templates/footer-2/footer-2-functions.php:18
+#, fuzzy
+#| msgid "Footer"
+msgid "Footer 1"
+msgstr "פוטר"
+
+#: templates/footer-2/footer-2-functions.php:26
+#, fuzzy
+#| msgid "Footer"
+msgid "Footer 2"
+msgstr "פוטר"
+
+#: templates/footer-2/footer-2-functions.php:34
+#, fuzzy
+#| msgid "Footer"
+msgid "Footer 3"
+msgstr "פוטר"
+
+#: templates/footer-2/footer-2.php:43
+#, fuzzy
+#| msgid "Go to Sogo Digital website"
+msgid "Open Sogo Digital website"
+msgstr "עבור לאתר האינטרנט של סוגו דיגיטל"
+
+#: templates/header-2/header-2.php:118 templates/header-2/header-2.php:177
+msgid "Go to homepage"
+msgstr "ביטוח חובה"
+
+#: templates/insurance-compare/contact-us-1.php:39
+#: templates/insurance-compare/contact-us-1.php:44
+#: templates/insurance-compare/contact-us-2.php:28
+#: templates/insurance-compare/contact-us-2.php:33
+#: templates/insurance-compare/contact-us-no-results.php:68
+#: templates/insurance-compare/contact-us-no-results.php:73
+msgid "Full name"
+msgstr "שם מלא"
+
+#: templates/insurance-compare/insurance-compare-1.php:458
+#: templates/insurance-compare/insurance-compare-1.php:461
+msgid "Is there stability system from lane"
+msgstr "האם יש מערכת בקרת יציבות ESP"
+
+#: templates/insurance-compare/insurance-compare-1.php:1061
+#: templates/insurance-compare/insurance-compare-1.php:1064
+msgid "Drive on saturday"
+msgstr "האם הרכב בשימוש בשבת"
+
+#: templates/insurance-compare/insurance-compare-1.php:1186
+#: templates/insurance-compare/insurance-compare-1.php:1191
+msgid "License number go"
+msgstr "מספר רכב"
+
+#: templates/insurance-compare/insurance-compare-2.php:63
+msgid "Mandatory"
+msgstr "חובה"
+
+#: templates/insurance-compare/insurance-compare-2.php:65
+msgid "Comprehensive"
+msgstr "מקיף"
+
+#: templates/insurance-compare/insurance-compare-2.php:67
+msgid "Third party"
+msgstr "צד ג' "
+
+#: templates/insurance-compare/insurance-compare-2.php:95
+msgid "With no protection"
+msgstr "ללא מיגון"
+
+#: templates/insurance-compare/insurance-compare-2.php:148
+msgid "Proposal details"
+msgstr "פרטי הצעה"
+
+#: templates/insurance-compare/insurance-compare-2.php:268
+msgid "Purchase insurance"
+msgstr "המשך הזמנה"
+
+#: templates/insurance-compare/insurance-compare-3.php:33
+#: templates/insurance-compare/insurance-compare-3_backup.php:53
+msgid "Completion of vehicle details"
+msgstr "השלמת פרטי הרכב"
+
+#: templates/insurance-compare/insurance-compare-3.php:55
+#: templates/insurance-compare/insurance-compare-3.php:60
+#: templates/insurance-compare/insurance-compare-3_backup.php:77
+msgid "License number"
+msgstr "מספר רכב"
+
+#: templates/insurance-compare/insurance-compare-3.php:78
+#: templates/insurance-compare/insurance-compare-3.php:81
+#: templates/insurance-compare/insurance-compare-3_backup.php:104
+msgid "Ownership date"
+msgstr "ממתי הרכב בבעלותך"
+
+#: templates/insurance-compare/insurance-compare-3.php:94
+#: templates/insurance-compare/insurance-compare-3_backup.php:116
+msgid "Under a year"
+msgstr "פחות משנה"
+
+#: templates/insurance-compare/insurance-compare-3.php:104
+#: templates/insurance-compare/insurance-compare-3_backup.php:126
+msgid "Above a year"
+msgstr "מעל שנה"
+
+#: templates/insurance-compare/insurance-compare-3.php:122
+#: templates/insurance-compare/insurance-compare-3_backup.php:143
+msgid "Choose car ownership car date"
+msgstr "תאריך ממתי הרכב בבעלותך"
+
+#: templates/insurance-compare/insurance-compare-3.php:175
+#: templates/insurance-compare/insurance-compare-3_backup.php:200
+msgid "Details of the policyholder"
+msgstr "פרטי בעל הרכב (יהיה גם בעל הפוליסה)"
+
+#: templates/insurance-compare/insurance-compare-3.php:198
+#: templates/insurance-compare/insurance-compare-3.php:794
+#: templates/insurance-compare/insurance-compare-3_backup.php:222
+#: templates/insurance-compare/insurance-compare-3_backup.php:799
+#: templates/insurance-compare/insurance-compare-3_backup.php:968
+#: templates/insurance-compare/insurance-compare-3_backup.php:1663
+msgid "First name"
+msgstr "שם פרטי"
+
+#: templates/insurance-compare/insurance-compare-3.php:212
+#: templates/insurance-compare/insurance-compare-3.php:808
+#: templates/insurance-compare/insurance-compare-3_backup.php:242
+#: templates/insurance-compare/insurance-compare-3_backup.php:816
+#: templates/insurance-compare/insurance-compare-3_backup.php:985
+#: templates/insurance-compare/insurance-compare-3_backup.php:1668
+msgid "Last name"
+msgstr "שם משפחה"
+
+#: templates/insurance-compare/insurance-compare-3.php:226
+#: templates/insurance-compare/insurance-compare-3.php:822
+#: templates/insurance-compare/insurance-compare-3_backup.php:262
+#: templates/insurance-compare/insurance-compare-3_backup.php:833
+#: templates/insurance-compare/insurance-compare-3_backup.php:1002
+#: templates/insurance-compare/insurance-compare-3_backup.php:1673
+msgid "Identical number"
+msgstr "מספר תעודת זהות"
+
+#: templates/insurance-compare/insurance-compare-3.php:251
+#: templates/insurance-compare/insurance-compare-3_backup.php:307
+msgid "Birthday"
+msgstr "תאריך לידה"
+
+#: templates/insurance-compare/insurance-compare-3.php:283
+msgid "The gender of the policyholder"
+msgstr "מין בעל הפוליסה"
+
+#: templates/insurance-compare/insurance-compare-3.php:318
+#: templates/insurance-compare/insurance-compare-3.php:322
+#: templates/insurance-compare/insurance-compare-3_backup.php:408
+msgid "Is the policyholder one of the drivers in the vehicle?"
+msgstr "האם בעל הפוליסה הינו אחד הנהגים ברכב?"
+
+#: templates/insurance-compare/insurance-compare-3.php:357
+#: templates/insurance-compare/insurance-compare-3.php:361
+#: templates/insurance-compare/insurance-compare-3.php:902
+#: templates/insurance-compare/insurance-compare-3.php:905
+#: templates/insurance-compare/insurance-compare-3_backup.php:329
+#: templates/insurance-compare/insurance-compare-3_backup.php:921
+#: templates/insurance-compare/insurance-compare-3_backup.php:1093
+#: templates/insurance-compare/insurance-compare-3_backup.php:1730
+msgid "Year of issuing a license"
+msgstr "שנת הוצאת רשיון"
+
+#: templates/insurance-compare/insurance-compare-3.php:420
+#: templates/insurance-compare/insurance-compare-3_backup.php:485
+msgid "Contact info"
+msgstr "פרטי קשר"
+
+#: templates/insurance-compare/insurance-compare-3.php:442
+#: templates/insurance-compare/insurance-compare-3_backup.php:506
+msgid "Mobile phone"
+msgstr "טלפון נייד"
+
+#: templates/insurance-compare/insurance-compare-3.php:455
+#: templates/insurance-compare/insurance-compare-3_backup.php:542
+msgid "Additional phone"
+msgstr "טלפון נוסף (מומלץ, לא חובה)"
+
+#: templates/insurance-compare/insurance-compare-3.php:483
+#: templates/insurance-compare/insurance-compare-3_backup.php:558
+msgid "City"
+msgstr "עיר/ישוב מגורים"
+
+#: templates/insurance-compare/insurance-compare-3.php:490
+#: templates/insurance-compare/insurance-compare-3_backup.php:571
+#: templates/insurance-compare/insurance-compare-3_backup.php:678
+msgid "Street"
+msgstr "רחוב"
+
+#: templates/insurance-compare/insurance-compare-3.php:504
+#: templates/insurance-compare/insurance-compare-3_backup.php:590
+#: templates/insurance-compare/insurance-compare-3_backup.php:696
+msgid "House number"
+msgstr "מספר בית"
+
+#: templates/insurance-compare/insurance-compare-3.php:517
+#: templates/insurance-compare/insurance-compare-3_backup.php:609
+#: templates/insurance-compare/insurance-compare-3_backup.php:714
+msgid "Apartment number"
+msgstr "מספר דירה"
+
+#: templates/insurance-compare/insurance-compare-3.php:622
+#: templates/insurance-compare/insurance-compare-3.php:636
+#: templates/insurance-compare/insurance-compare-3_backup.php:642
+msgid "Use different shipping address"
+msgstr "יש לסמן כאן אם הכתובת למשלוח דואר שונה מכתובת המגורים"
+
+#: templates/insurance-compare/insurance-compare-3.php:734
+#: templates/insurance-compare/insurance-compare-3_backup.php:769
+msgid "Driver details"
+msgstr "פרטי נהג"
+
+#: templates/insurance-compare/insurance-compare-3.php:837
+#: templates/insurance-compare/insurance-compare-3.php:841
+#: templates/insurance-compare/insurance-compare-3_backup.php:849
+#: templates/insurance-compare/insurance-compare-3_backup.php:1018
+#: templates/insurance-compare/insurance-compare-3_backup.php:1681
+msgid "Driver birthday"
+msgstr "תאריך לידה של הנהג"
+
+#: templates/insurance-compare/insurance-compare-3.php:864
+#: templates/insurance-compare/insurance-compare-3_backup.php:880
+#: templates/insurance-compare/insurance-compare-3_backup.php:1049
+#: templates/insurance-compare/insurance-compare-3_backup.php:1700
+msgid "Driver's gender"
+msgstr "מין"
+
+#: templates/insurance-compare/insurance-compare-3.php:971
+#: templates/insurance-compare/insurance-compare-3_backup.php:1153
+msgid "Extra coverage"
+msgstr "כיסויים נוספים לבחירתך"
+
+#: templates/insurance-compare/insurance-compare-3.php:1106
+#: templates/insurance-compare/insurance-compare-3_backup.php:1282
+msgid "Payment details"
+msgstr "פרטי תשלום"
+
+#: templates/insurance-compare/insurance-compare-3.php:1132
+#: templates/insurance-compare/insurance-compare-3.php:1138
+#: templates/insurance-compare/insurance-compare-3_backup.php:1315
+msgid "Use phone payment"
+msgstr "תשלום באמצעות טלפון"
+
+#: templates/insurance-compare/insurance-compare-3.php:1148
+#: templates/insurance-compare/insurance-compare-3_backup.php:1325
+msgid "Cardholder name"
+msgstr "שם בעל הכרטיס"
+
+#: templates/insurance-compare/insurance-compare-3.php:1154
+#: templates/insurance-compare/insurance-compare-3_backup.php:1335
+msgid "Cardholder ID"
+msgstr "ת.ז של בעל הכרטיס"
+
+#: templates/insurance-compare/insurance-compare-3.php:1160
+#: templates/insurance-compare/insurance-compare-3_backup.php:1345
+msgid "Number of credit card"
+msgstr "מס' אשראי"
+
+#: templates/insurance-compare/insurance-compare-3.php:1169
+#: templates/insurance-compare/insurance-compare-3_backup.php:1365
+msgid "Card validity year"
+msgstr "תוקף - שנה"
+
+#: templates/insurance-compare/insurance-compare-3.php:1188
+#: templates/insurance-compare/insurance-compare-3_backup.php:1384
+msgid "Card validity month"
+msgstr "תוקף - חודש"
+
+#: templates/insurance-compare/insurance-compare-3.php:1241
+#: templates/insurance-compare/insurance-compare-3_backup.php:1428
+msgid "Number of payments for mandatory"
+msgstr "תשלומים עבור ביטוח חובה"
+
+#: templates/insurance-compare/insurance-compare-3.php:1259
+#: templates/insurance-compare/insurance-compare-3.php:1292
+#: templates/insurance-compare/insurance-compare-3_backup.php:1448
+#: templates/insurance-compare/insurance-compare-3_backup.php:1468
+msgid "Number of payments for comprehensive"
+msgstr "תשלומים  עבור ביטוח מקיף"
+
+#: templates/insurance-compare/insurance-compare-3.php:1293
+msgid "Number of payments for thirdParty"
+msgstr "תשלומים עבור ביטוח צד ג' "
+
+#: templates/insurance-compare/insurance-compare-3.php:1322
+#: templates/insurance-compare/insurance-compare-3_backup.php:1487
+msgid "Number of payments for upsales"
+msgstr "מספר תשלומים להרחבות"
+
+#: templates/insurance-compare/insurance-compare-3.php:1364
+#: templates/insurance-compare/insurance-compare-3.php:1368
+#: templates/insurance-compare/insurance-compare-3_backup.php:1544
+#: templates/insurance-compare/insurance-compare-3_backup.php:1547
+msgid "Policy send"
+msgstr "האם לשלוח אליך את התעודה המקורית בדואר בנוסף לעותק בדוא\"ל ?"
+
+#: templates/insurance-compare/insurance-compare-3.php:1384
+#: templates/insurance-compare/insurance-compare-3_backup.php:1567
+msgid "Yes, send me original"
+msgstr "כן, תשלחו לי מקור"
+
+#: templates/insurance-compare/insurance-compare-3.php:1392
+#: templates/insurance-compare/insurance-compare-3_backup.php:1575
+msgid "No, a copy will be good"
+msgstr "לא, אסתפק בעותק"
+
+#: templates/insurance-compare/insurance-compare-3_backup.php:770
+msgid "Drivers details"
+msgstr "פרטי נהגים נוספים"
+
+#~ msgid "404 Settings"
+#~ msgstr "404 אפשרויות"
+
+#~ msgid "Limit of liability: "
+#~ msgstr "גבול אחריות: "
+
+#~ msgid "Deductible: "
+#~ msgstr "השתתפות עצמית: "
+
+#~ msgid "Legal Protection Coverage: Included"
+#~ msgstr "כיסוי הגנה משפטית: כלול"
+
+#~ msgid "Road and tow services: Included"
+#~ msgstr "שירותי דרך וגרירה: כלול"
+
+#~ msgid "Window Cover: Included"
+#~ msgstr "כיסוי שמשות: כלול"
+
+#~ msgid "Alternative radio: Included"
+#~ msgstr "רדיו חלופי: כלול"
+
+#~ msgid "Remarks: "
+#~ msgstr "הערות: "
+
+#~ msgid "The name of the company that provides the road services: "
+#~ msgstr "שם החברה שנותנת את שירותי הדרך: "
+
+#, fuzzy
+#~| msgid "Footer"
+#~ msgid "Footer 4"
+#~ msgstr "פוטר"
+
+#~ msgid "Insurance end date"
+#~ msgstr "תאריך סיום הביטוח"
+
+#~ msgid "CVV/CVC number"
+#~ msgstr "3 ספרות בגב הכרטיס"
+
+#~ msgid "Vehicle type"
+#~ msgstr "סוג רכב"
+
+#~ msgid "Denials in past 3 years"
+#~ msgstr "שלילות ב 3 שנים אחרונות"
+
+#~ msgid "Post right"
+#~ msgstr "פוסט צד ימין"
+
+#~ msgid "Post left"
+#~ msgstr "פוסט צד שמאל"
+
+#~ msgid "About us right"
+#~ msgstr "כתבו עלינו ימין"
+
+#~ msgid "About us left"
+#~ msgstr "כתבו עלינו שמאל"
+
+#~ msgid "Install center"
+#~ msgstr "מרכז התקנה"
+
+#, fuzzy
+#~| msgid "Writers"
+#~ msgid "Filters"
+#~ msgstr "כתבים"
+
+#~ msgid "Articles"
+#~ msgstr "מאמרים"
+
+#, fuzzy
+#~| msgid "Footer"
+#~ msgid "Footer 5"
+#~ msgstr "פוטר"
+
+#~ msgid "Messages"
+#~ msgstr "הודעות"
+
+#, fuzzy
+#~| msgid "Messages"
+#~ msgid "Write Message"
+#~ msgstr "הודעות"
+
+#, fuzzy
+#~| msgid "Messages"
+#~ msgid "New Message"
+#~ msgstr "הודעות"
+
+#, fuzzy
+#~| msgid "Choose tire cut"
+#~ msgid "Choose Group"
+#~ msgstr "חתך צמיג"
+
+#, fuzzy
+#~| msgid "Choose tire cut"
+#~ msgid "Choose Student"
+#~ msgstr "חתך צמיג"
+
+#, fuzzy
+#~| msgid "Messages"
+#~ msgid "Message"
+#~ msgstr "הודעות"
+
+#, fuzzy
+#~| msgid "All Articles"
+#~ msgid "All Recipes"
+#~ msgstr "לכל הכתבות"
+
+#, fuzzy
+#~| msgid "My mentor"
+#~ msgid "Mentor Name"
+#~ msgstr "המנחה שלי"
+
+#, fuzzy
+#~| msgid "From Date:"
+#~ msgid "From Date"
+#~ msgstr "תאריך התחלה"
+
+#, fuzzy
+#~| msgid "From Date:"
+#~ msgid "To Date"
+#~ msgstr "תאריך התחלה"
+
+#, fuzzy
+#~| msgid "Video Strip"
+#~ msgid "Video Archive"
+#~ msgstr "סרטים כאן נעים"
+
+#, fuzzy
+#~| msgid "Social"
+#~ msgid "Social media"
+#~ msgstr "רשת חברתית"
+
+#, fuzzy
+#~| msgid "Banner Image"
+#~ msgid "Banners"
+#~ msgstr "באנר תמונה"
+
+#, fuzzy
+#~| msgid "To News Letter"
+#~ msgid "Theme newsletter"
+#~ msgstr "לניוזלטר"
+
+#, fuzzy
+#~| msgid "To News Letter"
+#~ msgid "newsletter"
+#~ msgstr "לניוזלטר"
+
+#~ msgid "Select City"
+#~ msgstr "עיר"
+
+#~ msgid "Quantity"
+#~ msgstr "כמות"
+
+#~ msgid "About The Manufacture"
+#~ msgstr "אודות היצרן"
+
+#~ msgid "Shoping cart"
+#~ msgstr "לעגלת הקניות"
+
+#~ msgid "Checkout"
+#~ msgstr "לתשלום"
+
+#, fuzzy
+#~| msgid "My mentor"
+#~ msgid "Mentor"
+#~ msgstr "המנחה שלי"
+
+#~ msgid "Orders"
+#~ msgstr "הזמנות קודמות"
+
+#~ msgid "Personal info"
+#~ msgstr "מידע אישי"
+
+#~ msgid "Addresses"
+#~ msgstr "כתובות"
+
+#~ msgid "Add To Cart"
+#~ msgstr "הוסף לסל"
+
+#~ msgid "Success stories"
+#~ msgstr "סיפורי הצלחה"
+
+#~ msgid "Forms"
+#~ msgstr "טפסים"
+
+#, fuzzy
+#~| msgid "Messages"
+#~ msgid "Weekly messages"
+#~ msgstr "הודעות"
+
+#~ msgid "Videos"
+#~ msgstr "ווידאו"
+
+#, fuzzy
+#~| msgid "Menu"
+#~ msgid "Menus"
+#~ msgstr "תפריט"
+
+#~ msgid "Success category"
+#~ msgstr "קטגוריות סיפורי הצלחה"
+
+#~ msgid "Form category"
+#~ msgstr "קטגוריות טפסים"
+
+#, fuzzy
+#~| msgid "Hide Category"
+#~ msgid "Recipe category"
+#~ msgstr "הסתר קטגוריה"
+
+#, fuzzy
+#~| msgid "Brunches"
+#~ msgid "Lunch"
+#~ msgstr "סניפים"
+
+#, fuzzy
+#~| msgid "Banner Image"
+#~ msgid "Dinner"
+#~ msgstr "באנר תמונה"
+
+#, fuzzy
+#~| msgid "Category Banner"
+#~ msgid "Late Dinner"
+#~ msgstr "קטגוריה תמונה ראשית"
+
+#~ msgid "Connect to system"
+#~ msgstr "התחברות למערכת"
+
+#~ msgid "User name"
+#~ msgstr "שם משתמש"
+
+#~ msgid "Password"
+#~ msgstr "סיסמה"
+
+#~ msgid "Forgot password?"
+#~ msgstr "שכחת סיסמה?"
+
+#~ msgid "Login"
+#~ msgstr "התחבר"
+
+#~ msgid "Still don't have an account?"
+#~ msgstr "עדיין אין לך חשבון?"
+
+#~ msgid "Join!"
+#~ msgstr "הצטרף!"
+
+#~ msgid "First time in the site?"
+#~ msgstr "פעם ראשונה באתר?"
+
+#~ msgid "Zip"
+#~ msgstr "מיקוד"
+
+#, fuzzy
+#~| msgid "Click Here"
+#~ msgid "Click Here To Reply"
+#~ msgstr "לחצו כאן"
+
+#~ msgid "Update"
+#~ msgstr "עדכן"
+
+#~ msgid "Gender"
+#~ msgstr "מגדר"
+
+#~ msgid "Cancel"
+#~ msgstr "בטל"
+
+#~ msgid "Save"
+#~ msgstr "שמור"
+
+#~ msgid "My mentor"
+#~ msgstr "המנחה שלי"
+
+#~ msgid "How may i help ?"
+#~ msgstr "איך אפשר לעזור ?"
+
+#~ msgid "My group"
+#~ msgstr "הקבוצה שלי"
+
+#~ msgid "My receipts"
+#~ msgstr "החשבוניות שלי"
+
+#~ msgid "My program"
+#~ msgstr "התוכנית שלי"
+
+#~ msgid "Renew membership"
+#~ msgstr "חידוש מנוי"
+
+#, fuzzy
+#~| msgid "To the client story"
+#~ msgid "To the success story"
+#~ msgstr "לסיפור הלקוח"
+
+#~ msgid "Read more"
+#~ msgstr "קרא עוד"
+
+#, fuzzy
+#~| msgid "For Details"
+#~ msgid "Your Details"
+#~ msgstr "לפרטים"
+
+#, fuzzy
+#~| msgid "User name"
+#~ msgid "User Name:"
+#~ msgstr "שם משתמש"
+
+#, fuzzy
+#~| msgid "Password"
+#~ msgid "Password:"
+#~ msgstr "סיסמה"
+
+#, fuzzy
+#~| msgid "Free Text"
+#~ msgid "Free"
+#~ msgstr "טקסט חופשי"
+
+#~ msgid "Read More"
+#~ msgstr "קרא עוד"
+
+#~ msgid "Logout"
+#~ msgstr "התנתק"
+
+#~ msgid "To Article"
+#~ msgstr "לכתבה המלאה"
+
+#~ msgid "Choose profile image"
+#~ msgstr "בחר תמונת פרופיל"
+
+#~ msgid "Upload image"
+#~ msgstr "העלה תמונה"
+
+#~ msgid "System images"
+#~ msgstr "תמונות מערכת"
+
+#~ msgid "SKU"
+#~ msgstr "מק\"ט"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Product"
+#~ msgstr "מוצרים"
+
+#~ msgid "Watch"
+#~ msgstr "לצפיה"
+
+#~ msgid "Date of birth"
+#~ msgstr "תאריך לידה"
+
+#~ msgid "Search Articles"
+#~ msgstr "חיפוש מאמרים"
+
+#, fuzzy
+#~| msgid "Visit Us On Social Networks"
+#~ msgid ""
+#~ "Visit Us On Social \n"
+#~ "                            Networks"
+#~ msgstr "בקרו אותנו ברשתות החברתיות"
+
+#~ msgid "Category"
+#~ msgstr "קטגוריה"
+
+#~ msgid "Back Home"
+#~ msgstr "חזרה לעמוד הבית"
+
+#~ msgid "Displaying"
+#~ msgstr "מציג"
+
+#~ msgid "of"
+#~ msgstr "מתוך"
+
+#, fuzzy
+#~| msgid "Event Price"
+#~ msgid "Price"
+#~ msgstr "מחיר האירוע"
+
+#, fuzzy
+#~| msgid "Remove Item"
+#~ msgid "Remove this item"
+#~ msgstr "הסר"
+
+#, fuzzy
+#~| msgid "Day"
+#~ msgid "Pay"
+#~ msgstr "יום"
+
+#, fuzzy
+#~| msgid "To Date:"
+#~ msgid "Date:"
+#~ msgstr "תאריך סיום"
+
+#, fuzzy
+#~| msgid "Title Description"
+#~ msgid "Description : "
+#~ msgstr "תאור הכותרת:"
+
+#~ msgid "Show Testimonials"
+#~ msgstr "הצג חוות דעת"
+
+#~ msgid "Product Views"
+#~ msgstr "צפיות במוצר"
+
+#~ msgid "Sku"
+#~ msgstr "מק\"ט"
+
+#~ msgid "Product Warranty"
+#~ msgstr "אחריות המוצר"
+
+#, fuzzy
+#~| msgid "Remove Member"
+#~ msgid "Remember me"
+#~ msgstr "הסר איש צוות"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Add product(s)"
+#~ msgstr "מוצרים"
+
+#, fuzzy
+#~| msgid "Add new"
+#~ msgid "Add fee"
+#~ msgstr "הוסף חדש"
+
+#, fuzzy
+#~| msgid "Add new Post"
+#~ msgid "Add shipping cost"
+#~ msgstr "הוסף פוסט חדש"
+
+#, fuzzy
+#~| msgid "you already voted"
+#~ msgid "Amount already refunded"
+#~ msgstr "השתתפותך כבר התקבלה"
+
+#, fuzzy
+#~| msgid "management team"
+#~ msgid "Payment gateway"
+#~ msgstr "צוות הנהלה"
+
+#, fuzzy
+#~| msgid "Products"
+#~ msgid "Add products"
+#~ msgstr "מוצרים"
+
+#, fuzzy
+#~| msgid "Address"
+#~ msgid "Add"
+#~ msgstr "כתובת"
+
+#, fuzzy
+#~| msgid "To all classes"
+#~ msgid "Tax class"
+#~ msgstr "לכל החוגים"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Email address"
+#~ msgstr "כתובת אימייל"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Billing address"
+#~ msgstr "כתובת אימייל"
+
+#~ msgid "Edit"
+#~ msgstr "ערוך"
+
+#, fuzzy
+#~| msgid "More details"
+#~ msgid "Customer details"
+#~ msgstr "פרטים נוספים"
+
+#~ msgid "Phone:"
+#~ msgstr "נייד:"
+
+#~ msgid "Buy Now"
+#~ msgstr "קנה עכשיו"
+
+#, fuzzy
+#~| msgid "Patient Reviews"
+#~ msgid "Reviews"
+#~ msgstr "המלצות מטופלים"
+
+#, fuzzy
+#~| msgid "There are no results. Please try again."
+#~ msgid "There are no reviews yet."
+#~ msgstr "אין תוצאות. נא לבדוק שכתבת נכון."
+
+#, fuzzy
+#~| msgid "Add new"
+#~ msgid "Add a review"
+#~ msgstr "הוסף חדש"
+
+#, fuzzy
+#~| msgid "Submit Post"
+#~ msgid "Submit"
+#~ msgstr "הגש פוסט"
+
+#, fuzzy
+#~| msgid "Title Description"
+#~ msgid "Description"
+#~ msgstr "תאור הכותרת:"
+
+#~ msgid "All Rights Reserved to Tire Deal ©"
+#~ msgstr "כל הזכויות שמורות לטייר דיל ©"
+
+#~ msgid "Show All"
+#~ msgstr "הצג הכול "
+
+#, fuzzy
+#~| msgid "Your shopping cart"
+#~ msgid "View your shopping cart"
+#~ msgstr "סל הקניות שלך"
+
+#~ msgid "Your shopping cart"
+#~ msgstr "סל הקניות שלך"
+
+#~ msgid "Connect"
+#~ msgstr "התחברות"
+
+#, fuzzy
+#~| msgid "Open Hours"
+#~ msgid "Other courses"
+#~ msgstr "שעות פעילות"
+
+#~ msgid "Purchase Items By Brand"
+#~ msgstr "רכישת אביזרים לפי מותג"
+
+#, fuzzy
+#~| msgid "Email Address"
+#~ msgid "Email address*"
+#~ msgstr "כתובת אימייל"
+
+#, fuzzy
+#~| msgid "Requirements:"
+#~ msgid "*Required Fields"
+#~ msgstr "דרישות:"
+
+#, fuzzy
+#~| msgid "Written by:"
+#~ msgid "written by"
+#~ msgstr "נכתב ע\"י "
+
+#~ msgid "Tire width"
+#~ msgstr "רוחב צמיג"
+
+#~ msgid "Tire cut"
+#~ msgstr "חתך צמיג"
+
+#~ msgid "Rim Diameter"
+#~ msgstr "קוטר חישוק"
+
+#~ msgid "Vehicle Type"
+#~ msgstr "סוג רכב"
+
+#~ msgid "Model"
+#~ msgstr "דגם"
+
+#~ msgid "Year"
+#~ msgstr "שנה"
+
+#~ msgid "Search by car type"
+#~ msgstr "חיפוש לפי סוג רכב"
+
+#~ msgid "Search by wheel size"
+#~ msgstr "חיפוש צמיג לפי מידה"
+
+#~ msgid "Wrote about us, spoke about us"
+#~ msgstr "כתבו עלינו, דיברו עלינו"
+
+#~ msgid "Buy"
+#~ msgstr "לרכישה"
+
+#~ msgid "Check For Compare"
+#~ msgstr "סמן מוצר להשוואה"
+
+#~ msgid "Close"
+#~ msgstr "סגור"
+
+#~ msgid "Search by tire type"
+#~ msgstr "חיפוש לפי סוג צמיג"
+
+#~ msgid "Tires"
+#~ msgstr "צמיגים"
+
+#~ msgid "Car Type"
+#~ msgstr "סוג רכב"
+
+#~ msgid "For more details"
+#~ msgstr "לפרטים נוספים"
+
+#~ msgid "Hot Sale"
+#~ msgstr "מבצעים חמים"
+
+#~ msgid "All Sales"
+#~ msgstr "לכל המבצעים"
+
+#~ msgid "Top Selling"
+#~ msgstr "הנמכרים ביותר"
+
+#~ msgid "In The News"
+#~ msgstr "כתבו עלינו"
+
+#~ msgid "Install centers"
+#~ msgstr "מרכזי התקנה"
+
+#~ msgid "Categories"
+#~ msgstr "קטגוריות"
+
+#~ msgid "About us"
+#~ msgstr "כתבו עלינו"
+
+#, fuzzy
+#~| msgid "Branches"
+#~ msgid "Brand"
+#~ msgstr "סניפים"
+
+#, fuzzy
+#~| msgid "Install center"
+#~ msgid "Install Center Category"
+#~ msgstr "מרכז התקנה"
+
+#, fuzzy
+#~| msgid "County"
+#~ msgid "Cut"
+#~ msgstr "מחוז"
+
+#, fuzzy
+#~| msgid "Section "
+#~ msgid "Traction"
+#~ msgstr "קומה"
+
+#~ msgid "Link to the site of "
+#~ msgstr "לינק לאתר של "
+
+#~ msgid "Filter Products"
+#~ msgstr "סנן מוצרים"
+
+#~ msgid "Manufactures"
+#~ msgstr "יצרן"
+
+#, fuzzy
+#~| msgid "Phone Number"
+#~ msgid "Phone number required."
+#~ msgstr "מספר טלפון"
+
+#~ msgid "Visit us on social media"
+#~ msgstr "בקרו אותנו ברשתות החברתיות"
+
+#, fuzzy
+#~| msgid "Similar Products"
+#~ msgid "Show Draft Products"
+#~ msgstr "מוצרים דומים"
+
+#, fuzzy
+#~| msgid "Position Description"
+#~ msgid "Product Description"
+#~ msgstr "תיאור התפקיד"
+
+#, fuzzy
+#~| msgid "Select City"
+#~ msgid "Select Color"
+#~ msgstr "עיר"
+
+#, fuzzy
+#~| msgid "Load more"
+#~ msgid "Load Items"
+#~ msgstr "הצג עוד"
+
+#, fuzzy
+#~| msgid "Supplier location"
+#~ msgid "Select Pickup location:"
+#~ msgstr "מיקום הספק"
+
+#, fuzzy
+#~| msgid "Back to home"
+#~ msgid "Back to my order"
+#~ msgstr "לעמוד הבית"
+
+#~ msgid "View"
+#~ msgstr "הצג"
+
+#, fuzzy
+#~| msgid "Previous Status"
+#~ msgid "Previous"
+#~ msgstr "מצב קודם"
+
+#~ msgid "About Us"
+#~ msgstr "כתבו עלינו"
+
+#, fuzzy
+#~| msgid "All Rights Reserved"
+#~ msgid "All Rights Reserved ©"
+#~ msgstr "כל הזכויות שמורות"
+
+#, fuzzy
+#~| msgid "Back to homepage"
+#~ msgid "Back to home page"
+#~ msgstr "לעמוד הבית"
+
+#, fuzzy
+#~| msgid "Theme Settings"
+#~ msgid "Theme thank you Settings"
+#~ msgstr "אפשרויות"
+
+#, fuzzy
+#~| msgid "thank you!"
+#~ msgid "Thank-you"
+#~ msgstr "תודה רבה!"
+
+#~ msgid "Blog"
+#~ msgstr "בלוג"
+
+#~ msgid "Name: "
+#~ msgstr "שם: "
+
+#~ msgid "Company: "
+#~ msgstr "חברה : "
+
+#~ msgid "Seniority"
+#~ msgstr "ותק"
+
+#~ msgid "Projects Amount"
+#~ msgstr "כמות פרוייקטים"
+
+#~ msgid "Location"
+#~ msgstr "מיקום"
+
+#~ msgid "Watch Ticket"
+#~ msgstr "צפייה בכרטיס"
+
+#~ msgid "Most Watched"
+#~ msgstr "הנצפים ביותר"
+
+#~ msgid "Interesting Articles"
+#~ msgstr "כתבות שיכולות לעניין אותך"
+
+#~ msgid "Site logo"
+#~ msgstr "לוגו מגדילים"
+
+#~ msgid "All Rights Reserved To Magdilim ©"
+#~ msgstr "כל הזכויות שמורות למגדילים ©"
+
+#~ msgid "search"
+#~ msgstr "חיפוש"
+
+#~ msgid "Projects"
+#~ msgstr "פרויקטים"
+
+#~ msgid "Suppliers"
+#~ msgstr "ספקים"
+
+#~ msgid "Question & Answers"
+#~ msgstr "שאלות ותשובות"
+
+#~ msgid "Supplier Category"
+#~ msgstr "קטגוריית ספקים"
+
+#~ msgid "Front Page"
+#~ msgstr "עמוד ראשי"
+
+#~ msgid "Supplier index"
+#~ msgstr "אינדקס ספקים"
+
+#~ msgid "Supplier"
+#~ msgstr "ספק/קבלן"
+
+#~ msgid "Projectss"
+#~ msgstr "פרוייקטים"
+
+#~ msgid "Project"
+#~ msgstr "פרוייקט"
+
+#~ msgid "Questions and Answers"
+#~ msgstr "שאלות ותשובות"
+
+#~ msgid "News"
+#~ msgstr "חדשות"
+
+#~ msgid "What we do ?"
+#~ msgstr "מה אנחנו עושים ?"
+
+#~ msgid "Call Us"
+#~ msgstr "התקשר"
+
+#~ msgid "Watch the Contractor"
+#~ msgstr "צפה בפרטי הקבלן"
+
+#~ msgid "Contractor Projects that may interest you"
+#~ msgstr "פרוייקטים של הקבלן שיכולים לעניין אותך"
+
+#~ msgid "Communication Details"
+#~ msgstr "פרטי התקשרות"
+
+#~ msgid "Contact Person"
+#~ msgstr "איש קשר : "
+
+#~ msgid "Press to send email"
+#~ msgstr "לחץ לשליחת מייל"
+
+#~ msgid "Share"
+#~ msgstr "שיתוף"
+
+#~ msgid "In Planning"
+#~ msgstr "בתכנון"
+
+#~ msgid "Performed"
+#~ msgstr "בביצוע"
+
+#~ msgid "Populated"
+#~ msgstr "מאוכלס"
+
+#~ msgid "Profession"
+#~ msgstr "בעלי מקצוע"
+
+#~ msgid "Select Supplier"
+#~ msgstr "בעלי מקצוע"
+
+#~ msgid "Area"
+#~ msgstr "אזור"
+
+#~ msgid "Select Area"
+#~ msgstr "איזור"
+
+#~ msgid "Name"
+#~ msgstr "שם"
+
+#~ msgid "Company Name"
+#~ msgstr "שם החברה"
+
+#~ msgid "Video"
+#~ msgstr "וידאו"
+
+#~ msgid "Press here"
+#~ msgstr "לחץ כאן"
+
+#~ msgid "New Projects"
+#~ msgstr "פרוייקטים חדשים"
+
+#~ msgid "To All Projects"
+#~ msgstr "לכל הפרוייקטים"
+
+#~ msgid "Project Duration: "
+#~ msgstr "משך הפרוייקט"
+
+#~ msgid "Project Cost: "
+#~ msgstr "עלות הפרוייקט"
+
+#~ msgid "Project Extra Space: "
+#~ msgstr "תוספת במטרים"
+
+#~ msgid "Watch the Project"
+#~ msgstr "צפה בפרוייקט"
+
+#, fuzzy
+#~| msgid "Search suplliers"
+#~ msgid "Search suplliers:"
+#~ msgstr "תוצאות חיפוש עבור:"
+
+#~ msgid "Supplier area"
+#~ msgstr "אזור הספק"
+
+#~ msgid "populated"
+#~ msgstr "מאוכלס"
+
+#~ msgid "View all Articles"
+#~ msgstr "לכל הכתבות"
+
+#~ msgid "What we do"
+#~ msgstr "מה אנחנו עושים"
+
+#~ msgid "All Rights Reserved To Bneherzelia ©"
+#~ msgstr "כל הזכויות שמורות לבני הרצליה ©"
+
+#~ msgid "Front Page Calendar"
+#~ msgstr "יומן עמוד הבית"
+
+#~ msgid "Your browser doesn't support HTML5 video"
+#~ msgstr "הדפדפן שלך לא תומך ב HTML5"
+
+#~ msgid "Contact Form Title"
+#~ msgstr "כותרת טופס צור קשר"
+
+#~ msgid "Contact Form Shortcode"
+#~ msgstr "קוד של טופס צור קשר"
+
+#~ msgid "Contact Details"
+#~ msgstr "פרטי צור קשר"
+
+#~ msgid "Contact Details Title"
+#~ msgstr "כותרת פרטי צור קשר "
+
+#~ msgid "Phone Icon"
+#~ msgstr "אייקון טלפון"
+
+#~ msgid "Email Icon"
+#~ msgstr "אייקון אימייל"
+
+#~ msgid "Address Icon"
+#~ msgstr "אייקון כתובת"
+
+#~ msgid "Floor 1 section"
+#~ msgstr "אזור קומה ראשונה"
+
+#~ msgid "Add Home slider"
+#~ msgstr "הוסף סלייד לדף הבית"
+
+#~ msgid "Entry {#}"
+#~ msgstr "#1"
+
+#~ msgid "Add Another Entry"
+#~ msgstr "הכנס ערך נוסף"
+
+#~ msgid "Remove Entry"
+#~ msgstr "הסר ערך"
+
+#~ msgid "Tabs Settings"
+#~ msgstr "הגדרות טאבים"
+
+#~ msgid "Link"
+#~ msgstr "קישור"
+
+#~ msgid "Recommendation Settings"
+#~ msgstr "הגדרות לעמוד המלצות"
+
+#~ msgid "Banners Settings"
+#~ msgstr "הגדרות באנר "
+
+#~ msgid "Box link text"
+#~ msgstr "טקסט לינק"
+
+#~ msgid "Box link"
+#~ msgstr "לינק "
+
+#~ msgid "Events"
+#~ msgstr "אירועים"
+
+#~ msgid "Team"
+#~ msgstr "צוות"
+
+#~ msgid "Direct Phone: "
+#~ msgstr "טלפון ישיר:"
+
+#~ msgid "To All Events"
+#~ msgstr "לכל האירועים"
+
+#~ msgid "Activity map"
+#~ msgstr "מפת פעילויות"
+
+#~ msgid "To Full Gallery"
+#~ msgstr "לכל התמונות"
+
+#~ msgid "To All Classes"
+#~ msgstr "לכל החוגים"
+
+#~ msgid "The team of bnei herzlia"
+#~ msgstr "צוות המאמנים של בני הרצליה"
+
+#~ msgid "To All Camps"
+#~ msgstr "לכל הקייטנות"
+
+#~ msgid "More Details"
+#~ msgstr "פרטים נוספים"
+
+#~ msgid "To Register Press Here"
+#~ msgstr "להרשמה לחץ כאן"
+
+#~ msgid "Direction Map"
+#~ msgstr "מפת הגעה"
+
+#~ msgid "For more article by topics"
+#~ msgstr "ניתן לראות אירועים לפי סוג ענף"
+
+#~ msgid "In time"
+#~ msgstr "בשעה"
+
+#~ msgid "Download"
+#~ msgstr "להורדה"
+
+#~ msgid "Adress"
+#~ msgstr "כתובת"
+
+#~ msgid "Go To Homepage"
+#~ msgstr "לדף הבית"
+
+#~ msgid "Business Owners Join"
+#~ msgstr "הצטרפות לבעלי עסקים"
+
+#~ msgid "Landing Pages"
+#~ msgstr "דפי נחיתה"
+
+#~ msgid "More Information"
+#~ msgstr "מידע נוסף"
+
+#~ msgid "Defined Target"
+#~ msgstr "יעד שהוגדר"
+
+#~ msgid "Our Solutions"
+#~ msgstr "הפתרונות שלנו"
+
+#~ msgid "Client Recommendation"
+#~ msgstr "המלצת לקוחות"
+
+#~ msgid "More Success Stories"
+#~ msgstr "עוד סיפורי הצלחה"
+
+#~ msgid "Back to articles page"
+#~ msgstr "חזרה לעמוד מאמרים"
+
+#~ msgid "Services"
+#~ msgstr "שירותים"
+
+#~ msgid "There was no results for your search"
+#~ msgstr "לא נמצאו תוצאות חיפוש עבור החיפוש"
+
+#~ msgid "please try another search"
+#~ msgstr "אנא נסה חיפוש אחר "
+
+#~ msgid "Management Team"
+#~ msgstr "חברי הנהלה"
+
+#~ msgid "The Page You trying to get is not exist"
+#~ msgstr "העמוד לא נמצא"
+
+#~ msgid "Go to Branch Page"
+#~ msgstr "למידע נוסף על הסניף"
+
+#~ msgid "Navigate with Waze"
+#~ msgstr "ניווט באמצעות וויז"
+
+#~ msgid "Navigate with MOOVIT"
+#~ msgstr "ניווט באמצעות MOOVIT"
+
+#~ msgid "Our TreatMents"
+#~ msgstr "הטיפולים שלנו"
+
+#~ msgid "All rights Reserved © 2016"
+#~ msgstr "כול הזכויות שמורות  © 2016"
+
+#~ msgid "Blog Main Page Settings"
+#~ msgstr "עמוד בלוג ראשי"
+
+#~ msgid "Branches Main Page Settings"
+#~ msgstr "עמוד סניפים ראשי"
+
+#~ msgid "Before After Main Page Settings"
+#~ msgstr "עמוד גלריית לפני אחרי ראשי"
+
+#~ msgid "Q&A Main Page Settings"
+#~ msgstr "עמוד שאלות ותשובות ראשי"
+
+#~ msgid "Kupat Holim Main Page Settings"
+#~ msgstr "עמוד בונוס קופות חולים ראשי"
+
+#~ msgid "Treatment"
+#~ msgstr "טיפול"
+
+#~ msgid "Treatments"
+#~ msgstr "טיפולים"
+
+#~ msgid "Add new Treatment"
+#~ msgstr "הוסף טיפול חדש"
+
+#~ msgid "New Treatment"
+#~ msgstr "טיפול חדש"
+
+#~ msgid "Published"
+#~ msgstr "פורסם ב"
+
+#~ msgid "Before & After Gallery"
+#~ msgstr "גלריית לפני אחרי"
+
+#~ msgid "FAQ"
+#~ msgstr "שאלות נפוצות"
+
+#~ msgid "Kupat Holim Bonuses"
+#~ msgstr "הטבות לחברי קופות חולים"
+
+#~ msgid "Opening Hours:"
+#~ msgstr "שעות פעילות הסניף:"
+
+#~ msgid "Back to Kupat Holim"
+#~ msgstr "בחזרה לעמוד קופות חולים"
+
+#~ msgid "search us"
+#~ msgstr "חפשו אותנו"
+
+#~ msgid "on social"
+#~ msgstr "ברשתות החברתיות"
+
+#~ msgid "Go To Before After Page"
+#~ msgstr "גש לעמוד גלריית תמונות לפני אחרי"
+
+#~ msgid "Site Options"
+#~ msgstr "הגדרות אתר"
+
+#~ msgid "General Settings"
+#~ msgstr "הגדרות כללי"
+
+#~ msgid "Footer Settings"
+#~ msgstr "הגדרות פוטר"
+
+#~ msgid "Google Settings"
+#~ msgstr "הגדרות גוגל"
+
+#~ msgid "Analytics"
+#~ msgstr "אנליטיקס"
+
+#~ msgid "Section 1"
+#~ msgstr "סקשיין 1"
+
+#~ msgid "Add Another Item"
+#~ msgstr "הוסף"
+
+#~ msgid "Client/company name:"
+#~ msgstr "שם הלקוח/חברה:"
+
+#~ msgid "Nisha/Zone:"
+#~ msgstr "נישה/תחום:"
+
+#~ msgid "Services:"
+#~ msgstr "שירותים:"
+
+#~ msgid "Place on Google:"
+#~ msgstr "מקום בגוגל:"
+
+#~ msgid "Target set"
+#~ msgstr "יעד שהוגדר"
+
+#~ msgid "Clients"
+#~ msgstr "לקוחות"
+
+#~ msgid "Event Cat Img"
+#~ msgstr "תמונה קטגוריה ארועים"
+
+#~ msgid "posts you might be intersted in"
+#~ msgstr "פוסטים שאולי יענינו אותך "
+
+#~ msgid "wrote by"
+#~ msgstr "נכתב ע\"י"
+
+#~ msgid "comments"
+#~ msgstr "תגובות"
+
+#~ msgid "footer copyrights"
+#~ msgstr "זכויות יוצרים לפוטר"
+
+#~ msgid "Digi blog"
+#~ msgstr "דיגיבלוג"
+
+#~ msgid "little bit on marketing"
+#~ msgstr "קצת על קידום אתרים ושיווק באינטרנט"
+
+#~ msgid "from"
+#~ msgstr "מבית"
+
+#~ msgid "Full width box"
+#~ msgstr "אזור תמונה רחבה"
+
+#~ msgid "Secound box"
+#~ msgstr "אזור שני"
+
+#~ msgid "Section 2"
+#~ msgstr "קומה 2"
+
+#~ msgid "Published in "
+#~ msgstr "פורסם ב:"
+
+#~ msgid "Search in Blog"
+#~ msgstr "חיפוש בבלוג"
+
+#~ msgid "Section 3"
+#~ msgstr "קומה 3"
+
+#~ msgid "Member {#}"
+#~ msgstr "חברים {#}"
+
+#~ msgid "Add Another Member"
+#~ msgstr "הוסף איש צוות חדש"
+
+#~ msgid "share page:"
+#~ msgstr "שתף:"
+
+#~ msgid "Back to blog"
+#~ msgstr "חזרה לבלוג"
+
+#~ msgid "Comments"
+#~ msgstr "תגובות"
+
+#~ msgid "SEARCH IN BLOG"
+#~ msgstr "חפש בבלוג"
+
+#~ msgid "To Top"
+#~ msgstr "למעלה"
+
+#~ msgid "Entry"
+#~ msgstr "כניסה"
+
+#~ msgid "Add Another Position"
+#~ msgstr "הוסף תפקיד"
+
+#~ msgid "Remove Position"
+#~ msgstr "מחק תפקיד"
+
+#~ msgid "Position Requirements"
+#~ msgstr "דרישות התפקיד"
+
+#~ msgid "Position Description:"
+#~ msgstr "תיאור המשרה:"
+
+#~ msgid "Send Resume"
+#~ msgstr "שלח קורות חיים"
+
+#~ msgid "Back to homepage?"
+#~ msgstr "לחזור לעמוד הבית?"
+
+#~ msgid "Back to home?"
+#~ msgstr "חזרה לעמוד הבית?"
+
+#~ msgid "Back to lift?"
+#~ msgstr "לחזור למעלית?"
+
+#~ msgid "Published in"
+#~ msgstr "פורסם ב"
+
+#~ msgid "We thought, it may interest you too:"
+#~ msgstr "חשבנו שגם זה יענין אתכם:"
+
+#~ msgid "Logo"
+#~ msgstr "לוגו"
+
+#~ msgid "if removed the default logo will be used"
+#~ msgstr "אם ריק יוצג הלוגו ברירת מחדל"
+
+#~ msgid "Favorite text"
+#~ msgstr "טקסט מועדף"
+
+#~ msgid "Logo (optional)"
+#~ msgstr "לוגו (אופציונלי)"
+
+#~ msgid "Plugins Title"
+#~ msgstr "כותרת תוספים"
+
+#~ msgid "Plugins text"
+#~ msgstr "טקסט תוספים"
+
+#~ msgid "Projects Title"
+#~ msgstr "כותרת פרויקטים"
+
+#~ msgid "Projects text"
+#~ msgstr "טקסט פרויקטים"
+
+#~ msgid "Customers logos"
+#~ msgstr "לוגו לקוחות"
+
+#~ msgid "Test Color Picker"
+#~ msgstr "בחר צבע"
+
+#~ msgid "field description (optional)"
+#~ msgstr "תיאור שדה"
+
+#~ msgid "SEARCH IN PLUGINS"
+#~ msgstr "חפש בתוספים"
+
+#~ msgid "view a project"
+#~ msgstr "לצפייה בפרוייקט"
+
+#~ msgid "Publish in"
+#~ msgstr "פורסם ב"
+
+#~ msgid "All right reserved."
+#~ msgstr "כל הזכויות שמורות"
+
+#~ msgid "see full portfolio"
+#~ msgstr "לצפייה בתיק עבודות"
+
+#~ msgid ""
+#~ "Your mail is sent, our representative will call you back within 24 hours"
+#~ msgstr "האימייל שלך נשלח, הנציג שלנו יחזור אליך במהלך 24 שעות הקרובות"
+
+#~ msgid "Toggle navigation"
+#~ msgstr "מתג נייוט"
+
+#~ msgid "Skip to content"
+#~ msgstr "דלג למלל"
+
+#~ msgid "Contact Map"
+#~ msgstr "מפת צור קשר"
+
+#~ msgid "parking first row title"
+#~ msgstr "כותרת חניה ראשונה"
+
+#~ msgid "Parking Slider"
+#~ msgstr "מצגת חניה ראשונה"
+
+#~ msgid "Section 3 (employees)"
+#~ msgstr "קומה 3 (צוות)"
+
+#~ msgid "Section 4 (testimonials)"
+#~ msgstr "קומה 4 (המלצות)"
+
+#~ msgid "testimonial {#}"
+#~ msgstr "המלצות {#}"
+
+#~ msgid "Add Another testimonial"
+#~ msgstr "הוסף המלצה"
+
+#~ msgid "Section 5 (customers)"
+#~ msgstr "קומה 5 (לקוחות)"
+
+#~ msgid "Service {#}"
+#~ msgstr "שירותים {#}"
+
+#~ msgid "Add Another Service"
+#~ msgstr "הוסף שירות חדש"
+
+#~ msgid "Remove Service"
+#~ msgstr "הסר שירות"
+
+#~ msgid "Section 4"
+#~ msgstr "קומה 4"
+
+#~ msgid "Section 5"
+#~ msgstr "קומה 5"
+
+#~ msgid "Section 6"
+#~ msgstr "קומה 6"
+
+#~ msgid "Target {#}"
+#~ msgstr "מטרות {#}"
+
+#~ msgid "Remove Target"
+#~ msgstr "הסר מטרה"
+
+#~ msgid "Section 7"
+#~ msgstr "קומה 7"
+
+#~ msgid "Strategy  {#}"
+#~ msgstr "אסטרטגיה {#}"
+
+#~ msgid "Add Another Strategy"
+#~ msgstr "הוסף אסטרטגיה חדשה"
+
+#~ msgid "Remove Strategy"
+#~ msgstr "הסר אסטרטגיה "
+
+#~ msgid "Strategy {#}"
+#~ msgstr "אסטרטגיה {#}"
+
+#~ msgid "Section 2 (floors)"
+#~ msgstr "קומה 2 (קומות )"
+
+#~ msgid "floor {#}"
+#~ msgstr "קומה {#}"
+
+#~ msgid "Add Another floor"
+#~ msgstr "הוסף קומה"
+
+#~ msgid "Remove floor"
+#~ msgstr "הסר קומה"
+
+#~ msgid "Page Settings"
+#~ msgstr "הגדרות עמוד"
+
+#~ msgid "Disable FullPage"
+#~ msgstr "לבטל תצוגת עמוד מלא"
+
+#~ msgid "Plugins"
+#~ msgstr "תוספים"
+
+#~ msgid "contact us"
+#~ msgstr "צור קשר"
+
+#~ msgid "address:"
+#~ msgstr "כתובת:"
+
+#~ msgid "Israel, Kefar Saba,"
+#~ msgstr "איזור התעשיה, כפר סבא"
+
+#~ msgid "Ha Ta’as st. 10"
+#~ msgstr "רחוב התע\"ש 10"
+
+#~ msgid "E-MAIL:"
+#~ msgstr "אימייל:"
+
+#~ msgid "Office: 09-7719393"
+#~ msgstr "משרד: 09-7719393"
+
+#~ msgid "Fax: 09-7665724"
+#~ msgstr "פקס: 09-7665724"
+
+#~ msgid "Facebook:"
+#~ msgstr "פייסבוק"
+
+#~ msgid "Follow us on FB"
+#~ msgstr "עקבו אחרינו בפייסבוק"
+
+#~ msgid "nice"
+#~ msgstr "נעים"
+
+#~ msgid "to meet"
+#~ msgstr "להכיר"
+
+#~ msgid "you"
+#~ msgstr "!אותך"
+
+#~ msgid "what we need?"
+#~ msgstr "מה אנחנו צריכים?"
+
+#~ msgid "how to do that?"
+#~ msgstr "איך לעשות את זה?"
+
+#~ msgid "how to create it?"
+#~ msgstr "איך ליצור את זה?"
+
+#~ msgid "how to objectify it?"
+#~ msgstr "איך להגשים את זה?"
+
+#~ msgid "client:"
+#~ msgstr "לקוח:"
+
+#~ msgid "can you make this banner larger?"
+#~ msgstr "אפשר לעשות את הבאנר יותר גדול?"
+
+#~ msgid "no problem :)"
+#~ msgstr "אין בעיה"
+
+#~ msgid "We would like to make a header “fixed”?"
+#~ msgstr "אנחנו רוצים לעשות תפריט קבוע"
+
+#~ msgid "developer:"
+#~ msgstr "מפתח:"
+
+#~ msgid "Will be done"
+#~ msgstr "יעשה"
+
+#~ msgid "what our clients says"
+#~ msgstr "לקוח אומר עלינו"
+
+#~ msgid "Publish in: %s"
+#~ msgstr "פורסם ב: %s"
+
+#~ msgid "share"
+#~ msgstr "שתף"
+
+#~ msgid "back to articles"
+#~ msgstr "חזרה לבלוג"
+
+#~ msgid "you may also like"
+#~ msgstr "חשבנו שגם זה יענין אתכם"
+
+#~ msgid "previews project"
+#~ msgstr "פרויקט קודם"
+
+#~ msgid "next project"
+#~ msgstr "פרויקט הבא"
+
+#~ msgid "projects"
+#~ msgstr "פרויקטים"
+
+#~ msgid "plugins"
+#~ msgstr "תוספים"
+
+#~ msgid "header-right"
+#~ msgstr "הדר ימין"
+
+#~ msgid "home-row-2-right"
+#~ msgstr "בית - שורה 2 - ימין"
+
+#~ msgid "home-row-2-middle"
+#~ msgstr "בית - שורה 2 - אמצע"
+
+#~ msgid "home-row-2-left"
+#~ msgstr "בית - שורה 2 - שמאל"
+
+#~ msgid "Home - row - 3 - right"
+#~ msgstr "בית - שורה 3 - ימין"
+
+#~ msgid "Home - row - 3 - left"
+#~ msgstr "בית - שורה 3 - שמאל"
+
+#~ msgid "Home - row - 3 - middle bottom"
+#~ msgstr "בית - שורה 3 - אמצע למטה"
+
+#~ msgid "Home - row - 4 - right"
+#~ msgstr "בית - שורה 4 - ימין"
+
+#~ msgid "Home - row - 4 - middle - right"
+#~ msgstr "דף בית - שורה 4 - אמצע - ימין"
+
+#~ msgid "Home - row - 4 - middle - left"
+#~ msgstr "דף בית - שורה 4 - אמצע - שמאל"
+
+#~ msgid "Home - row - 5 - right"
+#~ msgstr "דף בית - שורה 5 - ימין"
+
+#~ msgid "Home - row - 5 - middle"
+#~ msgstr "דף בית - שורה 5 - אמצע"
+
+#~ msgid "Home - row - 5 - left"
+#~ msgstr "דף בית - שורה 5 - שמאל"
+
+#~ msgid "Home - row - 6 - middle"
+#~ msgstr "בית - שורה 6 - אמצע"
+
+#~ msgid "home-daily-right-row-7"
+#~ msgstr "דף בית - שורה 7 - תמונת היום"
+
+#~ msgid "Home - row - 8 - right"
+#~ msgstr "בית - שורה 8 - ימין"
+
+#~ msgid "Home - row - 8 - middle"
+#~ msgstr "דף בית - שורה 8 - אמצע"
+
+#~ msgid "Home - row - 8 - left"
+#~ msgstr "דף בית - שורה 8 - שמאל"
+
+#~ msgid "Home - row - 9 - right"
+#~ msgstr "דף בית - שורה 9 - ימין"
+
+#~ msgid "Home - row - 10 - right"
+#~ msgstr "דף בית - שורה 10 - ימין"
+
+#~ msgid "Home - row - 10 - middle"
+#~ msgstr "דף בית - שורה 10 - אמצע"
+
+#~ msgid "Home - row - 10 - left"
+#~ msgstr "דף בית - שורה 10 - שמאל"
+
+#~ msgid "Home - row - 11"
+#~ msgstr "דף בית - שורה 11"
+
+#~ msgid "Home - row - 12"
+#~ msgstr "דף בית - שורה 12 "
+
+#~ msgid "red-mail-right"
+#~ msgstr "מייל אדום - ימין"
+
+#~ msgid "red-mail-left"
+#~ msgstr "מייל אדום - ימין"
+
+#~ msgid "movies-right"
+#~ msgstr "דף סרטים - ימין"
+
+#~ msgid "movies-left"
+#~ msgstr "דף סרטים - שמאל"
+
+#~ msgid "movies-every-four"
+#~ msgstr "סרטים כל ארבע"
+
+#~ msgid "single-right"
+#~ msgstr "יחיד - ימין"
+
+#~ msgid "single-left"
+#~ msgstr "יחיד שמאל"
+
+#~ msgid "single-event-top"
+#~ msgstr "דף יחיד - ארועים - למעלה"
+
+#~ msgid "single-event-bottom"
+#~ msgstr "דף יחיד - ארועים - למטה"
+
+#~ msgid "events-every-four"
+#~ msgstr "ארועים  כל ארבע"
+
+#~ msgid "mivzakim-every-four"
+#~ msgstr "מבזקים כל ארבע"
+
+#~ msgid "single-right-to-content"
+#~ msgstr "יחיד - שמאל למלל"
+
+#~ msgid "contact-right"
+#~ msgstr "צור קשר - ימין"
+
+#~ msgid "contact-left"
+#~ msgstr "צור קשר - שמאל"
+
+#~ msgid "contact-bottom"
+#~ msgstr "דף צור קשר - למטה"
+
+#~ msgid "city-info-left"
+#~ msgstr "מידע של עיר - שמאל"
+
+#~ msgid "city-info-right"
+#~ msgstr "מידע של עיר - ימין"
+
+#~ msgid "city-info-bottom-right"
+#~ msgstr "מידע של עיר -למטה - ימין"
+
+#~ msgid "city-info-bottom-left"
+#~ msgstr "מידע של עיר -למטה - שמאל"
+
+#~ msgid "category-left-1"
+#~ msgstr "קטגוריה - שמאל  - 1"
+
+#~ msgid "category-right-1"
+#~ msgstr "קטגוריה - ימין - 1"
+
+#~ msgid "category-left-3"
+#~ msgstr "קטגוריה - שמאל  - 3"
+
+#~ msgid "category-right-4"
+#~ msgstr "קטגוריה - ימין - 4"
+
+#~ msgid "category-right-4-middle-right"
+#~ msgstr "קטגוריה - שורה 4 - אמצע - ימין"
+
+#~ msgid "category-right-4-middle-left"
+#~ msgstr "קטגוריה - שורה 4 - אמצע - שמאל"
+
+#~ msgid "category-right-5-middle-right"
+#~ msgstr "קטגוריה - שורה 5 - אמצע - ימין"
+
+#~ msgid "category-right-5-middle-left"
+#~ msgstr "קטגוריה - שורה 5 - אמצע - שמאל"
+
+#~ msgid "category-left-6"
+#~ msgstr "קטגוריה - שורה 6 - שמאל"
+
+#~ msgid "category - twitter"
+#~ msgstr "קטגוריה - טוויטר"
+
+#~ msgid "category-row-6"
+#~ msgstr "קטגוריה שורה 6"
+
+#~ msgid "Category-with-children-row-7"
+#~ msgstr "קטגוריה עם ילדים - שורה - 7"
+
+#~ msgid "category-row-8"
+#~ msgstr "קטגוריה - שורה 8 "
+
+#~ msgid "category-last-left-top"
+#~ msgstr "קטגוריה אחרונה - שמאל למעלה"
+
+#~ msgid "category-last-right-top"
+#~ msgstr "קטגוריה אחרונה - ימין  למעלה"
+
+#~ msgid "business-center"
+#~ msgstr "עסקים אמצע"
+
+#~ msgid "business-left"
+#~ msgstr "עסקים שמאל"
+
+#~ msgid "business-right"
+#~ msgstr "עסקים ימין"
+
+#~ msgid "business-bottom-right"
+#~ msgstr "עסקים - למטה - ימין"
+
+#~ msgid "business-bottom-middle"
+#~ msgstr "עסקים - למטה - אמצע"
+
+#~ msgid "business-bottom-left"
+#~ msgstr "עסקים - למטה - שמאל"
+
+#~ msgid "survey right"
+#~ msgstr "סקרים - ימין"
+
+#~ msgid "survey left"
+#~ msgstr "סקרים צד שמאל"
+
+#~ msgid "survey every four"
+#~ msgstr "סקר כל ארבע"
+
+#~ msgid "Primary"
+#~ msgstr "ראשי"
+
+#~ msgid "Notification"
+#~ msgstr "הודעות"
+
+#~ msgid "Recent Posts"
+#~ msgstr "פוסטים אחרונים"
+
+#~ msgid "form-naim-right-top"
+#~ msgstr "טופס נעים - ימין למעלה"
+
+#~ msgid "form-naim-right-bottom"
+#~ msgstr "טופס נעים - ימין למטה"
+
+#~ msgid "form-naim-left"
+#~ msgstr "טופס נעים - שמאל"
+
+#~ msgid "form-naim-center"
+#~ msgstr "טופס נעים- אמצע"
+
+#~ msgid "mivzakim right"
+#~ msgstr "מבזקים ימין"
+
+#~ msgid "mivzakim left"
+#~ msgstr "מבזקים שמאל"
+
+#~ msgid "Publish in %s"
+#~ msgstr "פורסם ב"
+
+#~ msgid "all right reserved"
+#~ msgstr "כל הזכויות שמורות"
+
+#~ msgid "HE"
+#~ msgstr "EN"
+
+#~ msgid "he"
+#~ msgstr "en"
+
+#~ msgid "comment"
+#~ msgstr "תגובה"
+
+#~ msgid "Enter"
+#~ msgstr "היכנס"
+
+#~ msgid "About and Help"
+#~ msgstr "אודות ועזרה"
+
+#~ msgid "Content Channels"
+#~ msgstr "ערוצי תוכן"
+
+#~ msgid "Videos of Kan-Naim"
+#~ msgstr "ווידאו כאן נעים"
+
+#~ msgid "Daily Images"
+#~ msgstr "תמונות היום"
+
+#~ msgid "Primary Navigation Left"
+#~ msgstr "תפריט ראשי שמאלי"
+
+#~ msgid "You have News / Image / Movie?"
+#~ msgstr "יש לך ידיעה / תמונה / סרט?"
+
+#~ msgid "The Red Mail of Kan Naim"
+#~ msgstr "האימייל האדום של כאן נעים"
+
+#~ msgid "LogIn"
+#~ msgstr "כניסה"
+
+#~ msgid "Add Naim Site To Your Favorite"
+#~ msgstr "הוסף את אתר כאן נעים למועדפים"
+
+#~ msgid "Primary Menu"
+#~ msgstr "תפריט ראשי"
+
+#~ msgid "Type Second Title Here"
+#~ msgstr "כותרת משנה "
+
+#~ msgid "Type Title Here"
+#~ msgstr "הכנס כותרת"
+
+#~ msgid "Vote"
+#~ msgstr "הצבע"
+
+#~ msgid "Shimoshnaim"
+#~ msgstr "שימושונעים"
+
+#~ msgid "Birthday Day"
+#~ msgstr "יום הולדת"
+
+#~ msgid "Month"
+#~ msgstr "חודש"
+
+#~ msgid "Contact Title"
+#~ msgstr "כותרת צור קשר"
+
+#~ msgid "Daily Image Settings"
+#~ msgstr "הגדרות תמונת היום"
+
+#~ msgid "Gallery"
+#~ msgstr "גלרייה"
+
+#~ msgid "Add Another Image"
+#~ msgstr "הוסף עוד תמונה"
+
+#~ msgid "Remove Image"
+#~ msgstr "הסר תמונה"
+
+#~ msgid "Image"
+#~ msgstr "תמונה"
+
+#~ msgid "URL"
+#~ msgstr "קישור"
+
+#~ msgid "Post Type"
+#~ msgstr "סוג כתבה"
+
+#~ msgid "post"
+#~ msgstr "כתבה"
+
+#~ msgid "events"
+#~ msgstr "ארוע"
+
+#~ msgid "Post Title, Of your choose, Mandatory field"
+#~ msgstr "כותרת הכתבה, לבחירתך, שדה חובה:"
+
+#~ msgid "Recommended Post Title, Name of city will appear automatically"
+#~ msgstr ""
+#~ "המלצה לכותרת ראשית: שם העיר, יופיע כחלק אינטגראלי בכותרת המומלצת לכתבה"
+
+#~ msgid "Key words for google, as default by category name"
+#~ msgstr "מילות מפתח עבור גוגל, כברירת מחדל לפי שם הקטגוריה, שדה חובה:"
+
+#~ msgid "Article Excerpt, Mandatory Field"
+#~ msgstr "תקציר הכתבה, שדה חובה:"
+
+#~ msgid "Roof Title, Not Mandatory"
+#~ msgstr "כותרת עליונה גג, לא חובה:"
+
+#~ msgid "insert the content of the article, mandatory field"
+#~ msgstr "הכנס תוכן הכתבה כאן , שדה חובה: "
+
+#~ msgid "Post Country wide"
+#~ msgstr "בקשה לפרסום הכתבה בפריסה ארצית של האתר:"
+
+#~ msgid "Select Taxonomy"
+#~ msgstr "לשייך כתבה ל-"
+
+#~ msgid "I agree i have read the terms of use"
+#~ msgstr ""
+#~ "שדה חובה: הנני מאשר כי קראתי, הבנתי והסכמתי לתנאי השימוש באתר כאן-נעים"
+
+#~ msgid "Gallery Image  "
+#~ msgstr "גלריית תמונות"
+
+#~ msgid "New post requires a title."
+#~ msgstr "פוסט חדש צריך כותרת"
+
+#~ msgid "Please enter a new title."
+#~ msgstr "אנא הזן כותרת חדשה"
+
+#~ msgid "Events Settings"
+#~ msgstr "הגדרות אירוע"
+
+#~ msgid "Event Date"
+#~ msgstr "תאריך ארוע"
+
+#~ msgid "Time"
+#~ msgstr "שעה"
+
+#~ msgid "Event Adress"
+#~ msgstr "כתובת ארוע"
+
+#~ msgid "Event Link"
+#~ msgstr "לינק לאירוע"
+
+#~ msgid "Event Map"
+#~ msgstr "מפת האירוע"
+
+#~ msgid "Is free event?"
+#~ msgstr "האם זה חינם?"
+
+#~ msgid "Event Area"
+#~ msgstr "אזור ארוע"
+
+#~ msgid "Event Roof Title"
+#~ msgstr "כותרת גג של הארוע"
+
+#~ msgid "Article - "
+#~ msgstr "כתבה-"
+
+#~ msgid "Start typing for auto complete"
+#~ msgstr "התחל להקליד להשלמה אוטומטית"
+
+#~ msgid "Row 1 Settings"
+#~ msgstr "הגדרות שורה 1"
+
+#~ msgid "Category settings Section 4"
+#~ msgstr "הגדרות קטגוריה חלק 4"
+
+#~ msgid "Category settings Section 5"
+#~ msgstr "הגדרות קטגוריה חלק 5"
+
+#~ msgid "Category settings Section 6"
+#~ msgstr "הגדרות קטגוריה חלק 6"
+
+#~ msgid "Category settings Section 7"
+#~ msgstr "הגדרות קטגוריה חלק 7"
+
+#~ msgid "Second Title"
+#~ msgstr "כותרת משנה "
+
+#~ msgid "Roof Title"
+#~ msgstr "כותרת גג עליונה"
+
+#~ msgid "Credit"
+#~ msgstr "קרדיט"
+
+#~ msgid "Author Request To show on Home page"
+#~ msgstr "בקשת המפרסם לפרסום בדף הבית"
+
+#~ msgid "Article Slider"
+#~ msgstr "גלרית  כתבה"
+
+#~ msgid "Business Info"
+#~ msgstr "מידע על העסק"
+
+#~ msgid "WebSite URL"
+#~ msgstr "קישור לאתר"
+
+#~ msgid "Business Slider"
+#~ msgstr "סלידר עסקים"
+
+#~ msgid "Slogan"
+#~ msgstr "סיסמת פרסום"
+
+#~ msgid "Map"
+#~ msgstr "מפה"
+
+#~ msgid "Title"
+#~ msgstr "כותרת"
+
+#~ msgid "Votes"
+#~ msgstr "הצבע"
+
+#~ msgid "Vote {#}"
+#~ msgstr "הצבע"
+
+#~ msgid "Text"
+#~ msgstr "טקסט"
+
+#~ msgid "Tz"
+#~ msgstr "תעודת זהות"
+
+#~ msgid "Video Settings"
+#~ msgstr "הגדרות וידאו"
+
+#~ msgid "event"
+#~ msgstr "אירועים"
+
+#~ msgid "Business"
+#~ msgstr "אינדקס עסקים"
+
+#~ msgid "business"
+#~ msgstr "אינדקס-עסקים"
+
+#~ msgid "Surveys"
+#~ msgstr "סקרים"
+
+#~ msgid "survey"
+#~ msgstr "סקרים"
+
+#~ msgid "Notifications"
+#~ msgstr "הודעות"
+
+#~ msgid "notifications"
+#~ msgstr "הודעות"
+
+#~ msgid "Naim Links"
+#~ msgstr "שימושונעים"
+
+#~ msgid "Daily Image"
+#~ msgstr "תמונת היום"
+
+#~ msgid "Events Type"
+#~ msgstr "סוג ארוע"
+
+#~ msgid "Category Background Image"
+#~ msgstr "תמונת רקע קטגוריה"
+
+#~ msgid "Category thumbnail Image"
+#~ msgstr "תמונה ראשית קטגוריה"
+
+#~ msgid "Color Picker"
+#~ msgstr "בחר צבע"
+
+#~ msgid "Short Category Name"
+#~ msgstr "שם קצר לקטגוריה"
+
+#~ msgid "Show Comments Bubble?"
+#~ msgstr "הצג בועת תגובות"
+
+#~ msgid "Sub Cat"
+#~ msgstr "קטגוריית משנה"
+
+#~ msgid "city?"
+#~ msgstr "עיר?"
+
+#~ msgid "Mayor"
+#~ msgstr "ראש העיר"
+
+#~ msgid "City Logo"
+#~ msgstr "לוגו עיר"
+
+#~ msgid "City Image"
+#~ msgstr "תמונה עיר"
+
+#~ msgid "Foundation Date"
+#~ msgstr "נוסד בתאריך"
+
+#~ msgid "Website"
+#~ msgstr "אתר"
+
+#~ msgid "City Map"
+#~ msgstr "מפת עיר"
+
+#~ msgid "Service link"
+#~ msgstr "לינק שרות"
+
+#~ msgid "Information Link"
+#~ msgstr "לינק מידע"
+
+#~ msgid "Back to Home page"
+#~ msgstr "לחזרה לעמוד הבית"
+
+#~ msgid "Author"
+#~ msgstr "מאת:"
+
+#~ msgid "Search Results for: %s"
+#~ msgstr "מציג תוצאות ל: %s"
+
+#~ msgid "want more updates? join us on"
+#~ msgstr "רוצים עוד עדכונים? הצטרפו "
+
+#~ msgid "facebook"
+#~ msgstr "ל'פייסבוק' ול'טוויטר'"
+
+#~ msgid "did u find an error? it is not pleasant"
+#~ msgstr "מצאתם טעות? זה לא נעים,"
+
+#~ msgid "tell us and we will fix it"
+#~ msgstr "ואנו נתקן"
+
+#~ msgid "my-naim-moment"
+#~ msgstr "רגע נעים שלי"
+
+#~ msgid ""
+#~ "want to appear on my-naim-moment? take a picture and send, and ull appear "
+#~ "here"
+#~ msgstr "רוצה להופיע כאן ברגע נעים שלך, צלמי ושלחי ותופיעי כאן"
+
+#~ msgid "thx for your vote"
+#~ msgstr "תודה על השתתפותך"
+
+#~ msgid "Category Class"
+#~ msgstr "סוג קטגוריה"
+
+#~ msgid "The Red Mail"
+#~ msgstr "המייל האדום"
+
+#~ msgid "single-business-right-bottom"
+#~ msgstr "יחיד - עסק - ימין - למטה"
+
+#~ msgid "single-business-left-bottom"
+#~ msgstr "יחיד - עסק - שמאל  - למטה"
+
+#~ msgid "red-mail-right-middle"
+#~ msgstr "מייל אדום - ימין - אמצע"
+
+#~ msgid "red-mail-right-bottom"
+#~ msgstr "מייל אדום - ימין - למטה"
+
+#~ msgid "category-last-right-bottom"
+#~ msgstr "קטגוריה אחרונה - ימין למטה"
+
+#~ msgid "Home - row - 6 - right"
+#~ msgstr "בית - שורה 6 - ימין"
+
+#~ msgid "Home - row - 7 - middle"
+#~ msgstr "בית - שורה 7- אמצע"
+
+#~ msgid "before-footer"
+#~ msgstr "לפני פוטר"
+
+#~ msgid "daily-right"
+#~ msgstr "יומי - ימין"
+
+#~ msgid "single-right-bottom"
+#~ msgstr "יחיד - ימין - למטה"
+
+#~ msgid "contact-right-bottom"
+#~ msgstr "צור קשר - ימין - למטה"
+
+#~ msgid "city-info"
+#~ msgstr "מידע עיר"
+
+#~ msgid "category-left-5"
+#~ msgstr "קטגוריה - שמאל  - 5"
+
+#~ msgid "category-row-7"
+#~ msgstr "קטגוריה שורה 7"
+
+#~ msgid "City Hall Kfar-Saba, Kfar-Saba "
+#~ msgstr "עיריית כפר סבא, כפר סבא"
+
+#~ msgid "Article Excerpt"
+#~ msgstr "תקציר הכתבה"
+
+#~ msgid "Date For Start Time"
+#~ msgstr "תאריך התחלה לתזמון:"
+
+#~ msgid "Test Multi Checkbox"
+#~ msgstr "מיקום לתזמון:"
+
+#~ msgid "Main Article - Top Part"
+#~ msgstr "כתבה ראשית - חלק עליון"
+
+#~ msgid "Article in Category"
+#~ msgstr "כתבה בקטגוריה"
+
+#~ msgid "Excerpt Article in 6 squares of sub-category"
+#~ msgstr "כתבת תקציר ב-6 הריבועים של תתי קטגוריות"
+
+#~ msgid "Save as draft, dont show article"
+#~ msgstr "שמור כטיוטה/הסתר ידיעה:"
+
+#~ msgid "Select Sub Taxonomy"
+#~ msgstr "לשייך כתבה ל-תת-"
+
+#~ msgid "Rami"
+#~ msgstr "רמי"
+
+#~ msgid "twitter"
+#~ msgstr "'טוויטר'"
+
+#~ msgid "Start Time"
+#~ msgstr "זמן התחלה"
+
+#~ msgid "End Time"
+#~ msgstr "זמן סיום"
+
+#~ msgid "Kan Naim On Twitter"
+#~ msgstr "כאן נעים ב-twitter  "

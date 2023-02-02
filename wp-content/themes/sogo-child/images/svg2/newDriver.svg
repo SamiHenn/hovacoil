@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 313 134">
+  <defs>
+    <clipPath id="a">
+      <path d="M2507 668h313v134h-313z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-2507 -668)">
+    <path fill="none" stroke="#0070C0" stroke-miterlimit="8" stroke-width="6.875" d="M2514.5 691.334c0-10.954 8.88-19.834 19.83-19.834h262.34c10.95 0 19.83 8.88 19.83 19.834v79.332c0 10.954-8.88 19.834-19.83 19.834h-262.34c-10.95 0-19.83-8.88-19.83-19.834Z"/>
+    <text x="214.271" fill="#0070C0" direction="rtl" font-family="Rubik,Rubik_MSFontService,sans-serif" font-size="60" font-weight="400" transform="translate(2558.21 751)" writing-mode="rl-tb">נהג חדש</text>
+    <text fill="#0070C0" font-family="Rubik,Rubik_MSFontService,sans-serif" font-size="60" font-weight="400" transform="translate(2543.31 751)"> </text>
+    <path fill="none" stroke="#0070C0" stroke-miterlimit="8" stroke-width="4.583" d="M2538.5 691a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Zm261 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Z"/>
+  </g>
+</svg>

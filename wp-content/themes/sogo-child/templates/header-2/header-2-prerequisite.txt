@@ -1,0 +1,25 @@
+must have:
+---------
+1. acf plugin
+
+2. group_5b1fbe263924c.json
+
+3. classes.less v1.0
+
+4. mixin.less v1.0
+
+5. header-2-functions.php
+
+6. header-2.less
+
+7. text.less (for the project)
+
+8. icons:
+    icon-home
+    icon-arrowdown
+
+9. /images/logo.img
+
+10. fill menu items in "primary_menu"
+
+11. fill desktop logo width in less (width/30)rem.

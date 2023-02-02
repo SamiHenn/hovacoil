@@ -1,0 +1,102 @@
+[13-Dec-2017 08:22:27 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOfferService") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:64
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(64): SoapClient->__call('CarOfferService', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 64
+[13-Dec-2017 08:25:36 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOfferService") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:64
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(64): SoapClient->__call('CarOfferService', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 64
+[13-Dec-2017 08:26:26 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("ICarOfferService_GetCarOffer_InputMessage") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:64
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(64): SoapClient->__call('ICarOfferServic...', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 64
+[13-Dec-2017 08:27:13 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("BasicHttpBinding_ICarOfferService_policy") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:64
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(64): SoapClient->__call('BasicHttpBindin...', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 64
+[13-Dec-2017 08:43:50 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOfferServiceClient") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:64
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(64): SoapClient->__call('CarOfferService...', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 64
+[13-Dec-2017 08:44:26 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOfferServiceClient") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:64
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(64): SoapClient->__call('CarOfferService...', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 64
+[13-Dec-2017 08:44:29 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOfferServiceClient") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:64
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(64): SoapClient->__call('CarOfferService...', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 64
+[13-Dec-2017 08:45:09 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOfferServiceClient") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:66
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(66): SoapClient->__call('CarOfferService...', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 66
+[13-Dec-2017 08:53:53 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOffer") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:66
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(66): SoapClient->__call('CarOffer', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 66
+[13-Dec-2017 08:53:59 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOffer") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:66
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(66): SoapClient->__call('CarOffer', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 66
+[13-Dec-2017 08:54:02 UTC] PHP Fatal error:  Uncaught SoapFault exception: [Client] Function ("CarOffer") is not a valid method for this service in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:66
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(66): SoapClient->__call('CarOffer', Array)
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 66
+[13-Dec-2017 09:26:26 UTC] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't find <definitions> in 'https://wsproxy.hcsra.co.il/ProxyServices/CarOfferService.svc' in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 18
+[13-Dec-2017 09:26:26 UTC] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't find <definitions> in 'https://wsproxy.hcsra.co.il/ProxyServices/CarOfferService.svc' in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:18
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php(18): SoapClient->SoapClient('https://wsproxy...')
+#1 /home/sbsogo/public_html/insurance/hachshara/index.php(11): hachsharaws->__construct()
+#2 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 18
+[17-Dec-2017 15:03:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function CarOfferServiceClient() on null in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:68
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#1 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 68
+[17-Dec-2017 15:03:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function CarOfferServiceClient() on null in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:68
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#1 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 68
+[18-Dec-2017 07:51:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function CarOfferServiceClient() on string in /home/sbsogo/public_html/insurance/hachshara/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/index.php on line 17
+[18-Dec-2017 07:52:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function CarOfferServiceClient() on string in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:101
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#1 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 101
+[18-Dec-2017 09:52:04 UTC] PHP Warning:  file_get_contents(https://wsproxy.hcsra.co.il/ProxyServices/CarOfferService.svc/GetCarOfferJointDiscount=0&amp;AgentId=111900&amp;IP=1&amp;ProtectionSystem=YES&amp;insuranceDetails%5BFromDate%5D=20%2F12%2F2017&amp;insuranceDetails%5BModelNumber%5D=588295&amp;insuranceDetails%5BProduceYear%5D=2008&amp;insuranceDetails%5BSugEmtzaiTashlum%5D=1&amp;insuranceDetails%5BLicenseNumber%5D=123456&amp;DriversDetails%5BDrivers%5D=0&amp;DriversDetails%5BDriverYoungestAge%5D=25&amp;DriversDetails%5BDriverYoungestLicenseYear%5D=101999&amp;DriversDetails%5BCoverForNewDriver%5D=1&amp;DriversDetails%5BIsPrivateOwner%5D=1&amp;DriversDetails%5BDriveInSat%5D=1&amp;DriversDetails%5BZipCode%5D=12345&amp;DriversDetails%5BYoungestDriverGender%5D=2&amp;insurancePass%5BTypeOfInsuranceYearBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceTwoYearsBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceThreeYearsBefore%5D=2&amp;insurancePass%5BNumberOfClaimYearBefore%5D=0&amp;insurancePass%5BNumberOfClaimTwoYearsBefore%5D=0&amp;insurancePass%5BNumber in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 105
+[18-Dec-2017 09:53:10 UTC] PHP Warning:  file_get_contents(https://wsproxy.hcsra.co.il/ProxyServices/CarOfferService.svc/GetCarOfferJointDiscount=0&amp;AgentId=111900&amp;IP=1&amp;ProtectionSystem=YES&amp;insuranceDetails%5BFromDate%5D=20%2F12%2F2017&amp;insuranceDetails%5BModelNumber%5D=588295&amp;insuranceDetails%5BProduceYear%5D=2008&amp;insuranceDetails%5BSugEmtzaiTashlum%5D=1&amp;insuranceDetails%5BLicenseNumber%5D=123456&amp;DriversDetails%5BDrivers%5D=0&amp;DriversDetails%5BDriverYoungestAge%5D=25&amp;DriversDetails%5BDriverYoungestLicenseYear%5D=101999&amp;DriversDetails%5BCoverForNewDriver%5D=1&amp;DriversDetails%5BIsPrivateOwner%5D=1&amp;DriversDetails%5BDriveInSat%5D=1&amp;DriversDetails%5BZipCode%5D=12345&amp;DriversDetails%5BYoungestDriverGender%5D=2&amp;insurancePass%5BTypeOfInsuranceYearBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceTwoYearsBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceThreeYearsBefore%5D=2&amp;insurancePass%5BNumberOfClaimYearBefore%5D=0&amp;insurancePass%5BNumberOfClaimTwoYearsBefore%5D=0&amp;insurancePass%5BNumber in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 105
+[18-Dec-2017 11:05:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function http_build_url() in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php:122
+Stack trace:
+#0 /home/sbsogo/public_html/insurance/hachshara/index.php(13): hachsharaws->calc_price()
+#1 {main}
+  thrown in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 122
+[18-Dec-2017 11:06:30 UTC] PHP Warning:  file_get_contents(https://wsproxy.hcsra.co.il/ProxyServices/CarOfferService.svc/GetCarOffer?JointDiscount=0&amp;AgentId=111900&amp;insuranceDetails%5BFromDate%5D=20%2F12%2F2017&amp;insuranceDetails%5BModelNumber%5D=588295&amp;insuranceDetails%5BProduceYear%5D=2008&amp;insuranceDetails%5BSugEmtzaiTashlum%5D=1&amp;DriversDetails%5BDrivers%5D=1&amp;DriversDetails%5BDriverYoungestAge%5D=25&amp;DriversDetails%5BDriverYoungestLicenseYear%5D=102010&amp;DriversDetails%5BCoverForNewDriver%5D=1&amp;DriversDetails%5BIsPrivateOwner%5D=1&amp;DriversDetails%5BDriveInSat%5D=1&amp;DriversDetails%5BZipCode%5D=44234&amp;DriversDetails%5BYoungestDriverGender%5D=1&amp;insurancePass%5BTypeOfInsuranceYearBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceTwoYearsBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceThreeYearsBefore%5D=2&amp;insurancePass%5BNumberOfClaimYearBefore%5D=0&amp;insurancePass%5BNumberOfClaimTwoYearsBefore%5D=0&amp;insurancePass%5BNumberOfClaimThreeYearBefore%5D=0&amp;insurancePass%5BNumberOfTimesLicenseSuspended%5D in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 122
+[24-Dec-2017 07:39:42 UTC] PHP Warning:  file_get_contents(https://wsproxy.hcsra.co.il/ProxyServices/CarOfferService.svc/GetCarOffer?JointDiscount=0&amp;AgentId=111900&amp;insuranceDetails%5BFromDate%5D=20%2F12%2F2017&amp;insuranceDetails%5BModelNumber%5D=588295&amp;insuranceDetails%5BProduceYear%5D=2008&amp;insuranceDetails%5BSugEmtzaiTashlum%5D=1&amp;DriversDetails%5BDrivers%5D=1&amp;DriversDetails%5BDriverYoungestAge%5D=25&amp;DriversDetails%5BDriverYoungestLicenseYear%5D=102010&amp;DriversDetails%5BCoverForNewDriver%5D=1&amp;DriversDetails%5BIsPrivateOwner%5D=1&amp;DriversDetails%5BDriveInSat%5D=1&amp;DriversDetails%5BZipCode%5D=44234&amp;DriversDetails%5BYoungestDriverGender%5D=1&amp;insurancePass%5BTypeOfInsuranceYearBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceTwoYearsBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceThreeYearsBefore%5D=2&amp;insurancePass%5BNumberOfClaimYearBefore%5D=0&amp;insurancePass%5BNumberOfClaimTwoYearsBefore%5D=0&amp;insurancePass%5BNumberOfClaimThreeYearBefore%5D=0&amp;insurancePass%5BNumberOfTimesLicenseSuspended%5D in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 122
+[24-Dec-2017 07:46:31 UTC] PHP Warning:  file_get_contents(https://wsproxy.hcsra.co.il/ProxyServices/api/CarOfferAPI/GetCarOfferJointDiscount=0&amp;AgentId=111900&amp;insuranceDetails%5BFromDate%5D=20%2F12%2F2017&amp;insuranceDetails%5BModelNumber%5D=588295&amp;insuranceDetails%5BProduceYear%5D=2008&amp;insuranceDetails%5BSugEmtzaiTashlum%5D=1&amp;DriversDetails%5BDrivers%5D=1&amp;DriversDetails%5BDriverYoungestAge%5D=25&amp;DriversDetails%5BDriverYoungestLicenseYear%5D=102010&amp;DriversDetails%5BCoverForNewDriver%5D=1&amp;DriversDetails%5BIsPrivateOwner%5D=1&amp;DriversDetails%5BDriveInSat%5D=1&amp;DriversDetails%5BZipCode%5D=44234&amp;DriversDetails%5BYoungestDriverGender%5D=1&amp;insurancePass%5BTypeOfInsuranceYearBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceTwoYearsBefore%5D=2&amp;insurancePass%5BTypeOfInsuranceThreeYearsBefore%5D=2&amp;insurancePass%5BNumberOfClaimYearBefore%5D=0&amp;insurancePass%5BNumberOfClaimTwoYearsBefore%5D=0&amp;insurancePass%5BNumberOfClaimThreeYearBefore%5D=0&amp;insurancePass%5BNumberOfTimesLicenseSuspended%5D=0&am in /home/sbsogo/public_html/insurance/hachshara/lib/hachsharaws.php on line 121

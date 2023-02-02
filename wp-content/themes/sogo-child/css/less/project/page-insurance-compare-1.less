@@ -1,0 +1,71 @@
+/**********************
+page-insurance-compare-1.less
+*********************/
+.page-insurance-compare-1 {
+  background-image: url("images/backgroundclouds.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  position: relative;
+
+  .insurance-date-finish,
+  .insurance-date-start {
+    width: 2.8rem;
+    border: none;
+  }
+}
+
+.radio_box_con,
+.vehicle_sub_brand_con,
+.vehicle_brand_con,
+.vehicle_year_con,
+.vehicle_manufacturer_con,
+.submit_tab2_con,
+.search_by_license_num_helper{
+  display: none;
+}
+
+.form-group a.list_link, .radio_box_con a.research_link, .search_by_license_num_helper a.s_num_link {
+  color: #006fc0;
+  cursor: pointer;
+}
+
+.research_link_con {
+  display: none;
+}
+
+#carFound {
+  position: fixed;
+  max-width: 150px;
+  height: 150px;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+  background-color: #0bb7d7;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  z-index: 999999999;
+  border-radius: 75px;
+  padding: 26px;
+  padding-top: 35px;
+  display: none;
+}
+
+.vehicle_not_found_popup {
+  position: fixed;
+  max-width: 90%;
+  height: auto;
+  top: calc(50% - 125px);
+  left: calc(50% - 45%);
+  padding: 2rem;
+  text-align: center;
+  z-index: 999999;
+  background-color: #ffffffd1;
+  display: none;
+
+  @media (min-width: 768px) {
+    max-width: 420px;
+    left: calc(50% - 210px);
+  }
+}
+

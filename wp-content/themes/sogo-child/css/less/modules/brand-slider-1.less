@@ -1,0 +1,49 @@
+/* brand-slider-1.less */
+
+body.mobile {
+  //.brand-slider-1 {
+  //  height: 10vh;
+  //}
+  .slick-list {
+    //height: 100%;
+    //position: absolute;
+    //top: 50%;
+    //.transform(translateY(-50%));
+    .slick-track {
+      //height: 100% !important;
+
+      //position: absolute;
+      //top: 50%;
+      //.transform(translateY(-50%));
+      .slick-slide {
+        position: relative;
+        img {
+          //display: block;
+          //position: absolute;
+          //top: 50%;
+          //transform: translateY(-50%);
+          //right: 0;
+          //margin: 0 auto;
+          //left: 0;
+        }
+      }
+    }
+  }
+}
+
+.brand-slider-1 {
+  height: 10vh;
+}
+
+body.desktop {
+  .brand-slider-1 {
+    > div {
+      .display-flex();
+      .d-flex-justify(center);
+      .align-items(center);
+    }
+  }
+}
+
+
+

@@ -1,0 +1,69 @@
+/* share-bar.less */
+
+.addtoany_shortcode {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+
+  a[class^="a2a_button"] {
+    display: block;
+
+    svg {
+      width: 0.9rem;
+      top: 50%;
+      .transform(translateY(-50%));
+    }
+
+    path {
+      fill: @color-white;
+    }
+
+    > span {
+      //background-color: @color-6 !important;
+      display: block !important;
+      border-radius: 0 !important;
+      .transition();
+      height: 45px !important;
+      line-height: 45px !important;
+      width: 45px !important;
+    }
+
+    &:hover {
+      > span {
+        background-color: @color-2 !important;
+      }
+    }
+
+    &:first-child {
+
+      > span {
+        background-color: @color-3 !important;
+      }
+    }
+
+    &:nth-child(2) {
+
+      > span {
+        background-color: @color-4 !important;
+      }
+    }
+
+    &:nth-child(3) {
+
+      > span {
+        background-color: @color-5 !important;
+      }
+    }
+
+    &:last-child {
+
+      > span {
+        background-color: @color-6 !important;
+      }
+    }
+  }
+}
+
+
